@@ -81,7 +81,7 @@ export default function Universities() {
               placeholder="Search by name or country..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-navy"
             />
           </div>
           <button
@@ -91,7 +91,7 @@ export default function Universities() {
             <SlidersHorizontal className="w-5 h-5" />
             Filters
             {Object.values(filters).some(Boolean) && (
-              <span className="w-2 h-2 rounded-full bg-primary-500" />
+              <span className="w-2 h-2 rounded-full bg-navy" />
             )}
           </button>
         </div>
@@ -103,7 +103,7 @@ export default function Universities() {
               <h3 className="font-semibold text-slate-900 dark:text-white">Advanced Filters</h3>
               <button
                 onClick={() => setFilters({ country: '', type: '', minRank: '', maxTuition: '', scholarships: false, program: '' })}
-                className="text-sm text-primary-500 hover:text-primary-600"
+                className="text-sm text-navy hover:text-navy"
               >
                 Clear all
               </button>
@@ -172,7 +172,7 @@ export default function Universities() {
               <div className="text-center mt-10">
                 <button
                   onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                  className="px-8 py-3 text-sm font-semibold text-primary-600 dark:text-primary-400 border-2 border-primary-500 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:shadow-lg hover:shadow-primary-500/20 transition-all"
+                  className="px-8 py-3 text-sm font-semibold text-navy dark:text-navy border-2 border-navy rounded-xl hover:bg-navy dark:hover:bg-navy-light hover:shadow-lg hover:shadow-navy transition-all"
                 >
                   Load More ({filtered.length - visibleCount} remaining)
                 </button>

@@ -21,7 +21,7 @@ export default function FacultyCard({ faculty }: FacultyCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         {faculty.verification_status === 'verified' && (
-          <Link to="/verification" className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-500 text-white text-xs font-semibold shadow-lg hover:opacity-80 transition-opacity cursor-pointer">
+          <Link to="/verification" className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-burgundy text-white text-xs font-semibold shadow-lg hover:opacity-80 transition-opacity cursor-pointer">
             <BadgeCheck className="w-3.5 h-3.5" /> Verified
           </Link>
         )}
@@ -40,7 +40,7 @@ export default function FacultyCard({ faculty }: FacultyCardProps) {
       <div className="p-5 flex flex-col flex-1">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-1.5 text-sm text-slate-600 dark:text-slate-300">
-            <MapPin className="w-4 h-4 text-primary-500" />
+            <MapPin className="w-4 h-4 text-navy" />
             <span className="truncate">{faculty.university_name}</span>
           </div>
           {faculty.rating > 0 && (
@@ -55,7 +55,7 @@ export default function FacultyCard({ faculty }: FacultyCardProps) {
         {/* Subjects */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {faculty.subjects.slice(0, 3).map((subject) => (
-            <span key={subject} className="px-2.5 py-1 rounded-full text-xs font-medium bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">
+            <span key={subject} className="px-2.5 py-1 rounded-full text-xs font-medium bg-navy dark:bg-navy-light text-navy dark:text-navy">
               {subject}
             </span>
           ))}
@@ -76,14 +76,14 @@ export default function FacultyCard({ faculty }: FacultyCardProps) {
         <div className="mt-auto flex items-center gap-2 pt-2">
           <Link
             to={`/mentors/${faculty.id}`}
-            className="flex-1 text-center px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-primary-600 to-primary-500 rounded-lg hover:shadow-lg hover:shadow-primary-500/30 transition-all"
+            className="flex-1 text-center px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-navy to-navy rounded-lg hover:shadow-lg hover:shadow-navy transition-all"
           >
             View Profile
           </Link>
           {faculty.is_available && faculty.verification_status === 'verified' && (
             <Link
               to={`/mentors/${faculty.id}#book`}
-              className="px-4 py-2.5 text-sm font-semibold text-accent-600 dark:text-accent-400 bg-accent-50 dark:bg-accent-900/20 rounded-lg hover:bg-accent-100 dark:hover:bg-accent-900/30 transition-colors flex items-center gap-1.5"
+              className="px-4 py-2.5 text-sm font-semibold text-burgundy dark:text-burgundy bg-burgundy dark:bg-burgundy-light rounded-lg hover:bg-burgundy dark:hover:bg-burgundy-light transition-colors flex items-center gap-1.5"
             >
               <Calendar className="w-4 h-4" /> Book
             </Link>

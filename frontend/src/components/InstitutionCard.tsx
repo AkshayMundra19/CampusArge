@@ -151,7 +151,7 @@ export function InstitutionCard({ inst }: { inst: Institution }) {
         </h3>
         {/* 2. Country */}
         <div className="flex items-center gap-1 text-xs text-slate-500 dark:text-slate-400 mb-3">
-          <MapPin className="w-3 h-3 text-primary-500 flex-shrink-0" aria-hidden="true" />
+          <MapPin className="w-3 h-3 text-navy flex-shrink-0" aria-hidden="true" />
           <span className="truncate">{inst.location}</span>
         </div>
 
@@ -177,7 +177,7 @@ export function InstitutionCard({ inst }: { inst: Institution }) {
         {/* 7. Specialization tags (discovery-oriented) */}
         <div className="flex flex-wrap gap-1.5 mb-3">
           {inst.tags.map((t) => (
-            <span key={t} className="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">
+            <span key={t} className="px-2 py-0.5 rounded-full text-[11px] font-semibold bg-navy dark:bg-navy-light text-navy dark:text-navy">
               {t}
             </span>
           ))}

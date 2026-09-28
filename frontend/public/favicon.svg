@@ -1,13 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Rounded square background - White -->
-  <rect width="100" height="100" rx="22" ry="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" />
-  <!-- Graduation cap — Black, centered -->
-  <!-- Mortarboard flat diamond top -->
-  <polygon points="50,18 82,33 50,48 18,33" fill="#0f172a"/>
-  <!-- Left arc (gown shoulders) -->
-  <path d="M26,37 L26,58 Q26,70 50,72 Q74,70 74,58 L74,37 L66,41 L66,57 Q66,65 50,67 Q34,65 34,57 L34,41 Z" fill="#0f172a"/>
-  <!-- Stem down from cap center -->
-  <rect x="47" y="46" width="6" height="18" rx="1" fill="#0f172a"/>
-  <!-- Tassel ball at bottom -->
-  <circle cx="50" cy="66" r="4.5" fill="#0f172a"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" aria-label="CampusArge">
+  <!-- Globe -->
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#1F4E79" stroke-width="2"/>
+  <path d="M50 10 A40 40 0 0 1 50 90 M50 10 A40 40 0 0 0 50 90" fill="none" stroke="#102A43" stroke-width="1.5" opacity="0.3"/>
+  <path d="M10 50 L90 50" fill="none" stroke="#102A43" stroke-width="1.5" opacity="0.3"/>
+  <!-- Building -->
+  <path d="M25 60 L50 35 L75 60 Z" fill="#102A43"/>
+  <rect x="30" y="60" width="8" height="25" fill="#1F4E79"/>
+  <rect x="46" y="60" width="8" height="25" fill="#1F4E79"/>
+  <rect x="62" y="60" width="8" height="25" fill="#1F4E79"/>
+  <rect x="25" y="85" width="50" height="5" fill="#102A43"/>
+  <!-- Book -->
+  <path d="M15 95 Q35 105 50 95 Q65 105 85 95 L80 90 Q65 100 50 90 Q35 100 20 90 Z" fill="#102A43"/>
+  <!-- Star -->
+  <path d="M48 20 L50 10 L52 20 L62 22 L52 24 L50 34 L48 24 L38 22 Z" fill="#B08D57"/>
 </svg>

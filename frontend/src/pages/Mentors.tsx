@@ -81,7 +81,7 @@ export default function Mentors() {
               placeholder="Search by name, subject, or university..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+              className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-navy"
             />
           </div>
           <button
@@ -90,7 +90,7 @@ export default function Mentors() {
           >
             <SlidersHorizontal className="w-5 h-5" />
             Filters
-            {Object.values(filters).some(Boolean) && <span className="w-2 h-2 rounded-full bg-primary-500" />}
+            {Object.values(filters).some(Boolean) && <span className="w-2 h-2 rounded-full bg-navy" />}
           </button>
         </div>
 

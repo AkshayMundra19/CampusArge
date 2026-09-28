@@ -8,7 +8,7 @@ const ROADMAPS = [
     id: 'tenure-track',
     title: 'Tenure-Track Preparation',
     icon: Award,
-    color: 'from-primary-500 to-primary-700',
+    color: 'from-navy to-navy',
     steps: ['Ph.D. Completion', 'Postdoctoral Fellowship', 'First Faculty Position', 'Publishing & Grants', 'Mid-Career Review', 'Tenure Decision'],
     duration: '5-7 years',
     skills: ['Grant Writing', 'Academic Publishing', 'Teaching Excellence', 'Committee Leadership', 'Networking', 'Lab Management'],
@@ -17,7 +17,7 @@ const ROADMAPS = [
     id: 'intl-postdoc',
     title: 'International Postdoc Journey',
     icon: Globe,
-    color: 'from-accent-500 to-accent-700',
+    color: 'from-burgundy to-burgundy',
     steps: ['Identify Global Labs', 'Reach out to PIs', 'Visa & Funding Applications', 'Relocation & Onboarding', 'High-Impact Research', 'Transition to Faculty'],
     duration: '2-4 years',
     skills: ['Cross-cultural Communication', 'Fellowship Applications', 'Advanced Lab Techniques', 'Independent Research', 'Global Networking'],
@@ -109,10 +109,10 @@ export default function Roadmaps() {
               {selectedRoadmap.steps.map((step, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="flex flex-col items-center">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-navy to-burgundy flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                       {i + 1}
                     </div>
-                    {i < selectedRoadmap.steps.length - 1 && <div className="w-0.5 h-12 bg-gradient-to-b from-primary-300 to-transparent mt-1" />}
+                    {i < selectedRoadmap.steps.length - 1 && <div className="w-0.5 h-12 bg-gradient-to-b from-navy to-transparent mt-1" />}
                   </div>
                   <div className="pt-1.5 pb-8">
                     <p className="font-semibold text-slate-900 dark:text-white">{step}</p>
@@ -126,7 +126,7 @@ export default function Roadmaps() {
               <h4 className="font-semibold text-slate-900 dark:text-white mb-3">Skills You'll Learn</h4>
               <div className="flex flex-wrap gap-2">
                 {selectedRoadmap.skills.map((skill) => (
-                  <span key={skill} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-accent-50 dark:bg-accent-900/20 text-accent-700 dark:text-accent-300">
+                  <span key={skill} className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-burgundy dark:bg-burgundy-light text-green-600 dark:text-green-600">
                     <CheckCircle2 className="w-3.5 h-3.5" /> {skill}
                   </span>
                 ))}

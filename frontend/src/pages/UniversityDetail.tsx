@@ -125,7 +125,7 @@ export default function UniversityDetail() {
             const Icon = stat.icon;
             return (
               <div key={i} className="glass-card rounded-2xl p-4">
-                <Icon className="w-5 h-5 text-primary-500 mb-2" />
+                <Icon className="w-5 h-5 text-navy mb-2" />
                 <p className="text-xs text-slate-500 dark:text-slate-400">{stat.label}</p>
                 <p className="font-bold text-slate-900 dark:text-white">{stat.value}</p>
               </div>
@@ -141,7 +141,7 @@ export default function UniversityDetail() {
               onClick={() => setActiveTab(tab.id)}
               className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-colors ${
                 activeTab === tab.id
-                  ? 'border-primary-500 text-primary-600 dark:text-primary-400'
+                  ? 'border-navy text-navy dark:text-navy'
                   : 'border-transparent text-slate-500 hover:text-slate-700 dark:hover:text-slate-300'
               }`}
             >
@@ -179,7 +179,7 @@ export default function UniversityDetail() {
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                   {university.campus_facilities.map((facility) => (
                      <div key={facility} className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
-                      <CheckCircle2 className="w-4 h-4 text-accent-500 flex-shrink-0" /> {facility}
+                      <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0" /> {facility}
                     </div>
                   ))}
                 </div>
@@ -209,7 +209,7 @@ export default function UniversityDetail() {
               <div className="glass-card rounded-2xl p-6">
                 <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-4">Tuition Information</h3>
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50">
-                  <DollarSign className="w-8 h-8 text-accent-500" />
+                  <DollarSign className="w-8 h-8 text-green-600" />
                   <div>
                     <p className="text-2xl font-bold text-slate-900 dark:text-white">
                       {tuitionDisplay()}
@@ -221,7 +221,7 @@ export default function UniversityDetail() {
               <div className="glass-card rounded-2xl p-6">
                 <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-4">Estimated Cost of Attendance</h3>
                 <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50">
-                  <DollarSign className="w-8 h-8 text-primary-500" />
+                  <DollarSign className="w-8 h-8 text-navy" />
                   <div>
                     <p className="text-2xl font-bold text-slate-900 dark:text-white">
                       {university.cost_of_attendance ? `$${university.cost_of_attendance.toLocaleString()}` : 'N/A'}
@@ -251,7 +251,7 @@ export default function UniversityDetail() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {university.programs.map((program) => (
                     <div key={program} className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50">
-                      <BookOpen className="w-5 h-5 text-primary-500 flex-shrink-0" />
+                      <BookOpen className="w-5 h-5 text-navy flex-shrink-0" />
                       <span className="font-medium text-slate-700 dark:text-slate-300">{program}</span>
                     </div>
                   ))}
@@ -267,7 +267,7 @@ export default function UniversityDetail() {
           <div className="animate-fade-in">
             <div className="flex items-center justify-between mb-6">
               <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white">Verified Faculty at {university.name}</h3>
-              <Link to={`/mentors?university=${university.id}`} className="text-sm text-primary-500 hover:text-primary-600 flex items-center gap-1">
+              <Link to={`/mentors?university=${university.id}`} className="text-sm text-navy hover:text-navy flex items-center gap-1">
                 View All <ArrowRight className="w-4 h-4" />
               </Link>
             </div>

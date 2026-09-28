@@ -45,7 +45,7 @@ export default function UniversityCard({ university }: UniversityCardProps) {
           </div>
         )}
         {university.scholarships_available && (
-          <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-accent-500 text-white text-xs font-semibold shadow-lg">
+          <div className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-burgundy text-white text-xs font-semibold shadow-lg">
             Scholarships
           </div>
         )}
@@ -62,12 +62,12 @@ export default function UniversityCard({ university }: UniversityCardProps) {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-2 mb-4">
           <div className="text-center p-2 rounded-lg bg-slate-50 dark:bg-slate-800/50">
-            <Users className="w-4 h-4 mx-auto text-primary-500 mb-1" />
+            <Users className="w-4 h-4 mx-auto text-navy mb-1" />
             <p className="text-xs text-slate-500 dark:text-slate-400">Faculty</p>
             <p className="text-sm font-bold text-slate-900 dark:text-white">{university.verified_faculty_count}</p>
           </div>
           <div className="text-center p-2 rounded-lg bg-slate-50 dark:bg-slate-800/50">
-            <Building2 className="w-4 h-4 mx-auto text-accent-500 mb-1" />
+            <Building2 className="w-4 h-4 mx-auto text-burgundy mb-1" />
             <p className="text-xs text-slate-500 dark:text-slate-400">Type</p>
             <p className="text-sm font-bold text-slate-900 dark:text-white capitalize">{university.university_type}</p>
           </div>
@@ -106,13 +106,13 @@ export default function UniversityCard({ university }: UniversityCardProps) {
         <div className="mt-auto flex items-center gap-2 pt-2">
           <Link
             to={`/universities/${university.id}`}
-            className="flex-1 flex items-center justify-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-primary-600 to-primary-500 rounded-lg hover:shadow-lg hover:shadow-primary-500/30 transition-all"
+            className="flex-1 flex items-center justify-center gap-1.5 px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-navy to-navy rounded-lg hover:shadow-lg hover:shadow-navy transition-all"
           >
             View University <ArrowRight className="w-4 h-4" />
           </Link>
           <Link
             to={`/mentors?university=${university.id}`}
-            className="px-4 py-2.5 text-sm font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 rounded-lg hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors"
+            className="px-4 py-2.5 text-sm font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light rounded-lg hover:bg-navy dark:hover:bg-navy-light transition-colors"
           >
             Faculty
           </Link>

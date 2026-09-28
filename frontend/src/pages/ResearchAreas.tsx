@@ -9,7 +9,7 @@ export default function ResearchAreas() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-16 animate-fade-in-up">
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-4">
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-4">
           Discovery
         </span>
         <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-slate-900 dark:text-white mb-6">
@@ -30,13 +30,13 @@ export default function ResearchAreas() {
             }`}>
               {i % 2 === 0 ? <Lightbulb className="w-6 h-6" /> : <Globe className="w-6 h-6" />}
             </div>
-            <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+            <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-2 group-hover:text-navy dark:group-hover:text-navy transition-colors">
               {topic}
             </h3>
             <p className="text-sm text-slate-500 dark:text-slate-400 mb-6 flex-1">
               Connect with leading experts and verified institutions focusing on {topic.toLowerCase()}.
             </p>
-            <div className="flex items-center gap-2 text-sm font-semibold text-primary-600 dark:text-primary-400 mt-auto">
+            <div className="flex items-center gap-2 text-sm font-semibold text-navy dark:text-navy mt-auto">
               Explore Faculty <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </div>
           </div>

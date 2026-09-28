@@ -43,7 +43,7 @@ export default function FacultyDashboard({ tab }: { tab: string }) {
         </div>
         
         <div className="glass-card rounded-3xl p-8 border border-slate-200/50 dark:border-slate-700/50 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-r from-primary-500/20 to-accent-500/20" />
+          <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-r from-navy to-burgundy" />
           
           {!facultyProfile ? (
             <div className="text-center py-12 relative z-10">
@@ -67,7 +67,7 @@ export default function FacultyDashboard({ tab }: { tab: string }) {
                 </div>
                 <div className="flex-1">
                   <h3 className="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 dark:text-white mb-1">{facultyProfile.full_name}</h3>
-                  <p className="text-lg text-primary-600 dark:text-primary-400 font-medium mb-3">{facultyProfile.title}</p>
+                  <p className="text-lg text-navy dark:text-navy font-medium mb-3">{facultyProfile.title}</p>
                   
                   <div className="flex flex-wrap items-center gap-3">
                     <Badge variant="neutral" className="px-3 py-1 bg-white/50 backdrop-blur-md border-slate-200/50">
@@ -162,9 +162,9 @@ export default function FacultyDashboard({ tab }: { tab: string }) {
             <p className="text-sm font-medium text-slate-500 dark:text-slate-400">Average Rating</p>
           </div>
           
-          <div className="glass-card rounded-2xl p-6 border border-slate-200/50 hover:border-primary-500/30 transition-colors group">
-            <div className="w-12 h-12 bg-primary-50 dark:bg-primary-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <BookOpen className="w-6 h-6 text-primary-500" />
+          <div className="glass-card rounded-2xl p-6 border border-slate-200/50 hover:border-navy transition-colors group">
+            <div className="w-12 h-12 bg-navy dark:bg-navy-light rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <BookOpen className="w-6 h-6 text-navy" />
             </div>
             <p className="font-display font-extrabold text-3xl text-slate-900 dark:text-white mb-1">
               {facultyProfile.review_count ?? '0'}

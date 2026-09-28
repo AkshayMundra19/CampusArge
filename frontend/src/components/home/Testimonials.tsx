@@ -49,7 +49,7 @@ export default function Testimonials() {
     <section className="py-24 bg-slate-50/60 dark:bg-slate-950/60 overflow-hidden" aria-labelledby="testimonials-heading">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-3">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
             What Our Community Says
           </span>
           <h2 id="testimonials-heading" className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white">
@@ -70,7 +70,7 @@ export default function Testimonials() {
               {TESTIMONIALS.map((t, i) => (
                 <div key={i} className="w-full flex-shrink-0">
                   <div className="glass-card rounded-2xl p-8 sm:p-12 text-center flex flex-col items-center mx-2 h-full">
-                    <Quote className="w-12 h-12 text-primary-300 dark:text-primary-700 mb-6 flex-shrink-0" aria-hidden="true" />
+                    <Quote className="w-12 h-12 text-navy dark:text-navy mb-6 flex-shrink-0" aria-hidden="true" />
                     <p className="text-slate-700 dark:text-slate-300 text-lg sm:text-xl font-medium leading-relaxed italic mb-8 flex-1 max-w-2xl">
                       "{t.quote}"
                     </p>
@@ -99,7 +99,7 @@ export default function Testimonials() {
               aria-selected={i === activeIndex}
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => setActiveIndex(i)}
-              className={`rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 ${i === activeIndex ? 'w-8 h-2.5 bg-primary-600 dark:bg-primary-500' : 'w-2.5 h-2.5 bg-slate-300 dark:bg-slate-700 hover:bg-slate-400 dark:hover:bg-slate-600'}`}
+              className={`rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-navy focus:ring-offset-2 dark:focus:ring-offset-slate-900 ${i === activeIndex ? 'w-8 h-2.5 bg-navy dark:bg-navy' : 'w-2.5 h-2.5 bg-slate-300 dark:bg-slate-700 hover:bg-slate-400 dark:hover:bg-slate-600'}`}
             />
           ))}
         </div>

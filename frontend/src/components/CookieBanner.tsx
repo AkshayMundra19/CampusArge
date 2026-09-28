@@ -38,7 +38,7 @@ export default function CookieBanner() {
         
         <div className="flex-1 pr-6 sm:pr-0">
           <p className="text-sm text-slate-700 dark:text-slate-300">
-            We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies in accordance with our <a href="/privacy" className="text-primary-600 dark:text-primary-400 hover:underline">Privacy Policy</a>.
+            We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies in accordance with our <a href="/privacy" className="text-navy dark:text-navy hover:underline">Privacy Policy</a>.
           </p>
         </div>
         

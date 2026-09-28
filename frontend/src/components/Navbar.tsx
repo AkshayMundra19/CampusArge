@@ -49,7 +49,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group" aria-label="Mentoring Path home">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center shadow-lg shadow-primary-500/30 group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center shadow-lg shadow-navy group-hover:scale-105 transition-transform">
               <GraduationCap className="w-5 h-5 text-white" aria-hidden="true" />
             </div>
             <span className="font-display font-bold text-lg text-slate-900 dark:text-white hidden sm:block">
@@ -65,7 +65,7 @@ export default function Navbar() {
                 to={link.path}
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive(link.path)
-                    ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
+                    ? 'text-navy dark:text-navy bg-navy dark:bg-navy-light'
                     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/50'
                 }`}
               >
@@ -77,7 +77,7 @@ export default function Navbar() {
                 to="/dashboard"
                 className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
                   isActive('/dashboard')
-                    ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
+                    ? 'text-navy dark:text-navy bg-navy dark:bg-navy-light'
                     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/50'
                 }`}
               >
@@ -97,7 +97,7 @@ export default function Navbar() {
                   aria-label="User menu"
                   className="flex items-center gap-2 p-1.5 pr-3 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors"
                 >
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white text-sm font-semibold">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-navy to-burgundy flex items-center justify-center text-white text-sm font-semibold">
                     {profile?.full_name?.charAt(0).toUpperCase() ?? 'U'}
                   </div>
                   <span className="text-sm font-medium text-slate-700 dark:text-slate-200 max-w-[100px] truncate">
@@ -143,7 +143,7 @@ export default function Navbar() {
                   to={link.path}
                   className={`px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                     isActive(link.path)
-                      ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20'
+                      ? 'text-navy dark:text-navy bg-navy dark:bg-navy-light'
                       : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50'
                   }`}
                 >

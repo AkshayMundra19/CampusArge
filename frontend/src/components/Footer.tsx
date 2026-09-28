@@ -50,7 +50,7 @@ export default function Footer() {
           {/* Brand — spans 2 cols */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4" aria-label="Mentoring Path home">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center">
                 <GraduationCap className="w-5 h-5 text-white" aria-hidden="true" />
               </div>
               <span className="font-display font-bold text-lg text-slate-900 dark:text-white">
@@ -67,7 +67,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-primary-600 hover:text-white transition-all"
+                  className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-navy hover:text-white transition-all"
                 >
                   <Icon className="w-4 h-4" aria-hidden="true" />
                 </a>
@@ -84,7 +84,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       to={link.path}
-                      className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                      className="text-sm text-slate-600 dark:text-slate-400 hover:text-navy dark:hover:text-navy transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
                 <li key={c.label}>
                   <a
                     href={c.href}
-                    className="text-sm text-slate-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                    className="text-sm text-slate-600 dark:text-slate-400 hover:text-navy dark:hover:text-navy transition-colors"
                   >
                     {c.label}
                   </a>
@@ -125,7 +125,7 @@ export default function Footer() {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="text-sm text-slate-500 dark:text-slate-500 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                  className="text-sm text-slate-500 dark:text-slate-500 hover:text-navy dark:hover:text-navy transition-colors"
                 >
                   {link.label}
                 </Link>

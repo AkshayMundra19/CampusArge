@@ -103,7 +103,7 @@ export default function Home() {
       <section id="faq" className="py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-3">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
               FAQ
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white">

@@ -5,7 +5,7 @@ export default function VerificationProcess() {
     <div className="pt-32 pb-20 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-4">
             Trust & Safety
           </span>
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-slate-900 dark:text-white mb-6">
@@ -67,7 +67,7 @@ export default function VerificationProcess() {
 
           <div className="mt-16 text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-slate-100 dark:bg-slate-800 mb-6">
-              <ShieldCheck className="w-8 h-8 text-primary-500" />
+              <ShieldCheck className="w-8 h-8 text-navy" />
             </div>
             <h2 className="font-display font-bold text-2xl text-slate-900 dark:text-white mb-3">Commitment to Quality</h2>
             <p className="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">

@@ -26,7 +26,7 @@ export function SectionHeader({ eyebrow, title, subtitle, center = true }: { eye
   return (
     <div className={`mb-12 ${center ? 'text-center max-w-2xl mx-auto' : ''}`}>
       {eyebrow && (
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-3">
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
           {eyebrow}
         </span>
       )}
@@ -40,8 +40,8 @@ export function SectionHeader({ eyebrow, title, subtitle, center = true }: { eye
 
 export function Badge({ children, variant = 'primary' }: { children: ReactNode; variant?: 'primary' | 'accent' | 'warning' | 'danger' | 'neutral' }) {
   const variants = {
-    primary: 'bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300',
-    accent: 'bg-accent-50 dark:bg-accent-900/20 text-accent-700 dark:text-accent-300',
+    primary: 'bg-navy dark:bg-navy-light text-navy dark:text-navy',
+    accent: 'bg-burgundy dark:bg-amber-500-light text-amber-500 dark:text-amber-500',
     warning: 'bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-300',
     danger: 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300',
     neutral: 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400',
@@ -85,7 +85,7 @@ export function Button({
   className?: string; 
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const variants = {
-    primary: 'bg-primary-600 hover:bg-primary-700 text-white shadow-md shadow-primary-500/20',
+    primary: 'bg-navy hover:bg-navy text-white shadow-md shadow-navy',
     secondary: 'bg-slate-800 hover:bg-slate-900 text-white',
     outline: 'bg-transparent border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800'
   };

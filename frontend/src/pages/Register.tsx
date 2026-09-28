@@ -30,13 +30,13 @@ export default function Register() {
   return (
     <div className="pt-20 min-h-screen flex items-center justify-center px-4 py-10">
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary-300/30 dark:bg-primary-700/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent-300/30 dark:bg-accent-700/20 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-navy-light dark:bg-navy-light rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-burgundy-light dark:bg-burgundy-light rounded-full blur-3xl" />
       </div>
 
       <div className="glass-card rounded-3xl p-8 sm:p-10 max-w-md w-full animate-fade-in-up">
         <Link to="/" className="flex items-center gap-2 mb-8 justify-center">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-600 to-accent-500 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center">
             <GraduationCap className="w-6 h-6 text-white" />
           </div>
           <span className="font-display font-bold text-xl text-slate-900 dark:text-white">
@@ -64,7 +64,7 @@ export default function Register() {
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 placeholder="John Doe"
-                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-navy"
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function Register() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-navy"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Register() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Min. 6 characters"
-                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary-500"
+                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-navy"
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function Register() {
 
         <p className="text-center text-sm text-slate-600 dark:text-slate-400 mt-6">
           Already have an account?{' '}
-          <Link to="/login" className="text-primary-600 dark:text-primary-400 font-semibold hover:underline">
+          <Link to="/login" className="text-navy dark:text-navy font-semibold hover:underline">
             Sign in
           </Link>
         </p>

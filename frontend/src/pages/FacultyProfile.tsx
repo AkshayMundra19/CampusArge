@@ -61,7 +61,7 @@ export default function FacultyProfile() {
     <div className="pt-20 pb-20 min-h-screen">
       {/* Hero */}
       <div className="relative h-64 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-accent-500" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy to-burgundy" />
         <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")' }} />
       </div>
 
@@ -80,7 +80,7 @@ export default function FacultyProfile() {
                 className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover shadow-xl"
               />
               {faculty.verification_status === 'verified' && (
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-accent-500 border-4 border-white dark:border-slate-900 flex items-center justify-center">
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-burgundy border-4 border-white dark:border-slate-900 flex items-center justify-center">
                   <BadgeCheck className="w-4 h-4 text-white" />
                 </div>
               )}
@@ -133,11 +133,11 @@ export default function FacultyProfile() {
             {faculty.research_interests.length > 0 && (
               <div className="glass-card rounded-2xl p-6">
                 <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-                  <Award className="w-5 h-5 text-primary-500" /> Research Interests
+                  <Award className="w-5 h-5 text-navy" /> Research Interests
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {faculty.research_interests.map((r) => (
-                    <span key={r} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-primary-50 dark:bg-primary-900/20 text-primary-700 dark:text-primary-300">{r}</span>
+                    <span key={r} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-navy dark:bg-navy-light text-navy dark:text-navy">{r}</span>
                   ))}
                 </div>
               </div>
@@ -146,11 +146,11 @@ export default function FacultyProfile() {
             {/* Subject Expertise */}
             <div className="glass-card rounded-2xl p-6">
               <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-3 flex items-center gap-2">
-                <BookOpen className="w-5 h-5 text-accent-500" /> Subject Expertise
+                <BookOpen className="w-5 h-5 text-burgundy" /> Subject Expertise
               </h3>
               <div className="flex flex-wrap gap-2">
                 {faculty.subjects.map((s) => (
-                  <span key={s} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-accent-50 dark:bg-accent-900/20 text-accent-700 dark:text-accent-300">{s}</span>
+                  <span key={s} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-burgundy dark:bg-burgundy-light text-burgundy dark:text-burgundy">{s}</span>
                 ))}
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function FacultyProfile() {
             {/* Reviews */}
             <div className="glass-card rounded-2xl p-6">
               <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mb-4 flex items-center gap-2">
-                <MessageSquare className="w-5 h-5 text-primary-500" /> Student Reviews
+                <MessageSquare className="w-5 h-5 text-navy" /> Student Reviews
               </h3>
               {reviews.length === 0 ? (
                 <p className="text-sm text-slate-500 dark:text-slate-400">No reviews yet. Be the first to review after a session!</p>

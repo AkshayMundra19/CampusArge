@@ -56,7 +56,7 @@ export default function HeroSection() {
               <Link
                 to="/mentors"
                 id="hero-find-faculty-btn"
-                className="btn-primary flex items-center justify-center gap-2 text-base px-8 py-4 shadow-lg shadow-primary-500/30"
+                className="btn-primary flex items-center justify-center gap-2 text-base px-8 py-4 shadow-lg shadow-navy"
               >
                 <Users className="w-5 h-5" aria-hidden="true" />
                 Find Faculty
@@ -64,7 +64,7 @@ export default function HeroSection() {
               <Link
                 to="/institutions"
                 id="hero-explore-institutions-btn"
-                className="flex items-center justify-center gap-2 text-base px-8 py-4 rounded-[0.625rem] font-semibold border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400 transition-all"
+                className="flex items-center justify-center gap-2 text-base px-8 py-4 rounded-[0.625rem] font-semibold border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-navy hover:text-navy dark:hover:text-navy transition-all"
               >
                 <Building2 className="w-5 h-5" aria-hidden="true" />
                 Explore Institutions

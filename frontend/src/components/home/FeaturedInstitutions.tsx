@@ -11,7 +11,7 @@ export default function FeaturedInstitutions() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row items-center justify-between mb-12 gap-4">
           <div>
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-3">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
               Explore
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white">
@@ -23,7 +23,7 @@ export default function FeaturedInstitutions() {
           </div>
           <Link
             to="/institutions"
-            className="flex items-center gap-2 text-primary-600 dark:text-primary-400 font-semibold hover:text-primary-700 dark:hover:text-primary-300 transition-colors whitespace-nowrap"
+            className="flex items-center gap-2 text-navy dark:text-navy font-semibold hover:text-navy dark:hover:text-navy transition-colors whitespace-nowrap"
           >
             View all institutions <ArrowRight className="w-4 h-4" />
           </Link>

@@ -24,7 +24,7 @@ export default function Blog() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-6">
-            <BookOpen className="w-4 h-4 text-accent-500" />
+            <BookOpen className="w-4 h-4 text-burgundy" />
             <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Knowledge Hub</span>
           </div>
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-slate-900 dark:text-white text-balance mb-4">
@@ -42,8 +42,8 @@ export default function Blog() {
               key={cat}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                 cat === 'All'
-                  ? 'bg-primary-600 text-white shadow-md shadow-primary-500/30'
-                  : 'glass text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400'
+                  ? 'bg-navy text-white shadow-md shadow-navy'
+                  : 'glass text-slate-600 dark:text-slate-300 hover:text-navy dark:hover:text-navy'
               }`}
             >
               {cat}
@@ -54,7 +54,7 @@ export default function Blog() {
         {/* Coming Soon State */}
         {BLOG_POSTS.length === 0 && (
           <div className="glass-card rounded-3xl p-16 text-center max-w-2xl mx-auto">
-            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center mx-auto mb-6 shadow-xl shadow-primary-500/30">
+            <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center mx-auto mb-6 shadow-xl shadow-navy">
               <BookOpen className="w-10 h-10 text-white" />
             </div>
             <h2 className="font-display font-bold text-2xl text-slate-900 dark:text-white mb-3">
@@ -99,8 +99,8 @@ export default function Blog() {
                   </div>
                 )}
                 <div className="p-5">
-                  <span className="text-xs font-semibold text-primary-600 dark:text-primary-400 uppercase tracking-wide">{post.category}</span>
-                  <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mt-1 mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{post.title}</h3>
+                  <span className="text-xs font-semibold text-navy dark:text-navy uppercase tracking-wide">{post.category}</span>
+                  <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white mt-1 mb-2 group-hover:text-navy dark:group-hover:text-navy transition-colors">{post.title}</h3>
                   <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">{post.excerpt}</p>
                   <div className="flex items-center gap-3 mt-4 text-xs text-slate-400">
                     <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> {post.readTime}</span>

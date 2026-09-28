@@ -101,7 +101,7 @@ export default function AdminDashboard({ tab }: { tab: string }) {
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <button onClick={() => updateVerification(f.id, 'approve')} className="px-4 py-2 rounded-lg bg-accent-500 text-white text-sm font-semibold hover:bg-accent-600 flex items-center gap-1.5">
+                    <button onClick={() => updateVerification(f.id, 'approve')} className="px-4 py-2 rounded-lg bg-green-600 text-white text-sm font-semibold hover:bg-burgundy flex items-center gap-1.5">
                       <BadgeCheck className="w-4 h-4" /> Verify
                     </button>
                     <button onClick={() => updateVerification(f.id, 'reject')} className="px-4 py-2 rounded-lg bg-red-500 text-white text-sm font-semibold hover:bg-red-600 flex items-center gap-1.5">
@@ -168,10 +168,10 @@ export default function AdminDashboard({ tab }: { tab: string }) {
                     {u.status === 'active' ? (
                       <button onClick={() => updateUserAction(u.id, 'suspend')} className="text-red-500 hover:underline">Suspend</button>
                     ) : (
-                      <button onClick={() => updateUserAction(u.id, 'reactivate')} className="text-accent-500 hover:underline">Reactivate</button>
+                      <button onClick={() => updateUserAction(u.id, 'reactivate')} className="text-burgundy hover:underline">Reactivate</button>
                     )}
                     {u.role !== 'admin' && (
-                      <button onClick={() => updateUserAction(u.id, 'promote_admin')} className="text-primary-500 hover:underline">Make Admin</button>
+                      <button onClick={() => updateUserAction(u.id, 'promote_admin')} className="text-navy hover:underline">Make Admin</button>
                     )}
                   </td>
                 </tr>
@@ -203,7 +203,7 @@ export default function AdminDashboard({ tab }: { tab: string }) {
                   
                   {report.status === 'open' && (
                     <div className="mt-4 flex gap-2">
-                      <button onClick={() => updateReportStatus(report.id, 'Resolved without action')} className="px-3 py-1.5 rounded-lg bg-accent-500 text-white text-xs font-semibold">Resolve</button>
+                      <button onClick={() => updateReportStatus(report.id, 'Resolved without action')} className="px-3 py-1.5 rounded-lg bg-green-600 text-white text-xs font-semibold">Resolve</button>
                     </div>
                   )}
                 </div>
@@ -232,7 +232,7 @@ export default function AdminDashboard({ tab }: { tab: string }) {
                   <p className="text-sm text-slate-700 dark:text-slate-300">{r.comment}</p>
                   <p className="text-xs text-slate-500 mt-2">By {r.student_name} for {r.faculty_name}</p>
                 </div>
-                <button onClick={() => toggleReview(r.id)} className={`px-3 py-1 text-xs rounded-lg ${r.is_published ? 'bg-red-100 text-red-600' : 'bg-accent-100 text-accent-600'}`}>
+                <button onClick={() => toggleReview(r.id)} className={`px-3 py-1 text-xs rounded-lg ${r.is_published ? 'bg-red-100 text-red-600' : 'bg-burgundy text-burgundy'}`}>
                   {r.is_published ? 'Unpublish' : 'Publish'}
                 </button>
               </div>
@@ -274,7 +274,7 @@ export default function AdminDashboard({ tab }: { tab: string }) {
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[
-          { icon: Users, label: 'Total Students', value: stats.total_students, color: 'text-primary-500' },
+          { icon: Users, label: 'Total Students', value: stats.total_students, color: 'text-navy' },
           { icon: Users, label: 'Total Faculty', value: stats.total_faculty, color: 'text-blue-500' },
           { icon: Shield, label: 'Pending Verifications', value: stats.pending_verification, color: 'text-amber-500' },
           { icon: GraduationCap, label: 'Universities', value: stats.total_universities, color: 'text-indigo-500' },

@@ -31,10 +31,10 @@ export default function About() {
       {/* ─── HERO SECTION ─────────────────────────────────────────── */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-24 text-center">
         {/* Background glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-primary-500/20 to-accent-500/20 blur-[100px] -z-10 rounded-full pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-r from-navy to-burgundy blur-[100px] -z-10 rounded-full pointer-events-none" />
         
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 border border-white/40 dark:border-white/10 shadow-sm animate-fade-in-up">
-          <Sparkles className="w-4 h-4 text-accent-500" />
+          <Sparkles className="w-4 h-4 text-burgundy" />
           <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">The New Academic Standard</span>
         </div>
         
@@ -48,7 +48,7 @@ export default function About() {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-          <Link to="/institutions" className="btn-primary text-base px-8 py-4 h-auto shadow-xl shadow-primary-500/20">
+          <Link to="/institutions" className="btn-primary text-base px-8 py-4 h-auto shadow-xl shadow-navy">
             Explore Universities
           </Link>
           <Link to="/mentors" className="glass-card font-semibold text-slate-700 dark:text-slate-200 px-8 py-4 rounded-xl hover:bg-white/60 dark:hover:bg-slate-800/60 transition-colors">
@@ -132,9 +132,9 @@ export default function About() {
 
           {/* Large Card 2 */}
           <div className="md:col-span-2 glass-card rounded-3xl p-8 sm:p-10 card-hover overflow-hidden relative group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent-500/10 blur-[80px] rounded-full group-hover:bg-accent-500/20 transition-colors duration-700" />
-            <div className="w-14 h-14 rounded-2xl bg-accent-50 dark:bg-accent-900/30 flex items-center justify-center mb-6">
-              <Zap className="w-7 h-7 text-accent-600 dark:text-accent-400" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-burgundy-light blur-[80px] rounded-full group-hover:bg-burgundy-light transition-colors duration-700" />
+            <div className="w-14 h-14 rounded-2xl bg-burgundy dark:bg-burgundy-light flex items-center justify-center mb-6">
+              <Zap className="w-7 h-7 text-burgundy dark:text-burgundy" />
             </div>
             <h3 className="font-display font-bold text-2xl text-slate-900 dark:text-white mb-4">Frictionless Connection</h3>
             <p className="text-slate-600 dark:text-slate-400 text-lg max-w-md">
@@ -159,7 +159,7 @@ export default function About() {
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors"
               >
                 <span className="font-bold text-slate-900 dark:text-white pr-4">{item.q}</span>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 transition-transform duration-300 ${openFaq === i ? 'rotate-180 bg-primary-50 dark:bg-primary-900/30 text-primary-600' : 'text-slate-400'}`}>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 transition-transform duration-300 ${openFaq === i ? 'rotate-180 bg-navy dark:bg-navy-light text-navy' : 'text-slate-400'}`}>
                   <ChevronDown className="w-4 h-4" />
                 </div>
               </button>
@@ -180,7 +180,7 @@ export default function About() {
       {/* ─── CTA ──────────────────────────────────────────────────── */}
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative glass-card rounded-[2.5rem] p-10 sm:p-16 text-center overflow-hidden border border-white/50 dark:border-slate-800/50">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-accent-600 opacity-90 dark:opacity-80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-navy to-burgundy opacity-90 dark:opacity-80" />
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay opacity-30" />
           
           <div className="relative z-10 flex flex-col items-center">
@@ -191,7 +191,7 @@ export default function About() {
               Join thousands of students and faculty members who are transforming the future of education on Mentoring Path.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
-              <Link to="/mentors" className="bg-white text-primary-700 font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors shadow-xl flex items-center justify-center gap-2">
+              <Link to="/mentors" className="bg-white text-navy font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors shadow-xl flex items-center justify-center gap-2">
                 Browse Faculty <ArrowRight className="w-4 h-4" />
               </Link>
               <Link to="/contact" className="glass text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center border border-white/30">

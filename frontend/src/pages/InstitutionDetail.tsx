@@ -82,7 +82,7 @@ export default function InstitutionDetail() {
               
               <div className="flex flex-wrap items-center gap-4 text-white/80 text-sm font-medium">
                 <span className="flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-primary-400" />
+                  <MapPin className="w-4 h-4 text-navy" />
                   {university.city}, {university.country}
                 </span>
                 <span className="flex items-center gap-1.5">
@@ -112,7 +112,7 @@ export default function InstitutionDetail() {
               <div className="grid sm:grid-cols-2 gap-4">
                 {university.programs.map(prog => (
                   <div key={prog} className="flex items-center gap-3 p-4 rounded-xl border border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50">
-                    <BookOpen className="w-5 h-5 text-primary-500 flex-shrink-0" />
+                    <BookOpen className="w-5 h-5 text-navy flex-shrink-0" />
                     <span className="font-semibold text-slate-700 dark:text-slate-300">{prog}</span>
                   </div>
                 ))}

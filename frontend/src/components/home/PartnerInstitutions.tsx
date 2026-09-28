@@ -15,7 +15,7 @@ export default function PartnerInstitutions() {
     <section className="py-24" aria-labelledby="partner-institutions-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 mb-3">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
             Trusted by Leading Institutions
           </span>
           <h2 id="partner-institutions-heading" className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white text-balance">
@@ -31,7 +31,7 @@ export default function PartnerInstitutions() {
           {INSTITUTIONS.map((inst) => (
             <div
               key={inst.name}
-              className="group flex flex-col items-center gap-3 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md hover:shadow-primary-500/10 transition-all duration-300 cursor-pointer"
+              className="group flex flex-col items-center gap-3 p-4 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-navy dark:hover:border-navy hover:shadow-md hover:shadow-navy transition-all duration-300 cursor-pointer"
               title={inst.full}
             >
               {/* Text-based logo badge */}
@@ -50,7 +50,7 @@ export default function PartnerInstitutions() {
           <Link
             to="/institutions"
             id="view-all-institutions-link"
-            className="inline-flex items-center gap-1.5 text-primary-600 dark:text-primary-400 font-semibold hover:gap-2.5 transition-all duration-200"
+            className="inline-flex items-center gap-1.5 text-navy dark:text-navy font-semibold hover:gap-2.5 transition-all duration-200"
           >
             View all institutions <ArrowRight className="w-4 h-4" aria-hidden="true" />
           </Link>

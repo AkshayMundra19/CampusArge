@@ -55,7 +55,7 @@ export default function Dashboard() {
         <div className="p-4 h-full flex flex-col">
           {/* User info */}
           <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800/50 mb-4">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white font-semibold">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-navy to-burgundy flex items-center justify-center text-white font-semibold">
               {profile?.full_name?.charAt(0).toUpperCase() ?? 'U'}
             </div>
             <div className="min-w-0">
@@ -74,7 +74,7 @@ export default function Dashboard() {
                   onClick={() => { setActiveTab(item.id); setSidebarOpen(false); }}
                   className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                     activeTab === item.id
-                      ? 'bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400'
+                      ? 'bg-navy dark:bg-navy-light text-navy dark:text-navy'
                       : 'text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/50'
                   }`}
                 >

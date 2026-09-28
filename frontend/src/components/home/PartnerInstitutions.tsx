@@ -15,7 +15,7 @@ export default function PartnerInstitutions() {
     <section className="py-24" aria-labelledby="partner-institutions-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-3">
             Trusted by Leading Institutions
           </span>
           <h2 id="partner-institutions-heading" className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white text-balance">

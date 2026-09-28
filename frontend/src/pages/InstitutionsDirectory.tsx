@@ -232,7 +232,7 @@ export default function InstitutionsDirectory() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-4">
+              <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-4">
                 University Directory
               </span>
               <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-slate-900 dark:text-white mb-4 text-balance">
@@ -295,7 +295,7 @@ export default function InstitutionsDirectory() {
             aria-controls="filter-panel"
             className={`flex items-center gap-2 px-4 py-3 rounded-xl border text-sm font-medium transition-colors ${
               showFilters
-                ? 'border-navy bg-navy dark:bg-navy-light text-navy dark:text-navy'
+                ? 'border-navy bg-navy-light text-navy'
                 : 'border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800'
             }`}
           >
@@ -379,7 +379,7 @@ export default function InstitutionsDirectory() {
         {/* Active filter pills + results count */}
         <div className="flex flex-wrap items-center gap-2 mb-4">
           {activePills.map(({ label, onRemove }) => (
-            <span key={label} className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy dark:bg-navy-light text-navy dark:text-navy text-xs font-semibold">
+            <span key={label} className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-light text-navy text-xs font-semibold">
               {label}
               <button onClick={onRemove} aria-label={`Remove ${label} filter`} className="hover:text-navy dark:hover:text-navy">
                 <X className="w-3 h-3" />
@@ -440,7 +440,7 @@ export default function InstitutionsDirectory() {
                 <button
                   onClick={() => setVisibleCount(c => c + PAGE_SIZE)}
                   id="load-more-institutions-btn"
-                  className="px-8 py-3 text-sm font-semibold text-navy dark:text-navy border-2 border-navy rounded-xl hover:bg-navy dark:hover:bg-navy-light transition-all"
+                  className="px-8 py-3 text-sm font-semibold text-navy border-2 border-navy rounded-xl hover:bg-navy-light transition-all"
                 >
                   Load more institutions ↓
                 </button>

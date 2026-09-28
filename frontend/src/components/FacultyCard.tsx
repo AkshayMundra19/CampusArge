@@ -10,7 +10,7 @@ const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
 export default function FacultyCard({ faculty }: FacultyCardProps) {
   return (
-    <div className="glass-card bg-teal-50/60 dark:bg-teal-900/10 rounded-2xl overflow-hidden card-hover group flex flex-col h-full">
+    <div className="glass-card bg-white rounded-2xl overflow-hidden card-hover group flex flex-col h-full">
       {/* Photo */}
       <div className="relative h-56 overflow-hidden">
         <img
@@ -55,7 +55,7 @@ export default function FacultyCard({ faculty }: FacultyCardProps) {
         {/* Subjects */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {faculty.subjects.slice(0, 3).map((subject) => (
-            <span key={subject} className="px-2.5 py-1 rounded-full text-xs font-medium bg-navy dark:bg-navy-light text-navy dark:text-navy">
+            <span key={subject} className="tag-pill">
               {subject}
             </span>
           ))}
@@ -76,14 +76,14 @@ export default function FacultyCard({ faculty }: FacultyCardProps) {
         <div className="mt-auto flex items-center gap-2 pt-2">
           <Link
             to={`/mentors/${faculty.id}`}
-            className="flex-1 text-center px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-navy to-navy rounded-lg hover:shadow-lg hover:shadow-navy transition-all"
+            className="flex-1 text-center btn-primary text-sm py-2.5"
           >
             View Profile
           </Link>
           {faculty.is_available && faculty.verification_status === 'verified' && (
             <Link
               to={`/mentors/${faculty.id}#book`}
-              className="px-4 py-2.5 text-sm font-semibold text-burgundy dark:text-burgundy bg-burgundy dark:bg-burgundy-light rounded-lg hover:bg-burgundy dark:hover:bg-burgundy-light transition-colors flex items-center gap-1.5"
+              className="btn-accent px-4 py-2.5 text-sm flex items-center gap-1.5"
             >
               <Calendar className="w-4 h-4" /> Book
             </Link>

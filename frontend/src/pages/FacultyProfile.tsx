@@ -137,7 +137,7 @@ export default function FacultyProfile() {
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {faculty.research_interests.map((r) => (
-                    <span key={r} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-navy dark:bg-navy-light text-navy dark:text-navy">{r}</span>
+                    <span key={r} className="px-3 py-1.5 rounded-lg text-sm font-medium bg-navy-light text-navy">{r}</span>
                   ))}
                 </div>
               </div>

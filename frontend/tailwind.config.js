@@ -11,20 +11,23 @@ export default {
       colors: {
         navy: {
           DEFAULT: '#102A43',
-          light: '#E7EAEE', // or whatever tint
-          dark: '#081521',
+          light: '#E9EEF4',
+          dark: '#0B1E30',
         },
         oxford: {
           DEFAULT: '#1F4E79',
-          light: '#366896',
+          light: '#E8F0F7',
+          dark: '#17395A',
         },
         burgundy: {
           DEFAULT: '#8B3A3A',
-          light: '#F3EBEB',
+          light: '#F6ECEC',
+          dark: '#6E2D2D',
         },
         gold: {
           DEFAULT: '#B08D57',
-          light: '#F7F3ED',
+          light: '#F6EFE3',
+          dark: '#8F7245',
         },
         primary: {
           50: '#F5F7FA',

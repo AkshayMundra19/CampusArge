@@ -29,7 +29,7 @@ export default function FacultyCarousel() {
         {/* Header row */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
           <div>
-            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
+            <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-3">
               Verified Experts
             </span>
             <h2 id="faculty-carousel-heading" className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white">
@@ -50,7 +50,7 @@ export default function FacultyCarousel() {
               onClick={() => scroll('left')}
               disabled={!canScrollLeft}
               aria-label="Scroll faculty left"
-              className="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-navy hover:border-navy hover:text-navy disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              className="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-navy hover:border-navy hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
             >
               <ChevronLeft className="w-4 h-4" aria-hidden="true" />
             </button>
@@ -58,7 +58,7 @@ export default function FacultyCarousel() {
               onClick={() => scroll('right')}
               disabled={!canScrollRight}
               aria-label="Scroll faculty right"
-              className="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-navy hover:border-navy hover:text-navy disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+              className="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-navy hover:border-navy hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
             >
               <ChevronRight className="w-4 h-4" aria-hidden="true" />
             </button>

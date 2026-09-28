@@ -9,7 +9,7 @@ export default function ResearchAreas() {
   return (
     <div className="min-h-screen pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="text-center mb-16 animate-fade-in-up">
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-4">
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-4">
           Discovery
         </span>
         <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-slate-900 dark:text-white mb-6">

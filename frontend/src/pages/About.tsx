@@ -159,7 +159,7 @@ export default function About() {
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors"
               >
                 <span className="font-bold text-slate-900 dark:text-white pr-4">{item.q}</span>
-                <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 transition-transform duration-300 ${openFaq === i ? 'rotate-180 bg-navy dark:bg-navy-light text-navy' : 'text-slate-400'}`}>
+                <div className={`w-8 h-8 rounded-full flex items-center justify-center bg-slate-100 dark:bg-slate-800 transition-transform duration-300 ${openFaq === i ? 'rotate-180 bg-navy-light text-navy' : 'text-slate-400'}`}>
                   <ChevronDown className="w-4 h-4" />
                 </div>
               </button>

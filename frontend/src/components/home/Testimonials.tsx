@@ -49,7 +49,7 @@ export default function Testimonials() {
     <section className="py-24 bg-slate-50/60 dark:bg-slate-950/60 overflow-hidden" aria-labelledby="testimonials-heading">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-3">
             What Our Community Says
           </span>
           <h2 id="testimonials-heading" className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white">

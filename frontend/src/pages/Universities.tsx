@@ -172,7 +172,7 @@ export default function Universities() {
               <div className="text-center mt-10">
                 <button
                   onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                  className="px-8 py-3 text-sm font-semibold text-navy dark:text-navy border-2 border-navy rounded-xl hover:bg-navy dark:hover:bg-navy-light hover:shadow-lg hover:shadow-navy transition-all"
+                  className="px-8 py-3 text-sm font-semibold text-navy border-2 border-navy rounded-xl hover:bg-navy-light hover:shadow-lg hover:shadow-navy transition-all"
                 >
                   Load More ({filtered.length - visibleCount} remaining)
                 </button>

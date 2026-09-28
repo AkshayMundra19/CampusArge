@@ -5,7 +5,7 @@ export default function VerificationProcess() {
     <div className="pt-32 pb-20 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
-          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-4">
+          <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-4">
             Trust & Safety
           </span>
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl text-slate-900 dark:text-white mb-6">

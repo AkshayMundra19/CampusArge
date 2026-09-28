@@ -112,7 +112,7 @@ export default function UniversityCard({ university }: UniversityCardProps) {
           </Link>
           <Link
             to={`/mentors?university=${university.id}`}
-            className="px-4 py-2.5 text-sm font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light rounded-lg hover:bg-navy dark:hover:bg-navy-light transition-colors"
+            className="px-4 py-2.5 text-sm font-semibold text-navy bg-navy-light rounded-lg hover:bg-oxford-light transition-colors"
           >
             Faculty
           </Link>

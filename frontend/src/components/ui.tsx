@@ -26,7 +26,7 @@ export function SectionHeader({ eyebrow, title, subtitle, center = true }: { eye
   return (
     <div className={`mb-12 ${center ? 'text-center max-w-2xl mx-auto' : ''}`}>
       {eyebrow && (
-        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy dark:text-navy bg-navy dark:bg-navy-light mb-3">
+        <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-3">
           {eyebrow}
         </span>
       )}
@@ -40,7 +40,7 @@ export function SectionHeader({ eyebrow, title, subtitle, center = true }: { eye
 
 export function Badge({ children, variant = 'primary' }: { children: ReactNode; variant?: 'primary' | 'accent' | 'warning' | 'danger' | 'neutral' }) {
   const variants = {
-    primary: 'bg-navy dark:bg-navy-light text-navy dark:text-navy',
+    primary: 'bg-navy-light text-navy',
     accent: 'bg-burgundy dark:bg-amber-500-light text-amber-500 dark:text-amber-500',
     warning: 'bg-amber-50 dark:bg-amber-900/20 text-amber-700 dark:text-amber-300',
     danger: 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300',

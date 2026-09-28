@@ -1,0 +1,15 @@
+<FilesMatch "^(config\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # If the request is for the /lib/ folder, deny access
+    RewriteRule ^lib/ - [F,L]
+    
+    # Pre-flight OPTIONS request for CORS handling (if needed, though relative paths don't need it usually)
+    RewriteCond %{REQUEST_METHOD} OPTIONS
+    RewriteRule ^(.*)$ $1 [R=200,L]
+</IfModule>

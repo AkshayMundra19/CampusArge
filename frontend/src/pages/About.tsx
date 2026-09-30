@@ -19,10 +19,10 @@ export default function About() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const stats = [
-    { icon: Building2, value: '500+', label: 'Global Universities', color: 'from-blue-500 to-indigo-500', delay: '0' },
-    { icon: Users, value: '1,200+', label: 'Verified Faculty', color: 'from-teal-500 to-emerald-500', delay: '100' },
-    { icon: Shield, value: '98%', label: 'Verification Rate', color: 'from-amber-500 to-orange-500', delay: '200' },
-    { icon: Globe, value: '50+', label: 'Countries Reached', color: 'from-purple-500 to-pink-500', delay: '300' },
+    { icon: Building2, value: '500+', label: 'Global Universities',  color: 'from-navy to-oxford',       delay: '0' },
+    { icon: Users,     value: '1,200+', label: 'Verified Faculty',    color: 'from-oxford to-navy-dark',  delay: '100' },
+    { icon: Shield,    value: '98%',  label: 'Verification Rate',     color: 'from-gold-dark to-gold',    delay: '200' },
+    { icon: Globe,     value: '50+',  label: 'Countries Reached',     color: 'from-burgundy to-navy',     delay: '300' },
   ];
 
   return (
@@ -98,9 +98,9 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Large Card 1 */}
           <div className="md:col-span-2 glass-card rounded-3xl p-8 sm:p-10 card-hover overflow-hidden relative group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 blur-[80px] rounded-full group-hover:bg-blue-500/20 transition-colors duration-700" />
-            <div className="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center mb-6">
-              <Shield className="w-7 h-7 text-blue-600 dark:text-blue-400" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-navy/5 blur-[80px] rounded-full group-hover:bg-navy/10 transition-colors duration-700" />
+            <div className="w-14 h-14 rounded-2xl bg-navy-light flex items-center justify-center mb-6">
+              <Shield className="w-7 h-7 text-navy" />
             </div>
             <h3 className="font-display font-bold text-2xl text-slate-900 dark:text-white mb-4">Ironclad Verification</h3>
             <p className="text-slate-600 dark:text-slate-400 text-lg max-w-md">
@@ -110,8 +110,8 @@ export default function About() {
 
           {/* Small Card 1 */}
           <div className="glass-card rounded-3xl p-8 sm:p-10 card-hover">
-            <div className="w-14 h-14 rounded-2xl bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center mb-6">
-              <Globe className="w-7 h-7 text-purple-600 dark:text-purple-400" />
+            <div className="w-14 h-14 rounded-2xl bg-oxford-light flex items-center justify-center mb-6">
+              <Globe className="w-7 h-7 text-oxford" />
             </div>
             <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white mb-3">Global Reach</h3>
             <p className="text-slate-600 dark:text-slate-400">
@@ -121,8 +121,8 @@ export default function About() {
 
           {/* Small Card 2 */}
           <div className="glass-card rounded-3xl p-8 sm:p-10 card-hover">
-            <div className="w-14 h-14 rounded-2xl bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center mb-6">
-              <BookOpen className="w-7 h-7 text-emerald-600 dark:text-emerald-400" />
+            <div className="w-14 h-14 rounded-2xl bg-gold-light flex items-center justify-center mb-6">
+              <BookOpen className="w-7 h-7 text-gold-dark" />
             </div>
             <h3 className="font-display font-bold text-xl text-slate-900 dark:text-white mb-3">Research Focus</h3>
             <p className="text-slate-600 dark:text-slate-400">
@@ -132,9 +132,9 @@ export default function About() {
 
           {/* Large Card 2 */}
           <div className="md:col-span-2 glass-card rounded-3xl p-8 sm:p-10 card-hover overflow-hidden relative group">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-burgundy-light blur-[80px] rounded-full group-hover:bg-burgundy-light transition-colors duration-700" />
-            <div className="w-14 h-14 rounded-2xl bg-burgundy dark:bg-burgundy-light flex items-center justify-center mb-6">
-              <Zap className="w-7 h-7 text-burgundy dark:text-burgundy" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-burgundy/5 blur-[80px] rounded-full group-hover:bg-burgundy/10 transition-colors duration-700" />
+            <div className="w-14 h-14 rounded-2xl bg-burgundy-light flex items-center justify-center mb-6">
+              <Zap className="w-7 h-7 text-burgundy" />
             </div>
             <h3 className="font-display font-bold text-2xl text-slate-900 dark:text-white mb-4">Frictionless Connection</h3>
             <p className="text-slate-600 dark:text-slate-400 text-lg max-w-md">

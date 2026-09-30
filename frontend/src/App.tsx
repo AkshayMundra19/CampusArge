@@ -42,8 +42,7 @@ function Layout() {
   const hideFooter =
     pathname === '/login' ||
     pathname === '/register' ||
-    pathname.startsWith('/dashboard') ||
-    pathname === '/institutions';
+    pathname.startsWith('/dashboard');
 
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors">

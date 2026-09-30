@@ -26,7 +26,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 2345, type: 'Public', founded: 1861,
     tags: ['AI Research', 'Engineering', 'Data Science'],
     researchAreas: ['Engineering', 'Computer Science', 'Physical Sciences'],
-    scholarships: true, verified: true, color: 'from-red-600 to-red-700',
+    scholarships: true, verified: true, color: 'from-navy to-oxford',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=mit.edu',
   },
   {
@@ -34,7 +34,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 3187, type: 'Private', founded: 1636,
     tags: ['Law', 'Business', 'Medical Sciences'],
     researchAreas: ['Law', 'Business', 'Medicine'],
-    scholarships: true, verified: true, color: 'from-red-800 to-rose-700',
+    scholarships: true, verified: true, color: 'from-oxford to-navy-dark',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=harvard.edu',
   },
   {
@@ -42,7 +42,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 2012, type: 'Private', founded: 1885,
     tags: ['AI Research', 'Business', 'Engineering'],
     researchAreas: ['Business', 'Engineering', 'Computer Science'],
-    scholarships: true, verified: true, color: 'from-red-700 to-orange-600',
+    scholarships: true, verified: true, color: 'from-navy to-burgundy',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=stanford.edu',
   },
   {
@@ -58,7 +58,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 1559, type: 'Private', founded: 1701,
     tags: ['Law', 'Medical Sciences', 'Sustainability'],
     researchAreas: ['Law', 'Drama', 'Medicine'],
-    scholarships: true, verified: true, color: 'from-blue-900 to-blue-700',
+    scholarships: true, verified: true, color: 'from-navy to-oxford',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=yale.edu',
   },
   {
@@ -66,7 +66,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 1318, type: 'Private', founded: 1746,
     tags: ['Engineering', 'Data Science', 'Sustainability'],
     researchAreas: ['Public Policy', 'Engineering', 'Mathematics'],
-    scholarships: false, verified: true, color: 'from-orange-600 to-orange-700',
+    scholarships: false, verified: true, color: 'from-oxford to-navy',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=princeton.edu',
   },
   {
@@ -74,7 +74,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 2606, type: 'Private', founded: 1876,
     tags: ['Medical Sciences', 'AI Research', 'Engineering'],
     researchAreas: ['Medicine', 'Public Health', 'Engineering'],
-    scholarships: true, verified: true, color: 'from-indigo-700 to-indigo-800',
+    scholarships: true, verified: true, color: 'from-navy-dark to-navy',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=jhu.edu',
   },
   {
@@ -82,7 +82,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 2843, type: 'Private', founded: 1831,
     tags: ['Business', 'Law', 'Data Science'],
     researchAreas: ['Arts', 'Business', 'Law'],
-    scholarships: true, verified: true, color: 'from-purple-700 to-purple-800',
+    scholarships: true, verified: true, color: 'from-navy to-burgundy',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=nyu.edu',
   },
   {
@@ -90,7 +90,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 1537, type: 'Private', founded: 1838,
     tags: ['Medical Sciences', 'Law', 'Sustainability'],
     researchAreas: ['Medicine', 'Law', 'Business'],
-    scholarships: false, verified: true, color: 'from-blue-600 to-indigo-600',
+    scholarships: false, verified: true, color: 'from-oxford to-navy',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=duke.edu',
   },
   {
@@ -98,7 +98,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 1405, type: 'Private', founded: 1851,
     tags: ['Journalism', 'Business', 'Law'],
     researchAreas: ['Journalism', 'Business', 'Law'],
-    scholarships: true, verified: true, color: 'from-purple-800 to-purple-900',
+    scholarships: true, verified: true, color: 'from-navy-dark to-oxford',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=northwestern.edu',
   },
   {
@@ -106,7 +106,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 2219, type: 'Private', founded: 1839,
     tags: ['Business', 'Engineering', 'AI Research'],
     researchAreas: ['Business', 'Communication', 'Engineering'],
-    scholarships: true, verified: true, color: 'from-red-600 to-red-800',
+    scholarships: true, verified: true, color: 'from-oxford to-navy',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=bu.edu',
   },
   {
@@ -114,7 +114,7 @@ export const INSTITUTIONS: Institution[] = [
     verifiedFaculty: 2590, type: 'Public', founded: 1096,
     tags: ['Humanities', 'Medical Sciences', 'Sustainability'],
     researchAreas: ['Humanities', 'Sciences', 'Social Sciences'],
-    scholarships: true, verified: true, color: 'from-blue-900 to-slate-700',
+    scholarships: true, verified: true, color: 'from-navy to-oxford-dark',
     logoUrl: 'https://www.google.com/s2/favicons?sz=128&domain_url=ox.ac.uk',
   },
 ];

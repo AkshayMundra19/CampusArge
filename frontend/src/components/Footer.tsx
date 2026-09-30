@@ -116,7 +116,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <p className="text-sm text-slate-400">
-              &copy; 2026 CampusArge. All rights reserved. Your data is handled securely and in line with our Privacy Policy.
+              &copy; 2026 CampusArge. All rights reserved.
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
               {legalLinks.map((link) => (

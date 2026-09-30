@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import HeroSection from '@/components/home/HeroSection';
-import StatsBar from '@/components/home/StatsBar';
-import PartnerInstitutions from '@/components/home/PartnerInstitutions';
 import FeaturedInstitutions from '@/components/home/FeaturedInstitutions';
 import FacultyCarousel from '@/components/home/FacultyCarousel';
 import HowItWorks from '@/components/home/HowItWorks';
@@ -76,11 +74,6 @@ export default function Home() {
       {/* 1. Hero */}
       <HeroSection />
 
-      {/* 2. Stats Bar */}
-      <StatsBar />
-
-      {/* 3. Partner Institutions */}
-      <PartnerInstitutions />
 
       {/* 3.5 Featured Institutions */}
       <FeaturedInstitutions />

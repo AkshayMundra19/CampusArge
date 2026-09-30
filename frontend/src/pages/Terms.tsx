@@ -16,7 +16,7 @@ export default function Terms() {
         <div className="glass-card rounded-3xl p-8 sm:p-12 space-y-8 text-slate-700 dark:text-slate-300">
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">1. Acceptance of Terms</h3>
-            <p className="leading-relaxed">By accessing and using Mentoring Path, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not use the platform.</p>
+            <p className="leading-relaxed">By accessing and using CampusArge, you agree to comply with and be bound by these Terms of Service. If you do not agree to these terms, please do not use the platform.</p>
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">2. User Eligibility</h3>
@@ -28,7 +28,7 @@ export default function Terms() {
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">4. Intellectual Property</h3>
-            <p className="leading-relaxed">All content, logos, and materials provided by Mentoring Path are the intellectual property of the platform. Users retain ownership of their profile data but grant Mentoring Path a license to display it in accordance with our Privacy Policy.</p>
+            <p className="leading-relaxed">All content, logos, and materials provided by CampusArge are the intellectual property of the platform. Users retain ownership of their profile data but grant CampusArge a license to display it in accordance with our Privacy Policy.</p>
           </section>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function Contact() {
           {/* Contact info */}
           <div className="space-y-4">
             {[
-              { icon: Mail, label: 'Email', value: 'hello@Mentoring Path.com' },
+              { icon: Mail, label: 'Email', value: 'hello@CampusArge.com' },
               { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567' },
               { icon: MapPin, label: 'Location', value: 'Global, Remote-First' },
             ].map((item, i) => {

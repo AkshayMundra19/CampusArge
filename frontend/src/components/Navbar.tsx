@@ -39,21 +39,50 @@ export default function Navbar() {
     navigate('/');
   };
 
+  // Pages with dark hero backgrounds — navbar text should be white when transparent
+  const darkHeroPages = [
+    '/institutions/', '/universities/', '/mentors/', '/research-areas/', '/blog/'
+  ];
+  const hasDarkHero = darkHeroPages.some(p => location.pathname.startsWith(p));
+
+  // Use dark text on light hero (home, about, contact etc.)
+  // Use white text on dark hero (detail pages)
+  const isTransparent = !scrolled;
+  const textOnTransparent = hasDarkHero ? 'text-white' : 'text-navy';
+  const linkOnTransparent = hasDarkHero
+    ? 'text-white/90 hover:text-white hover:bg-white/15'
+    : 'text-slate-700 hover:text-navy hover:bg-navy-light/60';
+  const activeLinkOnTransparent = hasDarkHero
+    ? 'text-white bg-white/20 font-semibold'
+    : 'text-navy bg-navy-light font-semibold';
+
+  const logoTextClass = scrolled ? 'text-navy' : textOnTransparent;
+  const navLinkClass = (active: boolean) => {
+    if (scrolled) {
+      return active
+        ? 'text-navy bg-navy-light font-semibold'
+        : 'text-slate-600 hover:text-navy hover:bg-navy-light/60';
+    }
+    return active ? activeLinkOnTransparent : linkOnTransparent;
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass shadow-lg shadow-navy/10' : 'bg-transparent'
+        scrolled
+          ? 'bg-white/95 backdrop-blur-md shadow-sm shadow-navy/10 border-b border-slate-200/50'
+          : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16">
 
-          {/* Logo */}
+          {/* Logo — always has a navy icon box so it's visible on any background */}
           <Link to="/" className="flex items-center gap-2 group" aria-label="CampusArge home">
-            <div className="w-9 h-9 rounded-xl bg-navy flex items-center justify-center shadow-md shadow-navy/30 group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 rounded-xl bg-navy flex items-center justify-center shadow-md shadow-navy/40 group-hover:scale-105 transition-transform flex-shrink-0">
               <GraduationCap className="w-5 h-5 text-gold" aria-hidden="true" />
             </div>
-            <span className="font-display font-bold text-lg text-navy hidden sm:block">
+            <span className={`font-display font-bold text-lg hidden sm:block transition-colors ${logoTextClass}`}>
               Campus<span className="text-gold">Arge</span>
             </span>
           </Link>
@@ -64,11 +93,7 @@ export default function Navbar() {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isActive(link.path)
-                    ? 'text-navy bg-navy-light font-semibold'
-                    : 'text-slate-600 hover:text-navy hover:bg-navy-light/60'
-                }`}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${navLinkClass(isActive(link.path))}`}
               >
                 {link.label}
               </Link>
@@ -76,36 +101,15 @@ export default function Navbar() {
             {user && (
               <Link
                 to="/dashboard"
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  isActive('/dashboard')
-                    ? 'text-navy bg-navy-light font-semibold'
-                    : 'text-slate-600 hover:text-navy hover:bg-navy-light/60'
-                }`}
+                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${navLinkClass(isActive('/dashboard'))}`}
               >
                 Dashboard
               </Link>
             )}
           </div>
 
-          {/* Right side */}
+          {/* Right side — only logged-in user menu, no Login/Register buttons */}
           <div className="flex items-center gap-2">
-            {!user && (
-              <div className="hidden lg:flex items-center gap-2">
-                <Link
-                  to="/login"
-                  className="px-4 py-2 rounded-lg text-sm font-semibold text-oxford border border-oxford hover:bg-oxford-light transition-colors"
-                >
-                  Login
-                </Link>
-                <Link
-                  to="/register"
-                  className="btn-accent text-sm py-2 px-4"
-                >
-                  Get Started
-                </Link>
-              </div>
-            )}
-
             {user ? (
               <div className="relative hidden lg:block">
                 <button
@@ -139,7 +143,7 @@ export default function Navbar() {
               </div>
             ) : null}
 
-            {/* Mobile menu button */}
+            {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg:hidden p-2 rounded-lg text-navy hover:bg-navy-light transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
@@ -153,7 +157,7 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="lg:hidden glass-card rounded-xl mt-2 p-4 animate-fade-in" role="navigation" aria-label="Mobile navigation">
+          <div className="lg:hidden bg-white rounded-xl mt-2 p-4 animate-fade-in border border-slate-200 shadow-lg" role="navigation" aria-label="Mobile navigation">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
@@ -169,27 +173,17 @@ export default function Navbar() {
                 </Link>
               ))}
               {user && (
-                <Link to="/dashboard" className="px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-navy-light/60 min-h-[44px] flex items-center">
-                  Dashboard
-                </Link>
+                <>
+                  <Link to="/dashboard" className="px-3 py-2.5 rounded-lg text-sm font-medium text-slate-600 hover:text-navy hover:bg-navy-light/60 min-h-[44px] flex items-center">
+                    Dashboard
+                  </Link>
+                  <div className="border-t border-slate-200 mt-2 pt-3">
+                    <button onClick={handleSignOut} className="flex items-center gap-2 px-3 py-2 text-sm text-red-600 rounded-lg hover:bg-red-50 w-full">
+                      <LogOut className="w-4 h-4" aria-hidden="true" /> Sign Out
+                    </button>
+                  </div>
+                </>
               )}
-
-              <div className="border-t border-slate-200 mt-2 pt-3 flex flex-col gap-2">
-                {user ? (
-                  <button onClick={handleSignOut} className="flex items-center gap-2 px-3 py-2 text-sm text-red-600 rounded-lg hover:bg-red-50">
-                    <LogOut className="w-4 h-4" aria-hidden="true" /> Sign Out
-                  </button>
-                ) : (
-                  <>
-                    <Link to="/login" className="px-3 py-2.5 text-sm font-semibold text-oxford border border-oxford rounded-lg text-center hover:bg-oxford-light transition-colors">
-                      Login
-                    </Link>
-                    <Link to="/register" className="btn-accent text-sm py-2.5 text-center">
-                      Get Started
-                    </Link>
-                  </>
-                )}
-              </div>
             </div>
           </div>
         )}

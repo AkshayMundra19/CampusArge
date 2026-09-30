@@ -137,7 +137,7 @@ function InstitutionsFooter() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-sm text-slate-500 dark:text-slate-500">
-            &copy; {new Date().getFullYear()} Mentoring Path. All rights reserved. Your data is handled securely and in line with our Privacy Policy.
+            &copy; {new Date().getFullYear()} CampusArge. All rights reserved. Your data is handled securely and in line with our Privacy Policy.
           </p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             {legalLinks.map((l) => (
@@ -220,7 +220,7 @@ export default function InstitutionsDirectory() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-24">
       <Helmet>
-        <title>Institutions Directory | Mentoring Path</title>
+        <title>Institutions Directory | CampusArge</title>
       </Helmet>
       {/* Search Header */}
       <div className="relative pt-28 pb-14 overflow-hidden">

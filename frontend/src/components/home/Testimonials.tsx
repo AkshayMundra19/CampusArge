@@ -3,7 +3,7 @@ import { Quote } from 'lucide-react';
 
 const TESTIMONIALS = [
   {
-    quote: 'Mentoring Path has significantly increased our institution\'s visibility and helped us connect with outstanding faculty for research collaborations.',
+    quote: 'CampusArge has significantly increased our institution\'s visibility and helped us connect with outstanding faculty for research collaborations.',
     name: 'Dr. Laura Bennett',
     role: 'Dean of Research',
     institution: 'University of Toronto',

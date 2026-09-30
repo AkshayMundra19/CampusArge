@@ -30,7 +30,7 @@ export default function InstitutionDetail() {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": university.name,
-    "url": university.website_url || `https://mentoringpath.com/institutions/${university.id}`,
+    "url": university.website_url || `https://CampusArge.com/institutions/${university.id}`,
     "logo": university.logo_url,
     "address": {
       "@type": "PostalAddress",
@@ -42,7 +42,7 @@ export default function InstitutionDetail() {
   return (
     <div className="min-h-screen pb-20">
       <Helmet>
-        <title>{university.name} | Mentoring Path</title>
+        <title>{university.name} | CampusArge</title>
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>

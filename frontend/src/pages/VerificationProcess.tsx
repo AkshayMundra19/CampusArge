@@ -12,7 +12,7 @@ export default function VerificationProcess() {
             How Verification Works
           </h1>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            At Mentoring Path, we take academic integrity seriously. Every institution and faculty member on our platform undergoes a rigorous manual verification process to ensure authenticity and trust.
+            At CampusArge, we take academic integrity seriously. Every institution and faculty member on our platform undergoes a rigorous manual verification process to ensure authenticity and trust.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function VerificationProcess() {
             </div>
             <h2 className="font-display font-bold text-2xl text-slate-900 dark:text-white mb-3">Commitment to Quality</h2>
             <p className="text-slate-600 dark:text-slate-400 max-w-xl mx-auto">
-              Our manual verification process is a core pillar of Mentoring Path, ensuring that every connection made on the platform is built on a foundation of trust and academic legitimacy.
+              Our manual verification process is a core pillar of CampusArge, ensuring that every connection made on the platform is built on a foundation of trust and academic legitimacy.
             </p>
           </div>
         </div>

@@ -12,12 +12,12 @@ import { Helmet } from 'react-helmet-async';
 
 const FAQ_ITEMS = [
   {
-    q: 'What is Mentoring Path?',
-    a: 'Mentoring Path is a platform that connects academic institutions with verified faculty members, helping universities build their global presence and helping faculty extend their professional visibility.'
+    q: 'What is CampusArge?',
+    a: 'CampusArge is a platform that connects academic institutions with verified faculty members, helping universities build their global presence and helping faculty extend their professional visibility.'
   },
   {
-    q: 'Who can join Mentoring Path?',
-    a: 'Mentoring Path is designed for universities, research institutions, and verified faculty members looking to build academic partnerships and collaborations.'
+    q: 'Who can join CampusArge?',
+    a: 'CampusArge is designed for universities, research institutions, and verified faculty members looking to build academic partnerships and collaborations.'
   },
   {
     q: 'How does institution verification work?',
@@ -28,7 +28,7 @@ const FAQ_ITEMS = [
     a: 'Faculty members provide documentation of their academic affiliation, which our team manually reviews before granting a Verified badge.'
   },
   {
-    q: 'How can my institution join Mentoring Path?',
+    q: 'How can my institution join CampusArge?',
     a: 'Institutions can reach out through our Contact page to begin the onboarding process and get listed on the platform.'
   },
   {
@@ -40,8 +40,8 @@ const FAQ_ITEMS = [
     a: 'Pricing and partnership details are shared directly with institutions during onboarding. Contact us to learn more.'
   },
   {
-    q: 'What research areas does Mentoring Path cover?',
-    a: 'The platform spans a wide range of academic disciplines including AI Research, Engineering, Medical Sciences, Business, Law, Sustainability, and Data Science, with more areas added regularly.'
+    q: 'What research areas does CampusArge cover?',
+    a: 'CampusArge spans a wide range of academic disciplines including AI Research, Engineering, Medical Sciences, Business, Law, Sustainability, and Data Science, with more areas added regularly.'
   },
   {
     q: 'How can I explore faculty by research area?',
@@ -49,7 +49,7 @@ const FAQ_ITEMS = [
   },
   {
     q: 'Who do I contact for support?',
-    a: 'You can reach the Mentoring Path team anytime through the Contact page for any questions related to institutions, faculty profiles, or the platform.'
+    a: 'You can reach the CampusArge team anytime through the Contact page for any questions related to institutions, faculty profiles, or the platform.'
   },
 ];
 
@@ -59,16 +59,16 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Mentoring Path",
-    "url": "https://mentoringpath.com",
-    "logo": "https://mentoringpath.com/favicon.svg",
-    "description": "Mentoring Path connects academic institutions with verified faculty members, helping universities build their global presence."
+    "name": "CampusArge",
+    "url": "https://CampusArge.com",
+    "logo": "https://CampusArge.com/favicon.svg",
+    "description": "CampusArge connects academic institutions with verified faculty members, helping universities build their global presence."
   };
 
   return (
     <div className="overflow-hidden">
       <Helmet>
-        <title>Mentoring Path | Connect Universities with Global Faculty Talent</title>
+        <title>CampusArge | Connect Universities with Global Faculty Talent</title>
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -110,7 +110,7 @@ export default function Home() {
               Frequently Asked Questions
             </h2>
             <p className="mt-3 text-slate-600 dark:text-slate-400 text-lg">
-              Everything you need to know about Mentoring Path
+              Everything you need to know about CampusArge
             </p>
           </div>
 

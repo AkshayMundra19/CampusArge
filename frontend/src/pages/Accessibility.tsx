@@ -21,7 +21,7 @@ export default function Accessibility() {
               Our Commitment
             </h3>
             <p className="leading-relaxed">
-              Mentoring Path is committed to ensuring digital accessibility for all users, including individuals with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards to guarantee an inclusive academic platform.
+              CampusArge is committed to ensuring digital accessibility for all users, including individuals with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards to guarantee an inclusive academic platform.
             </p>
           </section>
           
@@ -35,7 +35,7 @@ export default function Accessibility() {
           <section>
             <h3 className="font-sans font-bold text-xl text-slate-900 dark:text-white mb-3">Continuous Improvement</h3>
             <p className="leading-relaxed mb-3">
-              We are actively working to increase the accessibility and usability of Mentoring Path. Our ongoing efforts include:
+              We are actively working to increase the accessibility and usability of CampusArge. Our ongoing efforts include:
             </p>
             <ul className="list-disc pl-5 space-y-2 text-sm">
               <li>Regular accessibility audits of our core user flows.</li>
@@ -48,7 +48,7 @@ export default function Accessibility() {
           <section>
             <h3 className="font-sans font-bold text-xl text-slate-900 dark:text-white mb-3">Feedback and Support</h3>
             <p className="leading-relaxed">
-              We welcome your feedback on the accessibility of Mentoring Path. If you encounter accessibility barriers on any part of the platform, please contact our support team at <a href="mailto:accessibility@mentoringpath.com" className="text-navy dark:text-navy hover:underline">accessibility@mentoringpath.com</a>. We aim to respond to accessibility feedback within 3 business days.
+              We welcome your feedback on the accessibility of CampusArge. If you encounter accessibility barriers on any part of the platform, please contact our support team at <a href="mailto:accessibility@CampusArge.com" className="text-navy dark:text-navy hover:underline">accessibility@CampusArge.com</a>. We aim to respond to accessibility feedback within 3 business days.
             </p>
           </section>
         </div>

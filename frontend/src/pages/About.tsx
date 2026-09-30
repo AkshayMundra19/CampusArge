@@ -12,7 +12,7 @@ const FAQ_ITEMS = [
   { q: 'Are the professors verified?', a: 'Yes. Every faculty member goes through a verification process. Our team reviews credentials, university affiliation, and professional background before awarding the verified badge.' },
   { q: 'Can anyone create a profile?', a: 'No, creating a faculty profile is restricted to verified professors and researchers only.' },
   { q: 'What information is available for universities?', a: 'We provide detailed rankings, research focus areas, and a comprehensive directory of verified faculty affiliated with each institution.' },
-  { q: 'Is Mentoring Path free for students?', a: 'Yes! Students and researchers can browse the global directory of verified faculty and institutions completely free.' },
+  { q: 'Is CampusArge free for students?', a: 'Yes! Students and researchers can browse the global directory of verified faculty and institutions completely free.' },
 ];
 
 export default function About() {
@@ -44,7 +44,7 @@ export default function About() {
         </h1>
         
         <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 text-pretty max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-          Mentoring Path is the premier global marketplace connecting driven students with verified faculty from the world's top universities, democratizing access to elite academic networks.
+          CampusArge is the premier global marketplace connecting driven students with verified faculty from the world's top universities, democratizing access to elite academic networks.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up" style={{ animationDelay: '300ms' }}>
@@ -188,7 +188,7 @@ export default function About() {
               Ready to elevate your academic journey?
             </h3>
             <p className="text-white/80 text-lg sm:text-xl mb-10 max-w-2xl mx-auto font-medium">
-              Join thousands of students and faculty members who are transforming the future of education on Mentoring Path.
+              Join thousands of students and faculty members who are transforming the future of education on CampusArge.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto">
               <Link to="/mentors" className="bg-white text-navy font-bold px-8 py-4 rounded-xl hover:bg-slate-50 transition-colors shadow-xl flex items-center justify-center gap-2">

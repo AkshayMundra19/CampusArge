@@ -16,11 +16,11 @@ export default function BusinessPolicy() {
         <div className="glass-card rounded-3xl p-8 sm:p-12 space-y-8 text-slate-700 dark:text-slate-300">
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">1. Platform Role, Connector and Not an Employer</h3>
-            <p className="leading-relaxed">Mentoring Path operates solely as a technology platform that connects academic institutions with independently verified faculty members from accredited universities. Mentoring Path is not an employer, staffing agency, or contractor of any faculty member. All faculty members operate independently, and any collaboration formed through the platform is between the institution and the faculty member directly. Mentoring Path does not supervise, direct, or control the content of individual partnerships.</p>
+            <p className="leading-relaxed">CampusArge operates solely as a technology platform that connects academic institutions with independently verified faculty members from accredited universities. CampusArge is not an employer, staffing agency, or contractor of any faculty member. All faculty members operate independently, and any collaboration formed through the platform is between the institution and the faculty member directly. CampusArge does not supervise, direct, or control the content of individual partnerships.</p>
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">2. Faculty and Institution Verification Standard</h3>
-            <p className="leading-relaxed">Institutions and faculty members who apply for a Verified badge must provide accurate documentation of their current credentials. Our admin team manually reviews submitted credentials before approving the badge. Mentoring Path reserves the right to revoke verification and suspend accounts if credentials are found to be inaccurate or misrepresented.</p>
+            <p className="leading-relaxed">Institutions and faculty members who apply for a Verified badge must provide accurate documentation of their current credentials. Our admin team manually reviews submitted credentials before approving the badge. CampusArge reserves the right to revoke verification and suspend accounts if credentials are found to be inaccurate or misrepresented.</p>
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">3. Interaction and Booking Conduct</h3>
@@ -33,7 +33,7 @@ export default function BusinessPolicy() {
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">4. Dispute Resolution</h3>
-            <p className="leading-relaxed">In the event of a dispute between an institution and a faculty member, either party may contact our support team at support@mentoringpath.com. We will investigate reported incidents within 5 business days and take appropriate action, which may include mediation, warning issuance, or account suspension. Mentoring Path's decision in dispute matters is final.</p>
+            <p className="leading-relaxed">In the event of a dispute between an institution and a faculty member, either party may contact our support team at support@CampusArge.com. We will investigate reported incidents within 5 business days and take appropriate action, which may include mediation, warning issuance, or account suspension. CampusArge's decision in dispute matters is final.</p>
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">5. Changes to This Policy</h3>

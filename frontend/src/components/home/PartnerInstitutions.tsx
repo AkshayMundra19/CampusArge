@@ -22,7 +22,7 @@ export default function PartnerInstitutions() {
             Partner Institutions
           </h2>
           <p className="mt-3 text-slate-600 dark:text-slate-400 text-lg">
-            Universities and organizations worldwide trust Mentoring Path
+            Universities and organizations worldwide trust CampusArge
           </p>
         </div>
 

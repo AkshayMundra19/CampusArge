@@ -16,7 +16,7 @@ export default function Privacy() {
         <div className="glass-card rounded-3xl p-8 sm:p-12 space-y-8 text-slate-700 dark:text-slate-300">
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">1. Information We Collect</h3>
-            <p className="leading-relaxed">Mentoring Path collects information to facilitate connections between academic institutions and verified faculty members. When you register, we collect basic profile details (name, email, institutional affiliation) and optional professional history to enhance your profile visibility on the platform.</p>
+            <p className="leading-relaxed">CampusArge collects information to facilitate connections between academic institutions and verified faculty members. When you register, we collect basic profile details (name, email, institutional affiliation) and optional professional history to enhance your profile visibility on the platform.</p>
           </section>
           <section>
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">2. How We Use Your Data</h3>

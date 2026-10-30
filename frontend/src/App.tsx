@@ -52,11 +52,11 @@ function Layout() {
         <Route path="/" element={<Home />} />
         <Route path="/institutions" element={<InstitutionsDirectory />} />
         <Route path="/institutions/:slug" element={<InstitutionDetail />} />
-        <Route path="/research-areas" element={<ResearchAreas />} />
+        <Route path="/research-areas" element={<Navigate to="/" replace />} />
         <Route path="/universities" element={<Universities />} />
         <Route path="/universities/:id" element={<UniversityDetail />} />
-        <Route path="/mentors" element={<Mentors />} />
-        <Route path="/mentors/:id" element={<FacultyProfile />} />
+        <Route path="/mentors" element={<Navigate to="/" replace />} />
+        <Route path="/mentors/:id" element={<Navigate to="/" replace />} />
         <Route path="/roadmaps" element={<Roadmaps />} />
         <Route path="/dashboard/*" element={<Dashboard />} />
         <Route path="/admin" element={<Navigate to="/dashboard" replace />} />

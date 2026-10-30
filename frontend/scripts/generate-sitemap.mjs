@@ -75,3 +75,4 @@ Sitemap: https://campusarge.com/sitemap.xml
 const robotsPath = path.join(projectRoot, 'public', 'robots.txt');
 fs.writeFileSync(robotsPath, robotsContent, 'utf8');
 console.log(`Generated ${robotsPath}`);
+

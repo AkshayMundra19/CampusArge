@@ -4,8 +4,8 @@ import { GraduationCap, Linkedin, Twitter, Youtube, Instagram } from "lucide-rea
 const footerLinks = {
   Platform: [
     { label: "Institutions", path: "/institutions" },
-    { label: "Faculty Directory", path: "/mentors" },
-    { label: "Research Areas", path: "/research-areas" },
+    // { label: "Faculty Directory", path: "/mentors" },
+    // { label: "Research Areas", path: "/research-areas" },
     { label: "About Us", path: "/about" },
     { label: "Pricing", path: "/contact" },
   ],

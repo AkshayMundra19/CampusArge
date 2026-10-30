@@ -67,3 +67,4 @@ for (const dir of allDirs) {
 console.log(`Total Prerendered Institution Pages: ${allDirs.length}`);
 console.log(`Unique Canonical URLs: ${canonicals.size}/${allDirs.length}`);
 console.log(`Canonical Duplicates: ${dupes} (Target: 0)`);
+

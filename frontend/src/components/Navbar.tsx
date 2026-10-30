@@ -25,8 +25,8 @@ export default function Navbar() {
   const navLinks = [
     { label: 'Home',           path: '/' },
     { label: 'Institutions',   path: '/institutions' },
-    { label: 'Faculty',        path: '/mentors' },
-    { label: 'Research Areas', path: '/research-areas' },
+    // { label: 'Faculty',        path: '/mentors' },
+    // { label: 'Research Areas', path: '/research-areas' },
     { label: 'Blog',           path: '/blog' },
     { label: 'About',          path: '/about' },
     { label: 'Contact',        path: '/contact' },

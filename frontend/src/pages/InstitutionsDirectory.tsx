@@ -52,8 +52,8 @@ function InstitutionsFooter() {
   const footerCols = {
     Platform: [
       { label: 'Institutions', path: '/institutions' },
-      { label: 'Faculty Directory', path: '/mentors' },
-      { label: 'Research Areas', path: '/research-areas' },
+      // { label: 'Faculty Directory', path: '/mentors' },
+      // { label: 'Research Areas', path: '/research-areas' },
     ],
     Company: [
       { label: 'About Us', path: '/about' },

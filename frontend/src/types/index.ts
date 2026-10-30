@@ -16,6 +16,27 @@ export interface Profile {
   updated_at: string;
 }
 
+export interface InstitutionFacts {
+  about?: string | null;                       // CSV: About
+  research_summary?: string | null;            // CSV: Research (prose)
+  anchor_programs?: string[] | null;           // CSV: Anchor Programs
+  school_classification?: string | null;       // CSV: School Classification
+  accreditation_status?: string | null;        // CSV: Accreditation Status (display, as given)
+  accreditor?: string | null;                  // derived code e.g. "NECHE", "HLC"
+  campus_acreage?: { display: string; value: number | null } | null;
+  undergrad_population?: { display: string; value: number | null } | null;
+  graduate_population?: { display: string; value: number | null } | null;
+  housing_capacity_beds?: { display: string; value: number | null } | null;
+  athletic_conference?: string | null;
+  varsity_sports?: { display: string; value: number | null } | null;
+  student_faculty_ratio?: { display: string; value: number | null } | null; // "10:1" -> 10
+  cost_of_living_index?: number | null;        // CSV: Cost of Living (Annual), see D1
+  cost_of_living?: { display: string; value: number | null } | null;        // Full original text / index
+  avg_home_price?: { display: string; value: number | null } | null;
+  avg_apartment_rent?: { display: string; value: number | null } | null;  // per month
+  crime_rate?: { display: string; level: 'low' | 'moderate' | 'high' | null } | null;
+}
+
 export interface University {
   id: string;
   name: string;
@@ -46,14 +67,15 @@ export interface University {
   verified_faculty_count: number;
   is_featured: boolean;
   created_at: string;
+  facts?: InstitutionFacts;
 }
 
 export interface Faculty {
   id: string;
   user_id: string | null;
-  university_id: string | null;
+  university_id?: string | null;
   full_name: string;
-  email: string | null;
+  email?: string | null;
   title: string | null;
   department: string | null;
   subjects: string[];
@@ -63,14 +85,14 @@ export interface Faculty {
   university_name: string | null;
   languages: string[];
   experience_years: number;
-  session_fee: number;
-  currency: string;
+  session_fee?: number;
+  currency?: string;
   rating: number;
   review_count: number;
   verification_status: VerificationStatus;
   is_available: boolean;
   created_at: string;
-  updated_at: string;
+  updated_at?: string;
 }
 
 export interface FacultyAvailability {
@@ -107,7 +129,7 @@ export interface Booking {
 
 export interface Review {
   id: string;
-  booking_id: string;
+  booking_id?: string;
   student_id: string;
   faculty_id: string;
   rating: number;
@@ -115,6 +137,8 @@ export interface Review {
   is_published: boolean;
   created_at: string;
 }
+
+export type Session = Booking;
 
 export interface Testimonial {
   id: string;

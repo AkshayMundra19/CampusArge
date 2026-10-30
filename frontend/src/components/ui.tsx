@@ -38,7 +38,7 @@ export function SectionHeader({ eyebrow, title, subtitle, center = true }: { eye
   );
 }
 
-export function Badge({ children, variant = 'primary' }: { children: ReactNode; variant?: 'primary' | 'accent' | 'warning' | 'danger' | 'neutral' }) {
+export function Badge({ children, variant = 'primary', className = '' }: { children: ReactNode; variant?: 'primary' | 'accent' | 'warning' | 'danger' | 'neutral'; className?: string }) {
   const variants = {
     primary: 'bg-navy-light text-navy',
     accent: 'bg-burgundy dark:bg-amber-500-light text-amber-500 dark:text-amber-500',
@@ -47,7 +47,7 @@ export function Badge({ children, variant = 'primary' }: { children: ReactNode; 
     neutral: 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400',
   };
   return (
-    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${variants[variant]}`}>
+    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${variants[variant]} ${className}`}>
       {children}
     </span>
   );

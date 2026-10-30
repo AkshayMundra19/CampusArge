@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-sitemap.mjs && node scripts/prerender-institutions.mjs",
+    "prerender": "node scripts/prerender-institutions.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "merge-data": "node scripts/merge-institutions-csv.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.app.json"

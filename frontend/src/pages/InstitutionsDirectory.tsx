@@ -10,6 +10,8 @@ import { InstitutionCard } from '@/components/InstitutionCard';
 import type { Institution } from '@/components/InstitutionCard';
 import { REAL_UNIVERSITIES } from '@/lib/universitiesData';
 import heroCampus from '@/assets/institutions/hero-institutions-campus.png';
+import { useCompare } from '@/context/CompareContext';
+import CompareTray from '@/components/CompareTray';
 
 const MAPPED_INSTITUTIONS: Institution[] = REAL_UNIVERSITIES.map((u): Institution => ({
   id: u.id,
@@ -67,33 +69,13 @@ export default function InstitutionsDirectory() {
   const [showFilters, setShowFilters] = useState(false);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  // Compare selection persistence
-  const [compareIds, setCompareIds] = useState<string[]>(() => {
-    try {
-      const saved = localStorage.getItem('campusarge_compare_v1');
-      if (!saved) return [];
-      const parsed = JSON.parse(saved);
-      return Array.isArray(parsed) ? parsed.filter(id => MAPPED_INSTITUTIONS.some(i => i.id === id)).slice(0, 4) : [];
-    } catch {
-      return [];
-    }
-  });
-
+  // Global compare context
+  const { selectedIds, toggleInstitution, canAdd, count: compareCount } = useCompare();
   const [compareHint, setCompareHint] = useState<string | null>(null);
-  const [pulseCompare, setPulseCompare] = useState(false);
 
   const searchInputRef = useRef<HTMLInputElement>(null);
   const location = useLocation();
   const navigate = useNavigate();
-
-  // Save compare selection to localStorage
-  useEffect(() => {
-    try {
-      localStorage.setItem('campusarge_compare_v1', JSON.stringify(compareIds));
-    } catch {
-      // ignore
-    }
-  }, [compareIds]);
 
   // Focus search when URL hash is #search
   useEffect(() => {
@@ -106,28 +88,12 @@ export default function InstitutionsDirectory() {
     }
   }, [location.hash]);
 
-  const toggleCompare = (inst: Institution) => {
-    const id = String(inst.id);
-    setCompareIds(prev => {
-      if (prev.includes(id)) {
-        return prev.filter(item => item !== id);
-      }
-      if (prev.length >= 4) {
-        setCompareHint('You can compare up to 4 institutions.');
-        return prev;
-      }
-      return [...prev, id];
-    });
-  };
-
   const handleHeroCompareClick = () => {
-    if (compareIds.length >= 2) {
-      navigate(`/compare?ids=${compareIds.join(',')}`);
+    if (selectedIds.length >= 2) {
+      navigate(`/compare?ids=${selectedIds.join(',')}`);
     } else {
       document.getElementById('directory')?.scrollIntoView({ behavior: 'smooth' });
       setCompareHint('Select 2–4 institutions to compare.');
-      setPulseCompare(true);
-      setTimeout(() => setPulseCompare(false), 2000);
     }
   };
 
@@ -344,7 +310,7 @@ export default function InstitutionsDirectory() {
                 onClick={handleHeroCompareClick}
                 className="px-7 py-3.5 bg-white dark:bg-slate-800 border-[1.5px] border-navy text-navy dark:text-gold hover:bg-navy-light/40 font-semibold rounded-[10px] transition-all text-sm flex items-center gap-1.5 shadow-sm"
               >
-                Compare Now {compareIds.length > 0 && `(${compareIds.length})`}
+                Compare Now {compareCount > 0 && `(${compareCount})`}
               </button>
             </div>
 
@@ -412,7 +378,7 @@ export default function InstitutionsDirectory() {
       </div>
 
       {/* ── B4: DIRECTORY TOOLBAR & CONTENT ─────────────────────────────────── */}
-      <div id="directory" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      <div id="directory" className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 ${compareCount > 0 ? 'pb-36 sm:pb-28' : ''}`}>
         {/* Directory Header Row */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-6">
           {/* Left: Heading & Subtitle */}
@@ -731,9 +697,9 @@ export default function InstitutionsDirectory() {
                 <InstitutionCard
                   key={inst.id}
                   inst={inst}
-                  isComparing={compareIds.includes(String(inst.id))}
-                  onToggleCompare={toggleCompare}
-                  canCompare={compareIds.length < 4}
+                  isComparing={selectedIds.includes(String(inst.id))}
+                  onToggleCompare={() => toggleInstitution(String(inst.id))}
+                  canCompare={canAdd}
                 />
               ))}
             </div>
@@ -752,6 +718,9 @@ export default function InstitutionsDirectory() {
           </>
         )}
       </div>
+
+      {/* Sticky Bottom Compare Tray */}
+      <CompareTray />
     </div>
   );
 }

@@ -23,6 +23,8 @@ import Disclaimer from '@/pages/Disclaimer';
 import CookieBanner from '@/components/CookieBanner';
 import InstitutionsDirectory from '@/pages/InstitutionsDirectory';
 import InstitutionDetail from '@/pages/InstitutionDetail';
+import Compare from '@/pages/Compare';
+import { CompareProvider } from '@/context/CompareContext';
 import ResearchAreas from '@/pages/ResearchAreas';
 import VerificationProcess from '@/pages/VerificationProcess';
 import Accessibility from '@/pages/Accessibility';
@@ -52,6 +54,7 @@ function Layout() {
         <Route path="/" element={<Home />} />
         <Route path="/institutions" element={<InstitutionsDirectory />} />
         <Route path="/institutions/:slug" element={<InstitutionDetail />} />
+        <Route path="/compare" element={<Compare />} />
         <Route path="/research-areas" element={<Navigate to="/" replace />} />
         <Route path="/universities" element={<Universities />} />
         <Route path="/universities/:id" element={<UniversityDetail />} />
@@ -84,9 +87,11 @@ export default function App() {
   return (
     <ThemeProvider>
       <AuthProvider>
-        <BrowserRouter>
-          <Layout />
-        </BrowserRouter>
+        <CompareProvider>
+          <BrowserRouter>
+            <Layout />
+          </BrowserRouter>
+        </CompareProvider>
       </AuthProvider>
     </ThemeProvider>
   );

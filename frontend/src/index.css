@@ -364,6 +364,33 @@
       linear-gradient(to bottom, #000 82%, transparent 100%);
     mask-composite: intersect;
   }
+
+  /* ── Fix 3: Card Logo Stage & Container Query ──────────────── */
+  .inst-card {
+    container-type: inline-size;
+  }
+  .inst-logo-stage {
+    position: relative;
+    width: 100%;
+    height: clamp(140px, 14vw, 168px);
+    background: linear-gradient(to bottom, #F8FAFC 0%, #FFFFFF 100%);
+    border-bottom: 1px solid #EEF1F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    overflow: hidden;
+  }
+  .dark .inst-logo-stage {
+    background: linear-gradient(to bottom, #1E293B 0%, #0F172A 100%);
+    border-bottom: 1px solid #1E293B;
+  }
+  @container (max-width: 339px) {
+    .inst-logo-stage {
+      padding-top: 52px;
+      height: 190px;
+    }
+  }
 }
 
 /* Page transition */

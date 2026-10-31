@@ -1,38 +1,8 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { X, ArrowRight, Building2, Scale } from 'lucide-react';
+import { X, ArrowRight, Scale } from 'lucide-react';
 import { useCompare } from '@/context/CompareContext';
 import { REAL_UNIVERSITIES } from '@/lib/universitiesIndex';
-
-// Monogram for tray chip
-function TrayMonogram({ name, logoUrl }: { name: string; logoUrl?: string | null }) {
-  const [error, setError] = useState(false);
-  const initials = name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map(w => w[0].toUpperCase())
-    .join('');
-
-  if (logoUrl && !error) {
-    return (
-      <img
-        src={logoUrl}
-        alt=""
-        width={24}
-        height={24}
-        className="w-5 h-5 object-contain flex-shrink-0"
-        onError={() => setError(true)}
-      />
-    );
-  }
-
-  return (
-    <div className="w-5 h-5 rounded-full bg-navy/15 text-navy font-bold text-[10px] flex items-center justify-center flex-shrink-0">
-      {initials || <Building2 className="w-3 h-3" />}
-    </div>
-  );
-}
+import InstitutionLogo from './InstitutionLogo';
 
 export default function CompareTray() {
   const { selectedIds, removeInstitution, clearAll, count } = useCompare();
@@ -79,7 +49,7 @@ export default function CompareTray() {
                   key={u.id}
                   className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200/80 dark:border-slate-700 text-xs font-medium text-slate-800 dark:text-slate-200 flex-shrink-0 max-w-[180px] sm:max-w-[200px]"
                 >
-                  <TrayMonogram name={u.name} logoUrl={u.logo_url} />
+                  <InstitutionLogo id={u.id} name={u.name} logoUrl={u.logo_url} size="tray" />
                   <span className="truncate">{u.name}</span>
                   <button
                     type="button"

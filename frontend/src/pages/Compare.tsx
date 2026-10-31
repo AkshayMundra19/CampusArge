@@ -9,37 +9,7 @@ import {
 import { REAL_UNIVERSITIES, getUniversityById } from '@/lib/universitiesData';
 import { useCompare } from '@/context/CompareContext';
 import type { University } from '@/types';
-
-// Helper for Initials Monogram Fallback
-function MonogramLogo({ name, logoUrl }: { name: string; logoUrl?: string | null }) {
-  const [error, setError] = useState(false);
-  const initials = name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map(w => w[0].toUpperCase())
-    .join('');
-
-  if (logoUrl && !error) {
-    return (
-      <img
-        src={logoUrl}
-        alt={`${name} logo`}
-        width={48}
-        height={48}
-        loading="lazy"
-        className="max-h-12 max-w-12 object-contain"
-        onError={() => setError(true)}
-      />
-    );
-  }
-
-  return (
-    <div className="w-12 h-12 rounded-full bg-navy/10 text-navy dark:text-gold font-display font-bold text-lg flex items-center justify-center">
-      {initials || <Building2 className="w-5 h-5 text-slate-400" />}
-    </div>
-  );
-}
+import InstitutionLogo from '@/components/InstitutionLogo';
 
 export default function Compare() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -650,7 +620,7 @@ export default function Compare() {
 
             {institutions.length === 1 && (
               <div className="mb-6 inline-flex items-center gap-3 p-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-left">
-                <MonogramLogo name={institutions[0].name} logoUrl={institutions[0].logo_url} />
+                <InstitutionLogo id={institutions[0].id} name={institutions[0].name} logoUrl={institutions[0].logo_url} size="compare" />
                 <div>
                   <p className="text-xs font-semibold text-slate-900 dark:text-white">{institutions[0].name}</p>
                   <p className="text-[11px] text-slate-500">1 of 4 selected — add at least 1 more</p>
@@ -737,8 +707,8 @@ export default function Compare() {
                           <div className="flex flex-col h-full justify-between pr-6">
                             <div>
                               {/* Logo */}
-                              <div className="w-14 h-14 rounded-xl bg-white border border-slate-100 dark:border-slate-700 flex items-center justify-center p-2 mb-3 shadow-sm">
-                                <MonogramLogo name={inst.name} logoUrl={inst.logo_url} />
+                              <div className="w-14 h-14 rounded-xl bg-white border border-slate-100 dark:border-slate-700 flex items-center justify-center p-1.5 mb-3 shadow-sm overflow-hidden">
+                                <InstitutionLogo id={inst.id} name={inst.name} logoUrl={inst.logo_url} size="compare" />
                               </div>
 
                               {/* Classification badge */}

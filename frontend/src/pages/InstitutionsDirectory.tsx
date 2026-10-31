@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
   Search, SlidersHorizontal,
-  Linkedin, Twitter, Youtube, Instagram, X,
-  SearchX
+  X, SearchX
 } from 'lucide-react';
 import { InstitutionCard } from '@/components/InstitutionCard';
 import type { Institution } from '@/components/InstitutionCard';
@@ -44,116 +43,6 @@ const ACCREDITORS = [...new Set(MAPPED_INSTITUTIONS.map(i => i.accreditor).filte
 
 const TOTAL_COUNT = MAPPED_INSTITUTIONS.length;
 const PAGE_SIZE = 12;
-
-function InstitutionsFooter() {
-  const [email, setEmail] = useState('');
-  const [sent, setSent] = useState(false);
-
-  const footerCols = {
-    Platform: [
-      { label: 'Institutions', path: '/institutions' },
-      // { label: 'Faculty Directory', path: '/mentors' },
-      // { label: 'Research Areas', path: '/research-areas' },
-    ],
-    Company: [
-      { label: 'About Us', path: '/about' },
-      { label: 'Blog', path: '/blog' },
-      { label: 'Contact', path: '/contact' },
-    ],
-    Resources: [
-      { label: 'Career Guide', path: '/roadmaps' },
-      { label: 'Mentorship Tips', path: '/about' },
-      { label: 'University Rankings', path: '/institutions' },
-      { label: 'FAQ', path: '/#faq' },
-    ],
-  };
-
-  const legalLinks = [
-    { label: 'Privacy Policy', path: '/privacy' },
-    { label: 'Terms of Service', path: '/terms' },
-    { label: 'Business Policy', path: '/business-policy' },
-    { label: 'Disclaimer', path: '/disclaimer' },
-    { label: 'Accessibility', path: '/accessibility' },
-  ];
-
-  const socialIcons = [
-    { Icon: Linkedin,  href: '#', label: 'LinkedIn' },
-    { Icon: Twitter,   href: '#', label: 'Twitter / X' },
-    { Icon: Youtube,   href: '#', label: 'YouTube' },
-    { Icon: Instagram, href: '#', label: 'Instagram' },
-  ];
-
-  return (
-    <footer className="border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-          {Object.entries(footerCols).map(([title, links]) => (
-            <div key={title}>
-              <h4 className="font-semibold text-sm text-slate-900 dark:text-white mb-4">{title}</h4>
-              <ul className="space-y-2.5">
-                {links.map((l) => (
-                  <li key={l.label}>
-                    <Link to={l.path} className="text-sm text-slate-600 dark:text-slate-400 hover:text-navy dark:hover:text-gold transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-
-          <div className="lg:col-span-2">
-            <h4 className="font-semibold text-sm text-slate-900 dark:text-white mb-2">
-              Stay Informed on Global Higher Ed
-            </h4>
-            <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
-              Get weekly updates on university partnerships, academic opportunities, and faculty highlights.
-            </p>
-            {sent ? (
-              <p className="text-sm text-emerald-600 dark:text-emerald-400 font-medium">
-                Thank you for subscribing!
-              </p>
-            ) : (
-              <form onSubmit={(e) => { e.preventDefault(); if (email) setSent(true); }} className="flex gap-2">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email"
-                  required
-                  className="flex-1 px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-sm text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-navy"
-                />
-                <button type="submit" className="px-4 py-2.5 bg-navy hover:bg-navy-dark text-white text-sm font-semibold rounded-xl transition-colors flex-shrink-0">
-                  Subscribe
-                </button>
-              </form>
-            )}
-            <div className="flex items-center gap-3 mt-5">
-              {socialIcons.map(({ Icon, href, label }) => (
-                <a key={label} href={href} aria-label={label} className="w-9 h-9 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:bg-navy hover:text-white transition-all">
-                  <Icon className="w-4 h-4" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p className="text-sm text-slate-500 dark:text-slate-500">
-            &copy; {new Date().getFullYear()} CampusArge. All rights reserved. Your data is handled securely and in line with our Privacy Policy.
-          </p>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            {legalLinks.map((l) => (
-              <Link key={l.path} to={l.path} className="text-sm text-slate-500 dark:text-slate-500 hover:text-navy dark:hover:text-gold transition-colors">
-                {l.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
 
 // ─── Main Page ────────────────────────────────────────────────────────────────
 export default function InstitutionsDirectory() {
@@ -629,8 +518,6 @@ export default function InstitutionsDirectory() {
           </>
         )}
       </div>
-
-      <InstitutionsFooter />
     </div>
   );
 }

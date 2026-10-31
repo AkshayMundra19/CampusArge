@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <!-- Navy rounded square background -->
-  <rect width="32" height="32" rx="7" fill="#102A43"/>
-  <!-- Graduation cap base (mortarboard) -->
-  <polygon points="16,8 26,13 16,18 6,13" fill="#B08D57"/>
-  <!-- Cap top square -->
-  <rect x="13" y="7" width="6" height="2" rx="1" fill="#B08D57"/>
-  <!-- Tassel line -->
-  <line x1="26" y1="13" x2="26" y2="19" stroke="#B08D57" stroke-width="1.5" stroke-linecap="round"/>
-  <circle cx="26" cy="20" r="1.5" fill="#B08D57"/>
-  <!-- Diploma scroll below -->
-  <rect x="10" y="19" width="12" height="8" rx="2" fill="white" opacity="0.9"/>
-  <line x1="12" y1="22" x2="20" y2="22" stroke="#102A43" stroke-width="1" stroke-linecap="round"/>
-  <line x1="12" y1="24" x2="18" y2="24" stroke="#102A43" stroke-width="1" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Light rounded tile with subtle border -->
+  <rect x="0.5" y="0.5" width="31" height="31" rx="7" fill="#FFFFFF" stroke="#D5DCE6" stroke-width="1"/>
+  <!-- Mortarboard base in Midnight Navy -->
+  <polygon points="16,7 26.5,12 16,17 5.5,12" fill="#102A43"/>
+  <!-- Cap button -->
+  <circle cx="16" cy="12" r="1.2" fill="#B08D57"/>
+  <!-- Tassel line & pearl in Antique Gold -->
+  <path d="M16 12 C19.5 13 24 14 25.5 17.5" stroke="#B08D57" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+  <circle cx="25.5" cy="18.5" r="1.1" fill="#B08D57"/>
+  <!-- Academic book / scroll below -->
+  <rect x="9.5" y="19" width="13" height="7" rx="1.5" fill="#F8FAFC" stroke="#102A43" stroke-width="1"/>
+  <line x1="12" y1="21.5" x2="20" y2="21.5" stroke="#B08D57" stroke-width="1" stroke-linecap="round"/>
+  <line x1="12" y1="23.5" x2="18" y2="23.5" stroke="#102A43" stroke-width="1" stroke-linecap="round"/>
 </svg>

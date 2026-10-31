@@ -36,11 +36,11 @@ export default function Register() {
 
       <div className="glass-card rounded-3xl p-8 sm:p-10 max-w-md w-full animate-fade-in-up">
         <Link to="/" className="flex items-center gap-2 mb-8 justify-center">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center">
-            <GraduationCap className="w-6 h-6 text-white" />
+          <div className="w-10 h-10 rounded-xl bg-white border border-[#D5DCE6] shadow-sm flex items-center justify-center">
+            <GraduationCap className="w-6 h-6 text-navy" />
           </div>
           <span className="font-display font-bold text-xl text-slate-900 dark:text-white">
-            Mentoring <span className="gradient-text">Path</span>
+            Campus<span className="text-gold">Arge</span>
           </span>
         </Link>
 

@@ -77,10 +77,10 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <div className="flex items-center justify-between h-16">
 
-          {/* Logo — always has a navy icon box so it's visible on any background */}
+          {/* Logo — light tile with navy icon and gold text */}
           <Link to="/" className="flex items-center gap-2 group" aria-label="CampusArge home">
-            <div className="w-9 h-9 rounded-xl bg-navy flex items-center justify-center shadow-md shadow-navy/40 group-hover:scale-105 transition-transform flex-shrink-0">
-              <GraduationCap className="w-5 h-5 text-gold" aria-hidden="true" />
+            <div className="w-9 h-9 rounded-xl bg-white border border-[#D5DCE6] shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform flex-shrink-0">
+              <GraduationCap className="w-5 h-5 text-navy" aria-hidden="true" />
             </div>
             <span className={`font-display font-bold text-lg hidden sm:block transition-colors ${logoTextClass}`}>
               Campus<span className="text-gold">Arge</span>

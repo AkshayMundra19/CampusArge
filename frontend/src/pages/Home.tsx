@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import HeroSection from '@/components/home/HeroSection';
 import FeaturedInstitutions from '@/components/home/FeaturedInstitutions';
-import FacultyCarousel from '@/components/home/FacultyCarousel';
 import HowItWorks from '@/components/home/HowItWorks';
 import Testimonials from '@/components/home/Testimonials';
 import NewsletterBanner from '@/components/home/NewsletterBanner';
@@ -77,9 +76,6 @@ export default function Home() {
 
       {/* 3.5 Featured Institutions */}
       <FeaturedInstitutions />
-
-      {/* 4. Faculty Carousel */}
-      <FacultyCarousel />
 
       {/* 5. How It Works */}
       <section id="how-it-works">

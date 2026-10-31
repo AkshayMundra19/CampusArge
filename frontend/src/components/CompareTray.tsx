@@ -26,9 +26,9 @@ export default function CompareTray() {
     <aside
       role="region"
       aria-label="Comparison tray"
-      className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_20px_rgba(16,42,67,0.1)] py-3 px-4 sm:px-6 transition-all duration-300"
+      className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 shadow-[0_-4px_20px_rgba(16,42,67,0.1)] py-3 transition-all duration-300 max-h-[40dvh] overflow-y-auto"
     >
-      <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div className="inst-container flex flex-col sm:flex-row items-center justify-between gap-3">
         {/* Left: Selected Chips + Counter */}
         <div className="flex items-center gap-3 w-full sm:w-auto overflow-hidden">
           <div className="flex items-center gap-1.5 flex-shrink-0">

@@ -479,7 +479,7 @@ export default function Compare() {
         <link rel="canonical" href="https://campusarge.com/compare" />
       </Helmet>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="inst-container">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-6 pt-4">
           <ol className="flex items-center gap-2 text-xs sm:text-sm text-slate-500 dark:text-slate-400">

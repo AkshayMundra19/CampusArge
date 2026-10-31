@@ -391,6 +391,13 @@
       height: 190px;
     }
   }
+
+  /* ── Fix 4: Zoom Resilience & Fluid Grid ───────────────────── */
+  .inst-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+    gap: clamp(16px, 2vw, 28px);
+  }
 }
 
 /* Page transition */

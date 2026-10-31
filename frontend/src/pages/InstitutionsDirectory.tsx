@@ -316,7 +316,7 @@ export default function InstitutionsDirectory() {
       </section>
 
       {/* ── B3: FLOATING STATS BAR ────────────────────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 sm:-mt-12 relative z-20 mb-12">
+      <div className="inst-container -mt-10 sm:-mt-12 relative z-20 mb-12">
         <div className="bg-white dark:bg-slate-900 rounded-[20px] border border-[#E5E9EF] dark:border-slate-800 shadow-[0_4px_20px_rgba(16,42,67,0.06)] p-6 sm:p-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x divide-slate-200 dark:divide-slate-800">
             {/* Stat 1: Institutions */}
@@ -367,7 +367,7 @@ export default function InstitutionsDirectory() {
       </div>
 
       {/* ── B4: DIRECTORY TOOLBAR & CONTENT ─────────────────────────────────── */}
-      <div id="directory" className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 ${compareCount > 0 ? 'pb-36 sm:pb-28' : ''}`}>
+      <div id="directory" className={`inst-container pb-20 scroll-mt-20 ${compareCount > 0 ? 'pb-36 sm:pb-28' : ''}`}>
         {/* Directory Header Row */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-6">
           {/* Left: Heading & Subtitle */}
@@ -681,7 +681,7 @@ export default function InstitutionsDirectory() {
           </div>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div className="inst-grid">
               {visible.map((inst) => (
                 <InstitutionCard
                   key={inst.id}

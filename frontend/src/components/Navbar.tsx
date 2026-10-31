@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { Menu, X, GraduationCap, ChevronDown, User as UserIcon, LogOut, LayoutDashboard } from 'lucide-react';
+import { Menu, X, GraduationCap, ChevronDown, User as UserIcon, LogOut, LayoutDashboard, Search } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 
 export default function Navbar() {
@@ -108,8 +108,25 @@ export default function Navbar() {
             )}
           </div>
 
-          {/* Right side — only logged-in user menu, no Login/Register buttons */}
+          {/* Right side — search icon (desktop) and logged-in user menu */}
           <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                if (location.pathname === '/institutions') {
+                  const el = document.getElementById('directory-search');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    el.focus();
+                  }
+                } else {
+                  navigate('/institutions#search');
+                }
+              }}
+              aria-label="Search institutions"
+              className="hidden lg:flex items-center justify-center w-9 h-9 rounded-lg text-slate-700 hover:text-navy hover:bg-navy-light/60 transition-colors"
+            >
+              <Search className="w-4 h-4" aria-hidden="true" />
+            </button>
             {user ? (
               <div className="relative hidden lg:block">
                 <button

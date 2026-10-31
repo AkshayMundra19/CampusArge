@@ -286,6 +286,18 @@
 
   .text-balance { text-wrap: balance; }
   .text-pretty  { text-wrap: pretty; }
+
+  /* Institutions Hero Artwork Edge-Feathering Mask */
+  .inst-hero-art {
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0, #000 18%),
+      linear-gradient(to bottom, #000 82%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image:
+      linear-gradient(to right, transparent 0, #000 18%),
+      linear-gradient(to bottom, #000 82%, transparent 100%);
+    mask-composite: intersect;
+  }
 }
 
 /* Page transition */

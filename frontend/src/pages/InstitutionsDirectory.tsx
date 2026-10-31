@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import {
   Search, SlidersHorizontal, X, SearchX,
   Building2, GraduationCap, BookOpen, Wallet, ShieldCheck,
-  ArrowRight, ChevronDown, CheckCircle2
+  ArrowRight, ChevronDown, CheckCircle2, GitCompare
 } from 'lucide-react';
 import { InstitutionCard } from '@/components/InstitutionCard';
 import type { Institution } from '@/components/InstitutionCard';
@@ -291,26 +291,15 @@ export default function InstitutionsDirectory() {
               Explore and compare <strong className="text-navy dark:text-white font-bold">{TOTAL_COUNT}+</strong> accredited institutions by tuition, programs, faculty and more.
             </p>
 
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 mb-4">
-              <a
-                href="#directory"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById('directory')?.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="px-7 py-3.5 bg-navy hover:bg-navy-dark text-white font-semibold rounded-[10px] shadow-sm transition-all text-sm flex items-center gap-2"
-              >
-                Explore Institutions
-                <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </a>
-
+            {/* Action Button: Compare Now */}
+            <div className="mb-6">
               <button
                 type="button"
                 onClick={handleHeroCompareClick}
-                className="px-7 py-3.5 bg-white dark:bg-slate-800 border-[1.5px] border-navy text-navy dark:text-gold hover:bg-navy-light/40 font-semibold rounded-[10px] transition-all text-sm flex items-center gap-1.5 shadow-sm"
+                className="w-full min-[480px]:w-auto px-7 py-3.5 bg-navy hover:bg-navy-dark text-white font-semibold rounded-[10px] shadow-sm transition-all text-sm inline-flex items-center justify-center gap-2"
               >
-                Compare Now {compareCount > 0 && `(${compareCount})`}
+                <GitCompare className="w-4 h-4" aria-hidden="true" />
+                <span>Compare Now {compareCount > 0 && `(${compareCount})`}</span>
               </button>
             </div>
 

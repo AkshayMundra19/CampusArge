@@ -24,6 +24,7 @@ const footerLinks = {
 
 const contactLinks = [
   { label: "info@campusarge.com", href: "mailto:info@campusarge.com" },
+  { label: "query@campusarge.com", href: "mailto:query@campusarge.com" },
 ];
 
 const socialIcons = [

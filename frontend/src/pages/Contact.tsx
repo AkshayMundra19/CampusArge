@@ -31,18 +31,26 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Contact info cards */}
           <div className="space-y-4">
-            <div className="glass-card rounded-2xl p-6 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-navy flex items-center justify-center flex-shrink-0">
+            <div className="glass-card rounded-2xl p-6 flex items-start gap-4">
+              <div className="w-12 h-12 rounded-xl bg-navy flex items-center justify-center flex-shrink-0 mt-0.5">
                 <Mail className="w-5 h-5 text-gold" aria-hidden="true" />
               </div>
-              <div>
-                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Email</p>
-                <a
-                  href="mailto:info@campusarge.com"
-                  className="font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
-                >
-                  info@CampusArge.com
-                </a>
+              <div className="space-y-1.5 flex-1">
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Email Inquiries</p>
+                <div>
+                  <a
+                    href="mailto:info@campusarge.com"
+                    className="block font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
+                  >
+                    info@CampusArge.com
+                  </a>
+                  <a
+                    href="mailto:query@campusarge.com"
+                    className="block font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors text-sm text-slate-600 dark:text-slate-300 mt-1"
+                  >
+                    query@campusarge.com
+                  </a>
+                </div>
               </div>
             </div>
 

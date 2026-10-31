@@ -10,6 +10,8 @@ import { InstitutionCard } from '@/components/InstitutionCard';
 import type { Institution } from '@/components/InstitutionCard';
 import { REAL_UNIVERSITIES } from '@/lib/universitiesData';
 import heroCampus from '@/assets/institutions/hero-institutions-campus.png';
+import heroCampusWebp from '@/assets/institutions/hero-institutions-campus.webp';
+import heroCampus2xWebp from '@/assets/institutions/hero-institutions-campus@2x.webp';
 import { useCompare } from '@/context/CompareContext';
 import CompareTray from '@/components/CompareTray';
 
@@ -258,23 +260,9 @@ export default function InstitutionsDirectory() {
       </Helmet>
 
       {/* ── B2: HERO SECTION ──────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 sm:pt-36 sm:pb-24 lg:pt-36 lg:pb-28 overflow-hidden bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800">
-        {/* Desktop Campus Photo — Bleeds to right edge, flush with header bottom, masked fade */}
-        <div className="absolute top-0 right-0 bottom-0 w-[62vw] max-w-[1100px] pointer-events-none select-none z-0 hidden lg:block overflow-hidden">
-          <img
-            src={heroCampus}
-            alt="Historic university campus building with trees and a green lawn under a blue sky"
-            width={995}
-            height={312}
-            // @ts-expect-error fetchpriority attribute is supported in modern browsers
-            fetchpriority="high"
-            decoding="async"
-            className="w-full h-full object-cover object-right inst-hero-art"
-          />
-        </div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
-          <div className="max-w-2xl lg:max-w-xl xl:max-w-2xl">
+      <section className="inst-hero mt-16 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800">
+        <div className="inst-container hero-grid">
+          <div className="hero-copy">
             {/* Badge: Gold-tint pill */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FBF6EC] border border-[#EADFC8] text-navy text-sm font-medium mb-6">
               <Building2 className="w-4 h-4 text-gold" aria-hidden="true" />
@@ -282,17 +270,17 @@ export default function InstitutionsDirectory() {
             </div>
 
             {/* H1 */}
-            <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white leading-[1.12] mb-4 text-balance">
+            <h1 className="font-display font-extrabold text-slate-900 dark:text-white leading-[1.08] mb-4 text-balance">
               Find the Right <span className="text-gold">Institution</span> for You
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl text-pretty mb-8">
+            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 text-pretty mb-8">
               Explore and compare <strong className="text-navy dark:text-white font-bold">{TOTAL_COUNT}+</strong> accredited institutions by tuition, programs, faculty and more.
             </p>
 
             {/* Action Button: Compare Now */}
-            <div className="mb-6">
+            <div className="mb-4">
               <button
                 type="button"
                 onClick={handleHeroCompareClick}
@@ -302,15 +290,27 @@ export default function InstitutionsDirectory() {
                 <span>Compare Now {compareCount > 0 && `(${compareCount})`}</span>
               </button>
             </div>
+          </div>
 
-            {/* Mobile Photo: below buttons */}
-            <div className="lg:hidden w-full h-[200px] mt-6 relative overflow-hidden pointer-events-none select-none rounded-xl">
-              <img
-                src={heroCampus}
-                alt="Historic university campus building with trees and a green lawn under a blue sky"
-                className="w-full h-full object-cover object-[60%_center] [mask-image:linear-gradient(to_bottom,black_80%,transparent_100%)]"
+          <div className="hero-art pointer-events-none select-none">
+            <picture>
+              <source
+                type="image/webp"
+                srcSet={`${heroCampusWebp} 995w, ${heroCampus2xWebp} 1990w`}
+                sizes="(min-width: 1024px) min(56vw, 1100px), 100vw"
               />
-            </div>
+              <img
+                src={heroCampusWebp}
+                srcSet={`${heroCampusWebp} 995w, ${heroCampus2xWebp} 1990w`}
+                sizes="(min-width: 1024px) min(56vw, 1100px), 100vw"
+                alt="Historic university campus building with trees and a green lawn under a blue sky"
+                width={995}
+                height={312}
+                // @ts-expect-error fetchpriority attribute is supported in modern browsers
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
           </div>
         </div>
       </section>

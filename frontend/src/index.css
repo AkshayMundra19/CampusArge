@@ -287,7 +287,73 @@
   .text-balance { text-wrap: balance; }
   .text-pretty  { text-wrap: pretty; }
 
-  /* Institutions Hero Artwork Edge-Feathering Mask */
+  /* ── Fix 2: Hero Layout & Crisp Responsive Art ────────────── */
+  .inst-container {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: clamp(16px, 3vw, 48px);
+  }
+  .inst-hero {
+    position: relative;
+    overflow: clip;
+    isolation: isolate;
+    padding-block: clamp(32px, 4vw, 64px) clamp(72px, 7vw, 104px);
+    --hero-art-max: 1100px;
+  }
+  .hero-grid {
+    position: relative;
+  }
+  .hero-copy {
+    position: relative;
+    z-index: 2;
+    max-width: min(520px, 100%);
+  }
+  .hero-copy h1 {
+    font-size: clamp(2.25rem, 1.2rem + 3vw, 4rem);
+    line-height: 1.05;
+  }
+  .hero-copy p {
+    max-width: min(480px, 100%);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-art {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      margin-block: auto;
+      height: fit-content;
+      right: calc(-1 * clamp(16px, 3vw, 48px));
+      width: min(56%, var(--hero-art-max, 1100px));
+      aspect-ratio: 995 / 312;
+    }
+    .hero-art img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  @media (max-width: 1023.98px) {
+    .hero-art {
+      margin-top: 24px;
+      width: 100%;
+      max-width: 640px;
+      margin-inline: auto;
+    }
+    .hero-art img {
+      width: 100%;
+      height: clamp(160px, 32vw, 260px);
+      max-height: 312px;
+      object-fit: cover;
+      object-position: 60% 50%;
+      display: block;
+    }
+  }
+
+  .hero-art img,
   .inst-hero-art {
     -webkit-mask-image:
       linear-gradient(to right, transparent 0, #000 18%),

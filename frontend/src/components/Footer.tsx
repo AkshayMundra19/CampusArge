@@ -23,7 +23,7 @@ const footerLinks = {
 };
 
 const contactLinks = [
-  { label: "hello@campusarge.com", href: "mailto:hello@campusarge.com" },
+  { label: "info@campusarge.com", href: "mailto:info@campusarge.com" },
 ];
 
 const socialIcons = [

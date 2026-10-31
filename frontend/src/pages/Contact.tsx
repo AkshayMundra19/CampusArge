@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MapPin, Phone, Send, CheckCircle2, MessageSquare } from 'lucide-react';
+import { Mail, MapPin, CheckCircle2 } from 'lucide-react';
 import { Spinner } from '@/components/ui';
 
 export default function Contact() {
@@ -29,26 +29,34 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Contact info */}
+          {/* Contact info cards */}
           <div className="space-y-4">
-            {[
-              { icon: Mail, label: 'Email', value: 'hello@CampusArge.com' },
-              { icon: Phone, label: 'Phone', value: '+1 (555) 123-4567' },
-              { icon: MapPin, label: 'Location', value: 'Global, Remote-First' },
-            ].map((item, i) => {
-              const Icon = item.icon;
-              return (
-                <div key={i} className="glass-card rounded-2xl p-5 flex items-center gap-4">
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">{item.label}</p>
-                    <p className="font-semibold text-slate-900 dark:text-white">{item.value}</p>
-                  </div>
-                </div>
-              );
-            })}
+            <div className="glass-card rounded-2xl p-6 flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-navy flex items-center justify-center flex-shrink-0">
+                <Mail className="w-5 h-5 text-gold" aria-hidden="true" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Email</p>
+                <a
+                  href="mailto:info@campusarge.com"
+                  className="font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
+                >
+                  info@CampusArge.com
+                </a>
+              </div>
+            </div>
+
+            <div className="glass-card rounded-2xl p-6 flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-navy flex items-center justify-center flex-shrink-0">
+                <MapPin className="w-5 h-5 text-gold" aria-hidden="true" />
+              </div>
+              <div>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Location</p>
+                <p className="font-semibold text-slate-900 dark:text-white">
+                  Cambridge, Massachusetts, USA
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Contact form */}

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MapPin, CheckCircle2 } from 'lucide-react';
+import { Mail, MapPin, CheckCircle2, MessageSquare, Send } from 'lucide-react';
 import { Spinner } from '@/components/ui';
 
 export default function Contact() {

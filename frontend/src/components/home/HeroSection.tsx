@@ -4,7 +4,7 @@ import {
   ShieldCheck, Building2, Search, ArrowRight,
   ChevronDown,
 } from 'lucide-react';
-import heroImage from '@/assets/hero/hero-student-globe.png';
+import heroImage from '@/assets/hero/hero-student-globe.jpg';
 
 export default function HeroSection() {
   const [query, setQuery] = useState('');
@@ -92,19 +92,21 @@ export default function HeroSection() {
 
           {/* Right: Hero Image Artwork (5 cols) */}
           <div className="lg:col-span-5 flex items-center justify-center relative animate-fade-in-up mt-8 lg:mt-0" style={{ animationDelay: '0.25s' }}>
-            <div className="relative w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[400px] mx-auto flex items-center justify-center">
+            <div className="relative w-full max-w-[460px] sm:max-w-[500px] lg:max-w-none mx-auto">
               {/* Subtle ambient glow behind artwork */}
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-tr from-gold/15 via-navy-light/40 to-navy/10 blur-2xl pointer-events-none" />
+              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-gold/20 via-navy-light/40 to-navy/15 blur-2xl pointer-events-none" />
               
-              <img
-                src={heroImage}
-                alt="Student facing world university campus under globe"
-                // @ts-expect-error fetchpriority attribute is supported in modern browsers
-                fetchpriority="high"
-                loading="eager"
-                decoding="async"
-                className="relative z-10 w-full h-auto object-contain mx-auto mix-blend-multiply dark:mix-blend-normal [mask-image:radial-gradient(ellipse_at_center,black_65%,transparent_100%)] drop-shadow-md"
-              />
+              <div className="relative z-10 rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-700/70 shadow-2xl shadow-navy/20 group">
+                <img
+                  src={heroImage}
+                  alt="Student facing world university campus with global learning network"
+                  // @ts-expect-error fetchpriority attribute is supported in modern browsers
+                  fetchpriority="high"
+                  loading="eager"
+                  decoding="async"
+                  className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                />
+              </div>
             </div>
           </div>
         </div>

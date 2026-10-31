@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
-  ShieldCheck, Users, Building2, Search, ArrowRight,
+  ShieldCheck, Building2, Search, ArrowRight,
   ChevronDown,
 } from 'lucide-react';
 import heroImage from '@/assets/hero/hero-student-globe.png';
@@ -48,20 +48,12 @@ export default function HeroSection() {
               Showcase your institution, highlight verified faculty, foster academic collaborations, and increase global visibility.
             </p>
 
-            {/* CTAs */}
+            {/* CTA */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
-              <Link
-                to="/mentors"
-                id="hero-find-faculty-btn"
-                className="btn-primary flex items-center justify-center gap-2 text-base px-8 py-4 shadow-lg shadow-navy"
-              >
-                <Users className="w-5 h-5" aria-hidden="true" />
-                Find Faculty
-              </Link>
               <Link
                 to="/institutions"
                 id="hero-explore-institutions-btn"
-                className="flex items-center justify-center gap-2 text-base px-8 py-4 rounded-[0.625rem] font-semibold border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-200 hover:border-navy hover:text-navy dark:hover:text-navy transition-all"
+                className="btn-primary flex items-center justify-center gap-2 text-base px-8 py-4 shadow-lg shadow-navy"
               >
                 <Building2 className="w-5 h-5" aria-hidden="true" />
                 Explore Institutions

@@ -46,6 +46,7 @@ export interface University {
   state: string | null;
   qs_rank: number | null;
   logo_url: string | null;
+  original_logo_url?: string | null;
   banner_url: string | null;
   campus_image_url: string | null;
   campus_image_attribution: string | null;

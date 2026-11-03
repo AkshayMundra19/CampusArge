@@ -1,15 +1,14 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
-import { useLocation, useNavigate, Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
   Search, SlidersHorizontal, X, SearchX,
   Building2, GraduationCap, BookOpen, Wallet, ShieldCheck,
-  ArrowRight, ChevronDown, CheckCircle2, GitCompare
+  ChevronDown, GitCompare
 } from 'lucide-react';
 import { InstitutionCard } from '@/components/InstitutionCard';
 import type { Institution } from '@/components/InstitutionCard';
 import { REAL_UNIVERSITIES } from '@/lib/universitiesData';
-import heroCampus from '@/assets/institutions/hero-institutions-campus.png';
 import heroCampusWebp from '@/assets/institutions/hero-institutions-campus.webp';
 import heroCampus2xWebp from '@/assets/institutions/hero-institutions-campus@2x.webp';
 import { useCompare } from '@/context/CompareContext';
@@ -502,7 +501,7 @@ export default function InstitutionsDirectory() {
                 <select
                   id="filter-coa"
                   value={filterCoaRange}
-                  onChange={(e) => setFilterCoaRange(e.target.value as any)}
+                  onChange={(e) => setFilterCoaRange(e.target.value as 'under30' | '30to60' | 'over60' | '')}
                   className="w-full px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
                 >
                   <option value="">Any Cost</option>
@@ -520,7 +519,7 @@ export default function InstitutionsDirectory() {
                 <select
                   id="filter-ratio"
                   value={filterRatio}
-                  onChange={(e) => setFilterRatio(e.target.value as any)}
+                  onChange={(e) => setFilterRatio(e.target.value as 'le10' | 'le15' | '')}
                   className="w-full px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
                 >
                   <option value="">Any Ratio</option>
@@ -537,7 +536,7 @@ export default function InstitutionsDirectory() {
                 <select
                   id="filter-type"
                   value={filterType}
-                  onChange={(e) => setFilterType(e.target.value as any)}
+                  onChange={(e) => setFilterType(e.target.value as 'Public' | 'Private' | '')}
                   className="w-full px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
                 >
                   <option value="">All Types</option>
@@ -554,7 +553,7 @@ export default function InstitutionsDirectory() {
                 <select
                   id="filter-ranking"
                   value={filterRanking}
-                  onChange={(e) => setFilterRanking(e.target.value as any)}
+                  onChange={(e) => setFilterRanking(e.target.value as 'top10' | 'top50' | '')}
                   className="w-full px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
                 >
                   <option value="">All Rankings</option>
@@ -587,7 +586,7 @@ export default function InstitutionsDirectory() {
                 <select
                   id="filter-crime"
                   value={filterCrime}
-                  onChange={(e) => setFilterCrime(e.target.value as any)}
+                  onChange={(e) => setFilterCrime(e.target.value as 'Low' | 'Medium' | 'High' | '')}
                   className="w-full px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-900 dark:text-white"
                 >
                   <option value="">Any Safety Level</option>

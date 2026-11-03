@@ -270,3 +270,4 @@ run().catch((err) => {
   console.error('Fatal error in build-logos:', err);
   process.exit(1);
 });
+

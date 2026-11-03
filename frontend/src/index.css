@@ -15,6 +15,7 @@
     --color-text:          15 23 42;
     --color-text-secondary: 71 85 105;
     --color-border:        226 232 240;
+    --navbar-height:       64px;
   }
 
   .dark {
@@ -396,6 +397,179 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
     gap: clamp(16px, 2vw, 28px);
+  }
+
+  /* ── Compare Page Shared Grid Table & Sticky Model ─────────── */
+  .compare-scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    scrollbar-width: thin;
+    scrollbar-color: #CBD5E1 transparent;
+  }
+
+  .compare-grid-table {
+    display: grid;
+    grid-template-columns: var(--label-w, 200px) repeat(var(--col-count, 4), minmax(var(--col-min, 190px), 1fr));
+    width: 100%;
+    border-collapse: collapse;
+    --label-w: 200px;
+    --col-min: 190px;
+  }
+
+  @media (max-width: 1023px) {
+    .compare-grid-table {
+      --label-w: 135px;
+      --col-min: 160px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .compare-grid-table {
+      --label-w: 120px;
+      --col-min: 145px;
+    }
+    .compare-grid-table[data-cols="2"] {
+      --col-min: 110px;
+    }
+  }
+
+  .compare-grid-table > thead,
+  .compare-grid-table > tbody,
+  .compare-grid-table tr {
+    display: contents;
+  }
+
+  .compare-cell {
+    padding: 14px 16px;
+    border-bottom: 1px solid #EEF2F6;
+    border-right: 1px solid #F1F5F9;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-variant-numeric: tabular-nums;
+    background-color: #FFFFFF;
+    transition: background-color 150ms ease;
+  }
+
+  .compare-cell:last-child {
+    border-right: none;
+  }
+
+  .dark .compare-cell {
+    background-color: #0F172A;
+    border-bottom: 1px solid #1E293B;
+    border-right: 1px solid #1E293B;
+  }
+
+  /* Row Hover Highlight */
+  tr:hover > .compare-cell {
+    background-color: #F8FAFC;
+  }
+  .dark tr:hover > .compare-cell {
+    background-color: #1E293B/60;
+  }
+
+  /* First column: Sticky row header on horizontal scroll */
+  .compare-row-header {
+    position: sticky;
+    left: 0;
+    z-index: 15;
+    background-color: #FFFFFF;
+    border-right: 1px solid #E2E8F0;
+    font-weight: 600;
+  }
+
+  .dark .compare-row-header {
+    background-color: #0F172A;
+    border-right: 1px solid #1E293B;
+  }
+
+  /* Header cells (desktop vertical sticky below 64px navbar) */
+  @media (min-width: 1024px) {
+    .compare-header-cell {
+      position: sticky;
+      top: var(--navbar-height, 64px);
+      z-index: 25;
+      background-color: #FFFFFF;
+      box-shadow: 0 4px 12px -2px rgba(16, 42, 67, 0.05);
+      border-bottom: 2px solid #E2E8F0;
+    }
+    .dark .compare-header-cell {
+      background-color: #0F172A;
+      box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.25);
+      border-bottom: 2px solid #334155;
+    }
+    /* Top-left corner cell stays above both horizontal and vertical sticky tracks */
+    .compare-header-cell.compare-row-header {
+      z-index: 35;
+    }
+  }
+
+  /* Section band spans 100% of the card */
+  .compare-section-band {
+    grid-column: 1 / -1;
+    background-color: #F8FAFC;
+    padding: 12px 16px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #102A43;
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    position: sticky;
+    left: 0;
+    z-index: 10;
+  }
+
+  .dark .compare-section-band {
+    background-color: #1E293B;
+    color: #B08D57;
+    border-color: #334155;
+  }
+}
+
+/* Print Stylesheet */
+@media print {
+  @page {
+    size: landscape;
+    margin: 8mm;
+  }
+  header,
+  footer,
+  nav[aria-label="Breadcrumb"],
+  .compare-toolbar,
+  .compare-add-btn,
+  aside[role="region"],
+  button {
+    display: none !important;
+  }
+  body,
+  .inst-container,
+  .compare-grid-table {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+  .compare-scroll-container {
+    overflow: visible !important;
+  }
+  .compare-header-cell,
+  .compare-row-header,
+  .compare-section-band {
+    position: static !important;
+    box-shadow: none !important;
+  }
+  .compare-cell {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    padding: 8px 12px !important;
+    font-size: 11px !important;
   }
 }
 

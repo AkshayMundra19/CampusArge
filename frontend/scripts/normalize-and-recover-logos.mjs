@@ -394,3 +394,4 @@ ${recoveryLog.filter(r => r.source !== 'existing_high_res').slice(0, 30).map(r =
 }
 
 run().catch(console.error);
+

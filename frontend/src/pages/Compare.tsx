@@ -10,6 +10,7 @@ import { REAL_UNIVERSITIES, getUniversityById } from '@/lib/universitiesData';
 import { useCompare } from '@/context/CompareContext';
 import type { University } from '@/types';
 import InstitutionLogo from '@/components/InstitutionLogo';
+import { formatUSD, formatCOA, formatRent, formatNumber, formatRatio } from '@/lib/formatters';
 
 interface RowConfig {
   id: string;
@@ -22,7 +23,7 @@ interface RowConfig {
   lowestValueKey?: (u: University) => number | null;
 }
 
-// Reusable Lowest badge
+// Reusable Lowest badge (small gold pill)
 function LowestBadge() {
   return (
     <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider bg-gold/15 text-gold border border-gold/30 flex-shrink-0">
@@ -43,18 +44,20 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
         getValue: (u) => u.cost_of_attendance,
         isLowestCandidate: true,
         lowestValueKey: (u) => (u.cost_of_attendance && u.cost_of_attendance > 0 ? u.cost_of_attendance : null),
-        renderCell: (_u, val, isLowest) => (
-          typeof val === 'number' && val > 0 ? (
-            <div className="flex items-center flex-wrap gap-1.5">
-              <span className="font-semibold text-slate-900 dark:text-white whitespace-nowrap">
-                ${val.toLocaleString()}/yr
+        renderCell: (_u, val, isLowest) => {
+          const num = typeof val === 'number' ? val : (typeof val === 'string' ? Number(val.replace(/[^0-9.-]+/g, '')) : null);
+          const formatted = formatCOA(num);
+          return formatted ? (
+            <div className="flex items-center flex-wrap gap-2">
+              <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
+                {formatted}
               </span>
               {isLowest && <LowestBadge />}
             </div>
           ) : (
             <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+          );
+        }
       },
       {
         id: 'col_index',
@@ -68,8 +71,8 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
           return typeof v === 'number' && v > 0 ? v : null;
         },
         renderCell: (_u, val, isLowest) => (
-          val != null ? (
-            <div className="flex items-center flex-wrap gap-1.5">
+          val != null && val !== '' && val !== 'N/A' ? (
+            <div className="flex items-center flex-wrap gap-2">
               <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
                 {String(val)}
               </span>
@@ -90,22 +93,28 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
           const v = u.facts?.avg_apartment_rent?.value;
           return typeof v === 'number' && v > 0 ? v : null;
         },
-        renderCell: (u, val, isLowest) => (
-          typeof val === 'number' && val > 0 ? (
-            <div className="flex items-center flex-wrap gap-1.5">
-              <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
-                ${val.toLocaleString()}/mo
+        renderCell: (u, val, isLowest) => {
+          const num = typeof val === 'number' ? val : (typeof val === 'string' ? Number(val.replace(/[^0-9.-]+/g, '')) : null);
+          const formatted = formatRent(num);
+          if (formatted) {
+            return (
+              <div className="flex items-center flex-wrap gap-2">
+                <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
+                  {formatted}
+                </span>
+                {isLowest && <LowestBadge />}
+              </div>
+            );
+          }
+          if (u.facts?.avg_apartment_rent?.display && u.facts.avg_apartment_rent.display !== 'N/A') {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white">
+                {u.facts.avg_apartment_rent.display}
               </span>
-              {isLowest && <LowestBadge />}
-            </div>
-          ) : u.facts?.avg_apartment_rent?.display ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              {u.facts.avg_apartment_rent.display}
-            </span>
-          ) : (
-            <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+            );
+          }
+          return <span className="text-slate-400 font-normal italic">Not reported</span>;
+        }
       },
       {
         id: 'home_price',
@@ -117,22 +126,28 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
           const v = u.facts?.avg_home_price?.value;
           return typeof v === 'number' && v > 0 ? v : null;
         },
-        renderCell: (u, val, isLowest) => (
-          typeof val === 'number' && val > 0 ? (
-            <div className="flex items-center flex-wrap gap-1.5">
-              <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
-                ${val.toLocaleString()}
+        renderCell: (u, val, isLowest) => {
+          const num = typeof val === 'number' ? val : (typeof val === 'string' ? Number(val.replace(/[^0-9.-]+/g, '')) : null);
+          const formatted = formatUSD(num);
+          if (formatted) {
+            return (
+              <div className="flex items-center flex-wrap gap-2">
+                <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
+                  {formatted}
+                </span>
+                {isLowest && <LowestBadge />}
+              </div>
+            );
+          }
+          if (u.facts?.avg_home_price?.display && u.facts.avg_home_price.display !== 'N/A') {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white">
+                {u.facts.avg_home_price.display}
               </span>
-              {isLowest && <LowestBadge />}
-            </div>
-          ) : u.facts?.avg_home_price?.display ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              {u.facts.avg_home_price.display}
-            </span>
-          ) : (
-            <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+            );
+          }
+          return <span className="text-slate-400 font-normal italic">Not reported</span>;
+        }
       }
     ]
   },
@@ -143,48 +158,50 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
         id: 'ratio',
         label: 'Student / Faculty Ratio',
         section: 'Academics & Faculty',
-        getValue: (u) => u.facts?.student_faculty_ratio?.value,
+        getValue: (u) => u.facts?.student_faculty_ratio?.value ?? u.facts?.student_faculty_ratio?.display,
         isLowestCandidate: true,
         lowestValueKey: (u) => {
           const v = u.facts?.student_faculty_ratio?.value;
           return typeof v === 'number' && v > 0 ? v : null;
         },
-        renderCell: (u, val, isLowest) => (
-          typeof val === 'number' && val > 0 ? (
-            <div className="flex items-center flex-wrap gap-1.5">
+        renderCell: (u, val, isLowest) => {
+          const formatted = formatRatio(val as number | string) || formatRatio(u.facts?.student_faculty_ratio?.display);
+          return formatted ? (
+            <div className="flex items-center flex-wrap gap-2">
               <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
-                {val}:1
+                {formatted}
               </span>
               {isLowest && <LowestBadge />}
             </div>
-          ) : u.facts?.student_faculty_ratio?.display ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              {u.facts.student_faculty_ratio.display}
-            </span>
           ) : (
             <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+          );
+        }
       },
       {
         id: 'undergrad_pop',
         label: 'Undergraduate Enrollment',
         section: 'Academics & Faculty',
         getValue: (u) => u.facts?.undergrad_population?.value,
-        renderCell: (u, val) => (
-          typeof val === 'number' && val > 0 ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              <span className="whitespace-nowrap">{val.toLocaleString()}</span>{' '}
-              <span className="text-slate-500 dark:text-slate-400 text-xs font-normal">undergrads</span>
-            </span>
-          ) : u.facts?.undergrad_population?.display ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              {u.facts.undergrad_population.display}
-            </span>
-          ) : (
-            <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+        renderCell: (u, val) => {
+          const num = typeof val === 'number' ? val : (typeof val === 'string' ? Number(val.replace(/[^0-9.-]+/g, '')) : null);
+          if (num != null && num > 0) {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white">
+                <span className="whitespace-nowrap">{formatNumber(num)}</span>{' '}
+                <span className="text-slate-500 dark:text-slate-400 font-normal">undergrads</span>
+              </span>
+            );
+          }
+          if (u.facts?.undergrad_population?.display && u.facts.undergrad_population.display !== 'N/A') {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white">
+                {u.facts.undergrad_population.display}
+              </span>
+            );
+          }
+          return <span className="text-slate-400 font-normal italic">Not reported</span>;
+        }
       },
       {
         id: 'grad_pop',
@@ -192,19 +209,20 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
         section: 'Academics & Faculty',
         getValue: (u) => u.facts?.graduate_population?.value,
         renderCell: (u, val) => {
-          if (val === 0 || u.facts?.graduate_population?.display === '0 graduate students') {
+          if (val === 0 || u.facts?.graduate_population?.display === '0 graduate students' || u.facts?.graduate_population?.display === '0') {
             return (
               <span className="font-medium text-slate-900 dark:text-white">
                 <span className="whitespace-nowrap">0</span>{' '}
-                <span className="text-slate-500 dark:text-slate-400 text-xs font-normal">grad students</span>
+                <span className="text-slate-500 dark:text-slate-400 font-normal">grad students</span>
               </span>
             );
           }
-          if (typeof val === 'number' && val > 0) {
+          const num = typeof val === 'number' ? val : (typeof val === 'string' ? Number(val.replace(/[^0-9.-]+/g, '')) : null);
+          if (num != null && num > 0) {
             return (
               <span className="font-medium text-slate-900 dark:text-white">
-                <span className="whitespace-nowrap">{val.toLocaleString()}</span>{' '}
-                <span className="text-slate-500 dark:text-slate-400 text-xs font-normal">grad students</span>
+                <span className="whitespace-nowrap">{formatNumber(num)}</span>{' '}
+                <span className="text-slate-500 dark:text-slate-400 font-normal">grad students</span>
               </span>
             );
           }
@@ -223,15 +241,16 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
         label: 'Listed Programs Count',
         section: 'Academics & Faculty',
         getValue: (u) => u.programs?.length,
-        renderCell: (_u, val) => (
-          typeof val === 'number' ? (
-            <span className="font-semibold text-navy dark:text-gold whitespace-nowrap">
-              {val} programs
+        renderCell: (_u, val) => {
+          const num = typeof val === 'number' ? val : null;
+          return num != null ? (
+            <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
+              {formatNumber(num)} <span className="text-slate-500 dark:text-slate-400 font-normal">programs</span>
             </span>
           ) : (
             <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+          );
+        }
       },
       {
         id: 'anchor_programs',
@@ -262,7 +281,7 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
                 <span
                   key={idx}
                   title={item}
-                  className="px-2 py-0.5 rounded-full text-[11px] font-medium bg-[#FBF6EC] border border-[#EADFC8] text-[#8C6D3B] break-words"
+                  className="px-2 py-0.5 rounded-full text-xs font-medium bg-[#FBF6EC] border border-[#EADFC8] text-[#8C6D3B] break-words"
                 >
                   {item}
                 </span>
@@ -270,7 +289,7 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
               {remaining.length > 0 && (
                 <span
                   title={remaining.join(', ')}
-                  className="px-1.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex-shrink-0 cursor-default"
+                  className="px-1.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 flex-shrink-0 cursor-default"
                 >
                   +{remaining.length}
                 </span>
@@ -289,38 +308,48 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
         label: 'Campus Size',
         section: 'Campus & Athletics',
         getValue: (u) => u.facts?.campus_acreage?.value,
-        renderCell: (u, val) => (
-          val != null ? (
-            <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
-              {String(val)} acres
-            </span>
-          ) : u.facts?.campus_acreage?.display ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              {u.facts.campus_acreage.display}
-            </span>
-          ) : (
-            <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+        renderCell: (u, val) => {
+          const num = typeof val === 'number' ? val : null;
+          if (num != null) {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
+                {formatNumber(num)} <span className="text-slate-500 dark:text-slate-400 font-normal">acres</span>
+              </span>
+            );
+          }
+          if (u.facts?.campus_acreage?.display && u.facts.campus_acreage.display !== 'N/A') {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white">
+                {u.facts.campus_acreage.display}
+              </span>
+            );
+          }
+          return <span className="text-slate-400 font-normal italic">Not reported</span>;
+        }
       },
       {
         id: 'housing_beds',
         label: 'On-Campus Housing',
         section: 'Campus & Athletics',
         getValue: (u) => u.facts?.housing_capacity_beds?.value,
-        renderCell: (u, val) => (
-          typeof val === 'number' && val > 0 ? (
-            <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
-              {val.toLocaleString()} beds
-            </span>
-          ) : u.facts?.housing_capacity_beds?.display && u.facts.housing_capacity_beds.display !== 'N/A' ? (
-            <span className="font-medium text-slate-900 dark:text-white">
-              {u.facts.housing_capacity_beds.display}
-            </span>
-          ) : (
-            <span className="text-slate-400 font-normal italic">Not reported</span>
-          )
-        )
+        renderCell: (u, val) => {
+          const num = typeof val === 'number' ? val : null;
+          if (num != null && num > 0) {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
+                {formatNumber(num)} <span className="text-slate-500 dark:text-slate-400 font-normal">beds</span>
+              </span>
+            );
+          }
+          if (u.facts?.housing_capacity_beds?.display && u.facts.housing_capacity_beds.display !== 'N/A') {
+            return (
+              <span className="font-medium text-slate-900 dark:text-white">
+                {u.facts.housing_capacity_beds.display}
+              </span>
+            );
+          }
+          return <span className="text-slate-400 font-normal italic">Not reported</span>;
+        }
       },
       {
         id: 'athletic_conf',
@@ -328,7 +357,7 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
         section: 'Campus & Athletics',
         getValue: (u) => u.facts?.athletic_conference,
         renderCell: (_u, val) => (
-          val && val !== 'N/A' ? (
+          val && val !== 'N/A' && val !== 'None' ? (
             <span className="font-medium text-slate-900 dark:text-white">
               {String(val)}
             </span>
@@ -349,7 +378,7 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
           if (typeof val === 'number' && val > 0) {
             return (
               <span className="font-medium text-slate-900 dark:text-white whitespace-nowrap">
-                {val} sports
+                {formatNumber(val)} <span className="text-slate-500 dark:text-slate-400 font-normal">sports</span>
               </span>
             );
           }
@@ -384,15 +413,15 @@ const ROW_SECTIONS: { title: string; rows: RowConfig[] }[] = [
           const isMedium = level === 'medium' || level === 'moderate';
 
           return (
-            <div className="flex items-start gap-1.5 text-xs sm:text-sm">
+            <div className="flex items-start gap-1.5 text-[15px] font-medium text-slate-900 dark:text-white leading-normal">
               {isLow ? (
-                <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-1" aria-hidden="true" />
               ) : isMedium ? (
-                <ShieldAlert className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <ShieldAlert className="w-4 h-4 text-amber-600 flex-shrink-0 mt-1" aria-hidden="true" />
               ) : (
-                <ShieldAlert className="w-4 h-4 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <ShieldAlert className="w-4 h-4 text-rose-600 flex-shrink-0 mt-1" aria-hidden="true" />
               )}
-              <span className="font-medium text-slate-900 dark:text-white leading-snug">
+              <span className="leading-snug">
                 {text}
               </span>
             </div>
@@ -469,6 +498,21 @@ export default function Compare() {
 
   const [institutions, setInstitutions] = useState<University[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // Detect when sticky header is stuck below 64px navbar
+  const [isStuck, setIsStuck] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!cardRef.current) return;
+      const rect = cardRef.current.getBoundingClientRect();
+      setIsStuck(rect.top <= 64);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Add institution combobox
   const [comboboxOpen, setComboboxOpen] = useState(false);
@@ -638,17 +682,16 @@ export default function Compare() {
     return ROW_SECTIONS.reduce((acc, sec) => acc + sec.rows.length, 0);
   }, []);
 
+  // Filter sections and rows based on availability and "showDiffsOnly"
+  // When differences only is OFF, show ALL criteria (do not auto-hide rows without data)
   const visibleSections = useMemo(() => {
     return ROW_SECTIONS.map(section => {
       const filteredRows = section.rows.filter(row => {
-        const hasAnyData = institutions.some(u => {
-          const v = row.getValue(u);
-          return v !== null && v !== undefined && v !== '' && v !== 'N/A';
-        });
-        if (!hasAnyData) return false;
-
-        if (showDiffsOnly && !hasRowDifferences(row)) return false;
-
+        if (showDiffsOnly) {
+          // In differences mode, hide rows where all values are identical
+          return hasRowDifferences(row);
+        }
+        // In normal mode, show all criteria
         return true;
       });
 
@@ -657,7 +700,7 @@ export default function Compare() {
         rows: filteredRows
       };
     }).filter(sec => sec.rows.length > 0);
-  }, [institutions, showDiffsOnly, hasRowDifferences]);
+  }, [showDiffsOnly, hasRowDifferences]);
 
   const visibleCriteriaCount = useMemo(() => {
     return visibleSections.reduce((acc, sec) => acc + sec.rows.length, 0);
@@ -899,7 +942,10 @@ export default function Compare() {
             </div>
 
             {/* Card Container holding table */}
-            <div className="bg-white dark:bg-slate-900 rounded-[20px] border border-[#E5E9EF] dark:border-slate-800 shadow-[0_4px_20px_rgba(16,42,67,0.06)] overflow-hidden">
+            <div
+              ref={cardRef}
+              className="bg-white dark:bg-slate-900 rounded-[20px] border border-[#E5E9EF] dark:border-slate-800 shadow-[0_4px_20px_rgba(16,42,67,0.06)]"
+            >
               <div className="compare-scroll-container">
                 <table
                   role="table"
@@ -914,91 +960,95 @@ export default function Compare() {
                       {/* Top-left Criteria cell with embedded toggle */}
                       <th
                         scope="col"
-                        className="compare-cell compare-header-cell compare-row-header flex flex-col justify-between items-start"
+                        className={`compare-cell compare-header-cell compare-row-header rounded-tl-[20px] ${isStuck ? 'is-stuck' : ''}`}
                       >
-                        <div>
-                          <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 block">
-                            Criteria
-                          </span>
-                          <span className="text-sm font-bold text-slate-900 dark:text-white block mt-0.5">
-                            Comparison
-                          </span>
-                        </div>
-
-                        {/* Differences toggle switch */}
-                        <div className="w-full pt-3 mt-2 border-t border-slate-100 dark:border-slate-800">
-                          <label className="inline-flex items-center gap-2 cursor-pointer select-none">
-                            <input
-                              type="checkbox"
-                              id="diff-toggle"
-                              checked={showDiffsOnly}
-                              onChange={(e) => handleToggleDiff(e.target.checked)}
-                              className="rounded text-navy focus:ring-navy w-4 h-4 cursor-pointer"
-                            />
-                            <span className="text-xs font-medium text-slate-700 dark:text-slate-300">
-                              Differences only
+                        <div className="w-full flex flex-col justify-between h-full">
+                          <div>
+                            <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-slate-400 dark:text-slate-500 block">
+                              CRITERIA
                             </span>
-                          </label>
-                          <p className="text-[10px] text-slate-400 mt-0.5">
-                            Showing {visibleCriteriaCount} of {totalCriteriaCount} criteria
-                          </p>
+                            <h2 className="font-display font-bold text-lg text-slate-900 dark:text-white block mt-0.5">
+                              Compare
+                            </h2>
+                          </div>
+
+                          {/* Differences toggle switch */}
+                          <div className="w-full pt-3 mt-auto border-t border-slate-100 dark:border-slate-800">
+                            <label className="inline-flex items-center gap-2 cursor-pointer select-none">
+                              <input
+                                type="checkbox"
+                                id="diff-toggle"
+                                checked={showDiffsOnly}
+                                onChange={(e) => handleToggleDiff(e.target.checked)}
+                                className="rounded text-navy focus:ring-navy w-4 h-4 cursor-pointer"
+                              />
+                              <span className="text-xs font-medium text-slate-700 dark:text-slate-300">
+                                Show differences only
+                              </span>
+                            </label>
+                            <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1">
+                              Showing {visibleCriteriaCount} of {totalCriteriaCount} criteria
+                            </p>
+                          </div>
                         </div>
                       </th>
 
-                      {/* Institution Header Cells */}
-                      {institutions.map((inst) => (
-                        <th
-                          key={inst.id}
-                          scope="col"
-                          className="compare-cell compare-header-cell flex flex-col justify-between items-stretch relative min-h-[160px]"
-                        >
-                          {/* Remove button */}
-                          <button
-                            type="button"
-                            onClick={() => handleRemove(inst.id)}
-                            aria-label={`Remove ${inst.name} from comparison`}
-                            className="absolute top-2.5 right-2.5 w-6 h-6 rounded-full bg-slate-100 hover:bg-rose-50 hover:text-rose-600 text-slate-400 dark:bg-slate-800 dark:hover:bg-rose-950/60 dark:hover:text-rose-400 flex items-center justify-center transition-colors shadow-sm z-10"
+                      {/* Institution Header Cells (Fixed 4-row layout) */}
+                      {institutions.map((inst, index) => {
+                        const isLast = index === institutions.length - 1;
+                        return (
+                          <th
+                            key={inst.id}
+                            scope="col"
+                            className={`compare-cell compare-header-cell ${isLast ? 'rounded-tr-[20px]' : ''} ${isStuck ? 'is-stuck' : ''}`}
                           >
-                            <X className="w-3.5 h-3.5" />
-                          </button>
+                            <div className="w-full flex flex-col h-full items-start">
+                              {/* Row 1: Logo tile (48x48) + Type label on left, remove (x) button on far right */}
+                              <div className="flex items-center justify-between w-full mb-3">
+                                <div className="flex items-center gap-2.5 min-w-0">
+                                  <div className="w-12 h-12 rounded-[12px] bg-white border border-slate-200 dark:border-slate-700 flex items-center justify-center p-1.5 shadow-sm overflow-hidden flex-shrink-0">
+                                    <InstitutionLogo id={inst.id} name={inst.name} logoUrl={inst.logo_url} size="compare" />
+                                  </div>
+                                  <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-navy/70 dark:text-gold/80 truncate">
+                                    {inst.facts?.school_classification || (inst.university_type === 'public' ? 'PUBLIC' : 'PRIVATE')}
+                                  </span>
+                                </div>
 
-                          {/* Institution Info */}
-                          <div className="flex flex-col items-start w-full pr-6">
-                            <div className="flex items-center gap-2.5 w-full mb-2">
-                              {/* Logo tile 56x56 */}
-                              <div className="w-14 h-14 rounded-xl bg-white border border-slate-200 dark:border-slate-700 flex items-center justify-center p-1.5 shadow-sm overflow-hidden flex-shrink-0">
-                                <InstitutionLogo id={inst.id} name={inst.name} logoUrl={inst.logo_url} size="compare" />
-                              </div>
-
-                              <div className="min-w-0 flex-1">
-                                <span className="inline-block text-[10px] font-bold uppercase tracking-wider text-oxford dark:text-gold">
-                                  {inst.facts?.school_classification || (inst.university_type === 'public' ? 'Public' : 'Private')}
-                                </span>
-                                <h2
-                                  title={inst.name}
-                                  className="font-sans font-bold text-sm text-slate-900 dark:text-white leading-snug line-clamp-2"
+                                <button
+                                  type="button"
+                                  onClick={() => handleRemove(inst.id)}
+                                  aria-label={`Remove ${inst.name} from comparison`}
+                                  className="w-7 h-7 rounded-full bg-slate-100 hover:bg-rose-50 hover:text-rose-600 text-slate-400 dark:bg-slate-800 dark:hover:bg-rose-950/60 dark:hover:text-rose-400 flex items-center justify-center transition-colors shadow-sm flex-shrink-0"
                                 >
-                                  {inst.name}
-                                </h2>
+                                  <X className="w-3.5 h-3.5" />
+                                </button>
                               </div>
+
+                              {/* Row 2: Institution Name (16px, 1.3 line-height, semibold, clamp to 2 lines, min-height 2.6em) */}
+                              <h3
+                                title={inst.name}
+                                className="w-full text-left font-sans font-semibold text-base text-slate-900 dark:text-white leading-[1.3] line-clamp-2 min-h-[2.6em] mb-1.5"
+                              >
+                                {inst.name}
+                              </h3>
+
+                              {/* Row 3: Location (13px, muted, pin icon top-aligned, allows 2-line wrap) */}
+                              <p className="w-full text-left text-[13px] text-slate-500 dark:text-slate-400 flex items-start gap-1.5 min-h-[1.5em] mb-4">
+                                <MapPin className="w-3.5 h-3.5 text-slate-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                                <span className="leading-snug">{inst.city}, {inst.country}</span>
+                              </p>
+
+                              {/* Row 4: View Details Button (pinned to bottom, height 40px) */}
+                              <Link
+                                to={`/institutions/${inst.id}`}
+                                className="mt-auto w-full h-10 px-4 flex items-center justify-center text-center rounded-lg bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm"
+                              >
+                                View Details →
+                              </Link>
                             </div>
-
-                            {/* Location */}
-                            <p className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1 w-full mb-2">
-                              <MapPin className="w-3 h-3 text-slate-400 flex-shrink-0" aria-hidden="true" />
-                              <span className="truncate">{inst.city}, {inst.country}</span>
-                            </p>
-                          </div>
-
-                          {/* View details button pinned to bottom */}
-                          <Link
-                            to={`/institutions/${inst.id}`}
-                            className="mt-auto w-full py-2 px-3 text-center rounded-lg bg-navy hover:bg-navy-dark text-white text-xs font-semibold transition-colors block shadow-sm"
-                          >
-                            View Details →
-                          </Link>
-                        </th>
-                      ))}
+                          </th>
+                        );
+                      })}
                     </tr>
                   </thead>
 
@@ -1026,14 +1076,14 @@ export default function Compare() {
                               {/* Label Column (Row Header, Sticky Left) */}
                               <th
                                 scope="row"
-                                className="compare-cell compare-row-header text-xs sm:text-sm text-slate-700 dark:text-slate-300"
+                                className="compare-cell compare-row-header"
                               >
                                 <div>
                                   <p className="font-semibold text-slate-800 dark:text-slate-200">
                                     {row.label}
                                   </p>
                                   {row.caption && (
-                                    <p className="text-[11px] font-normal text-slate-400 mt-0.5">
+                                    <p className="text-xs font-normal text-slate-400 dark:text-slate-500 mt-0.5">
                                       {row.caption}
                                     </p>
                                   )}
@@ -1049,7 +1099,7 @@ export default function Compare() {
                                   <td
                                     key={inst.id}
                                     role="cell"
-                                    className="compare-cell text-xs sm:text-sm"
+                                    className="compare-cell"
                                   >
                                     {row.renderCell(inst, val, isLowest)}
                                   </td>
@@ -1077,7 +1127,7 @@ export default function Compare() {
                             onClick={() => handleToggleDiff(false)}
                             className="text-xs text-navy dark:text-gold hover:underline mt-2 font-medium"
                           >
-                            Disable &ldquo;Differences only&rdquo; to view all criteria
+                            Disable &ldquo;Show differences only&rdquo; to view all criteria
                           </button>
                         </td>
                       </tr>
@@ -1087,7 +1137,7 @@ export default function Compare() {
               </div>
 
               {/* Footnote inside the card */}
-              <div className="p-4 sm:p-5 bg-slate-50/70 dark:bg-slate-800/40 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 leading-relaxed">
+              <div className="p-4 sm:p-5 bg-slate-50/70 dark:bg-slate-800/40 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500 leading-relaxed rounded-b-[20px]">
                 <span className="font-semibold text-navy dark:text-gold">* Note: </span>
                 A small <span className="text-gold font-bold">LOWEST</span> tag highlights the lowest numerical value for Cost of Attendance, student-to-faculty ratios, and living costs. Lower is not always better and depends on your personal financial priorities and academic objectives.
               </div>

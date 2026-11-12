@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "patch_target": {
+    "file": "frontend/src/lib/universitiesFull.json",
+    "institution_id": "u_54",
+    "institution_name": "Pomona College"
+  },
+  "metadata": {
+    "audit_reference": "frontend/scripts/data-audit-compare.md",
+    "status": "PROPOSED",
+    "verified_sources": [
+      "IPEDS Data Feedback Report 2023-2024 (UnitID: 121345)",
+      "Pomona College Common Data Set (CDS) 2023-2024",
+      "WASC Senior College and University Commission (WSCUC) Directory"
+    ],
+    "created_at": "2026-11-04T00:00:00.000Z",
+    "author": "Antigravity Engineering Audit"
+  },
+  "proposed_patch": {
+    "state": "CA",
+    "cost_of_attendance": 85000,
+    "facts": {
+      "accreditation_status": "WSCUC Accredited",
+      "accreditor": "WSCUC",
+      "anchor_programs": [
+        "Economics",
+        "Computer Science",
+        "Mathematics",
+        "Political Science",
+        "Molecular Biology"
+      ],
+      "campus_acreage": {
+        "display": "140 acres",
+        "value": 140
+      },
+      "undergrad_population": {
+        "display": "1,747 undergraduates",
+        "value": 1747
+      },
+      "graduate_population": {
+        "display": "None (Undergraduate only)",
+        "value": 0
+      },
+      "housing_capacity_beds": {
+        "display": "1,520 beds",
+        "value": 1520
+      },
+      "athletic_conference": "SCIAC (NCAA Division III)",
+      "varsity_sports": {
+        "display": "21 varsity teams (Pomona-Pitzer Sagehens)",
+        "value": 21
+      },
+      "student_faculty_ratio": {
+        "display": "8:1",
+        "value": 8
+      }
+    }
+  }
+}
+

@@ -37,16 +37,16 @@ export default function Contact() {
               </div>
               <div className="space-y-1.5 flex-1">
                 <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Email Inquiries</p>
-                <div>
+                <div className="flex flex-col gap-1">
                   <a
                     href="mailto:info@campusarge.com"
-                    className="block font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
+                    className="font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
                   >
                     info@CampusArge.com
                   </a>
                   <a
                     href="mailto:query@campusarge.com"
-                    className="block font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors text-sm text-slate-600 dark:text-slate-300 mt-1"
+                    className="font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
                   >
                     query@campusarge.com
                   </a>

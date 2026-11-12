@@ -61,7 +61,6 @@ export default function Footer() {
             <p className="text-sm text-slate-300 max-w-xs leading-relaxed mb-2">
               CampusArge is an independent platform connecting verified academic institutions and faculty across the globe. Not affiliated with or endorsed by any listed university.
             </p>
-            <p className="text-xs text-gold/80 font-semibold mb-5">Est. 2026</p>
             <div className="flex items-center gap-3">
               {socialIcons.map(({ Icon, href, label }) => (
                 <a

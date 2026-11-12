@@ -222,7 +222,6 @@ export default function InstitutionDetail() {
     { label: 'Student/Faculty Ratio', value: facts.student_faculty_ratio?.display || null },
     { label: 'Cost of Attendance (COA)', value: university.cost_of_attendance ? `$${university.cost_of_attendance.toLocaleString('en-US')} / year` : null },
     { label: 'Anchor Programs', value: facts.anchor_programs && facts.anchor_programs.length > 0 ? facts.anchor_programs.join(', ') : null },
-    { label: 'Logo Links', value: university.logo_url || null }
   ].filter(item => item.value && item.value.trim().length > 0);
 
   return (

@@ -67,3 +67,4 @@ Website के footer में official social media handles live कर दि
 6. **Done!**:
    - आपकी वेबसाइट तुरंत `https://campusarge.com` पर live हो जाएगी।
    - Subpages (`/institutions`, `/compare`, `/about`, `/contact`) के लिए `.htaccess` auto-configured है, जिससे कोई 404 error नहीं आएगा।
+

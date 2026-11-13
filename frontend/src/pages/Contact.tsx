@@ -85,7 +85,7 @@ export default function Contact() {
                     href="mailto:query@campusarge.com"
                     className="font-semibold text-slate-900 dark:text-white hover:text-navy dark:hover:text-gold transition-colors"
                   >
-                    query@campusarge.com
+                    query@CampusArge.com
                   </a>
                 </div>
               </div>

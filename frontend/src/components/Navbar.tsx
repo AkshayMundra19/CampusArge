@@ -39,39 +39,16 @@ export default function Navbar() {
     navigate('/');
   };
 
-  // Pages with dark hero backgrounds — navbar text should be white when transparent
-  const darkHeroPages = [
-    '/institutions/', '/universities/', '/mentors/', '/research-areas/', '/blog/'
-  ];
-  const hasDarkHero = darkHeroPages.some(p => location.pathname.startsWith(p));
-
-  // Use dark text on light hero (home, about, contact etc.)
-  // Use white text on dark hero (detail pages)
-  const isTransparent = !scrolled;
-  const textOnTransparent = hasDarkHero ? 'text-white' : 'text-navy';
-  const linkOnTransparent = hasDarkHero
-    ? 'text-white/90 hover:text-white hover:bg-white/15'
-    : 'text-slate-700 hover:text-navy hover:bg-navy-light/60';
-  const activeLinkOnTransparent = hasDarkHero
-    ? 'text-white bg-white/20 font-semibold'
-    : 'text-navy bg-navy-light font-semibold';
-
-  const logoTextClass = scrolled ? 'text-navy' : textOnTransparent;
   const navLinkClass = (active: boolean) => {
-    if (scrolled) {
-      return active
-        ? 'text-navy bg-navy-light font-semibold'
-        : 'text-slate-600 hover:text-navy hover:bg-navy-light/60';
-    }
-    return active ? activeLinkOnTransparent : linkOnTransparent;
+    return active
+      ? 'text-navy bg-navy-light font-semibold'
+      : 'text-slate-700 hover:text-navy hover:bg-navy-light/60';
   };
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-sm shadow-navy/10 border-b border-slate-200/50'
-          : 'bg-white/80 backdrop-blur-sm'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/60 ${
+        scrolled ? 'shadow-sm shadow-navy/5' : ''
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
@@ -82,7 +59,7 @@ export default function Navbar() {
             <div className="w-9 h-9 rounded-xl bg-white border border-[#D5DCE6] shadow-sm flex items-center justify-center group-hover:scale-105 transition-transform flex-shrink-0">
               <GraduationCap className="w-5 h-5 text-navy" aria-hidden="true" />
             </div>
-            <span className={`font-display font-bold text-lg hidden sm:block transition-colors ${logoTextClass}`}>
+            <span className="font-display font-bold text-lg hidden sm:block transition-colors text-navy">
               Campus<span className="text-gold">Arge</span>
             </span>
           </Link>

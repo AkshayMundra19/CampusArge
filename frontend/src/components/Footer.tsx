@@ -28,10 +28,10 @@ const contactLinks = [
 ];
 
 const socialIcons = [
-  { Icon: Linkedin,  href: "#", label: "LinkedIn" },
-  { Icon: Twitter,   href: "#", label: "Twitter / X" },
-  { Icon: Youtube,   href: "#", label: "YouTube" },
-  { Icon: Instagram, href: "#", label: "Instagram" },
+  { Icon: Linkedin,  href: "https://www.linkedin.com/company/144138973/", label: "LinkedIn" },
+  { Icon: Instagram, href: "https://www.instagram.com/campusarge/", label: "Instagram" },
+  { Icon: Twitter,   href: "https://x.com/campusarge", label: "Twitter / X" },
+  { Icon: Youtube,   href: "https://www.youtube.com/@campusarge", label: "YouTube" },
 ];
 
 const legalLinks = [
@@ -66,6 +66,8 @@ export default function Footer() {
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-slate-300 hover:bg-gold hover:text-navy transition-all"
                 >

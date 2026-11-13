@@ -14,18 +14,17 @@ const fullData = JSON.parse(
 const today = new Date().toISOString().split('T')[0];
 
 const staticRoutes = [
-  { path: '', priority: '1.0', changefreq: 'weekly' },
-  { path: '/institutions', priority: '0.9', changefreq: 'daily' },
-  { path: '/mentors', priority: '0.9', changefreq: 'daily' },
-  { path: '/research-areas', priority: '0.8', changefreq: 'weekly' },
-  { path: '/about', priority: '0.7', changefreq: 'monthly' },
-  { path: '/contact', priority: '0.6', changefreq: 'monthly' },
-  { path: '/verification', priority: '0.6', changefreq: 'monthly' },
-  { path: '/roadmaps', priority: '0.7', changefreq: 'weekly' },
-  { path: '/blog', priority: '0.7', changefreq: 'weekly' },
-  { path: '/privacy', priority: '0.3', changefreq: 'yearly' },
-  { path: '/terms', priority: '0.3', changefreq: 'yearly' },
-  { path: '/accessibility', priority: '0.3', changefreq: 'yearly' }
+  { path: '', priority: '1.0', changefreq: 'daily' },
+  { path: '/institutions', priority: '1.0', changefreq: 'daily' },
+  { path: '/compare', priority: '0.9', changefreq: 'weekly' },
+  { path: '/blog', priority: '0.8', changefreq: 'weekly' },
+  { path: '/about', priority: '0.8', changefreq: 'monthly' },
+  { path: '/contact', priority: '0.8', changefreq: 'monthly' },
+  { path: '/privacy', priority: '0.4', changefreq: 'yearly' },
+  { path: '/terms', priority: '0.4', changefreq: 'yearly' },
+  { path: '/business-policy', priority: '0.4', changefreq: 'yearly' },
+  { path: '/disclaimer', priority: '0.4', changefreq: 'yearly' },
+  { path: '/accessibility', priority: '0.4', changefreq: 'yearly' }
 ];
 
 let xml = `<?xml version="1.0" encoding="UTF-8"?>

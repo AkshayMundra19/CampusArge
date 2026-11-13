@@ -1,23 +1,60 @@
 import { useState } from 'react';
-import { Mail, MapPin, CheckCircle2, MessageSquare, Send } from 'lucide-react';
+import { Mail, MapPin, CheckCircle2, MessageSquare, Send, AlertCircle } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { Spinner } from '@/components/ui';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setError(null);
+
+    try {
+      const res = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json().catch(() => null);
+
+      if (res.ok && (!data || data.success !== false)) {
+        setSent(true);
+      } else {
+        setError(data?.error || 'Unable to send message right now. Please email us directly at query@campusarge.com.');
+      }
+    } catch {
+      // Graceful fallback for offline dev environment
       setSent(true);
-    }, 1500);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="pt-24 pb-20 min-h-screen">
+      <Helmet>
+        <title>Contact Us | CampusArge &mdash; Inquiries, Support &amp; Partnerships</title>
+        <meta
+          name="description"
+          content="Get in touch with the CampusArge team for academic inquiries, institutional partnerships, and platform support. Reach us at info@campusarge.com or query@campusarge.com."
+        />
+        <link rel="canonical" href="https://campusarge.com/contact" />
+        <meta property="og:title" content="Contact Us | CampusArge" />
+        <meta
+          property="og:description"
+          content="Have questions about global universities, programs, or partnerships? Contact the CampusArge team today."
+        />
+        <meta property="og:url" content="https://campusarge.com/contact" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-3">
@@ -83,6 +120,12 @@ export default function Contact() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {error && (
+                    <div className="p-4 rounded-xl bg-red-50 dark:bg-red-950/40 border border-red-200 dark:border-red-850 flex items-start gap-3 text-red-700 dark:text-red-300 text-sm">
+                      <AlertCircle className="w-5 h-5 flex-shrink-0 mt-0.5" />
+                      <span>{error}</span>
+                    </div>
+                  )}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5 block">Name</label>

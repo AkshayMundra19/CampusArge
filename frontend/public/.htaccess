@@ -1,15 +1,62 @@
+# =======================================================================
+# CampusArge - Hostinger Apache / LiteSpeed Configuration
+# Optimized for React SPA Routing, Security & Performance
+# =======================================================================
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
 
-    # Leave the /api/ folder alone (do not route these to index.html)
+    # Enforce HTTPS (Recommended for Hostinger)
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} ^(www\.)?campusarge\.com$ [NC]
+    RewriteRule ^ https://campusarge.com%{REQUEST_URI} [L,R=301]
+
+    # Exclude backend /api/ folder from React SPA rewriting
     RewriteCond %{REQUEST_URI} ^/api/ [NC]
     RewriteRule ^ - [L]
 
-    # If the requested file or directory exists, serve it directly
+    # Serve existing files, directories, and assets directly
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
 
-    # Otherwise, fallback to the SPA index.html
-    RewriteRule . /index.html [L]
+    # Route all other URLs to SPA index.html
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# ── Security Headers ──────────────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ── Browser Caching for Fast Performance ──────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # HTML: Do not cache aggressively so new builds update immediately
+    ExpiresByType text/html "access plus 0 seconds"
+
+    # Static CSS and JavaScript (cache-busted via Vite hash)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+
+    # Images, Fonts and Icons
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+</IfModule>
+
+# ── GZIP / Brotli Compression ─────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>

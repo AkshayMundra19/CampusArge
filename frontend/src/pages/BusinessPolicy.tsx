@@ -1,54 +1,117 @@
-import { Briefcase } from 'lucide-react';
+import { Briefcase, Award, ShieldCheck, CheckSquare, RefreshCw, Mail } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 export default function BusinessPolicy() {
   return (
-    <div className="pt-24 pb-20 min-h-screen">
+    <div className="pt-28 pb-24 min-h-screen bg-slate-50/50 dark:bg-slate-950">
       <Helmet>
-        <title>Business & Editorial Policy | CampusArge</title>
+        <title>Business & Editorial Policy | Zero Sponsored Rankings – CampusArge</title>
         <meta
           name="description"
-          content="Learn about CampusArge's independent business model, institutional listing policies, and non-sponsored editorial integrity standards."
+          content="Learn about CampusArge's Business Policy, editorial independence, zero-sponsored ranking ethics, and institutional data verification standards."
         />
-        <meta name="keywords" content="business policy, editorial independence, university listing policy, CampusArge standards" />
+        <meta
+          name="keywords"
+          content="CampusArge business policy, editorial integrity higher ed, zero sponsored ranking, university listing standards, college comparison ethics"
+        />
         <link rel="canonical" href="https://campusarge.com/business-policy" />
       </Helmet>
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-12">
-          <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center mx-auto mb-4">
-            <Briefcase className="w-6 h-6 text-white" />
+          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-navy to-navy-dark border border-gold/20 flex items-center justify-center mx-auto mb-4 shadow-md">
+            <Briefcase className="w-7 h-7 text-gold" />
           </div>
           <h1 className="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-3">
-            Business Policy
+            Business & Editorial Policy
           </h1>
-          <p className="text-slate-600 dark:text-slate-400">Last updated: August 2026</p>
+          <p className="text-slate-500 dark:text-slate-400 text-sm">
+            Ethical Governance &bull; Academic Independence &bull; Non-Biased Higher Education Directory
+          </p>
         </div>
-        <div className="glass-card rounded-3xl p-8 sm:p-12 space-y-8 text-slate-700 dark:text-slate-300">
-          <section>
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">1. Platform Role, Connector and Not an Employer</h3>
-            <p className="leading-relaxed">CampusArge operates solely as a technology platform that connects academic institutions with independently verified faculty members from accredited universities. CampusArge is not an employer, staffing agency, or contractor of any faculty member. All faculty members operate independently, and any collaboration formed through the platform is between the institution and the faculty member directly. CampusArge does not supervise, direct, or control the content of individual partnerships.</p>
-          </section>
-          <section>
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">2. Faculty and Institution Verification Standard</h3>
-            <p className="leading-relaxed">Institutions and faculty members who apply for a Verified badge must provide accurate documentation of their current credentials. Our admin team manually reviews submitted credentials before approving the badge. CampusArge reserves the right to revoke verification and suspend accounts if credentials are found to be inaccurate or misrepresented.</p>
-          </section>
-          <section>
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">3. Interaction and Booking Conduct</h3>
-            <p className="leading-relaxed mb-3">All participants agree to the following conduct standards when connecting through the platform:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
-              <li>Interactions are strictly for professional academic collaboration, research, and institutional partnerships.</li>
-              <li>Both parties must treat each other with respect. Harassment, discrimination, or inappropriate conduct of any kind will result in immediate account suspension.</li>
-              <li>Users must provide accurate context for their connection requests and not misrepresent their academic or institutional status.</li>
+
+        {/* Content Container */}
+        <div className="glass-card rounded-3xl p-8 sm:p-12 space-y-10 text-slate-700 dark:text-slate-300 shadow-sm border border-slate-200/80 dark:border-slate-800">
+          
+          <div className="p-4 rounded-2xl bg-emerald-50/60 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/50 text-sm text-slate-800 dark:text-slate-200 leading-relaxed">
+            <strong>Core Principle:</strong> CampusArge exists to serve students, academic researchers, and universities with total objectivity. We adhere strictly to a non-pay-to-play model: no university can purchase higher ranks, manipulate comparison indicators, or alter algorithmic objectivity.
+          </div>
+
+          <section className="space-y-3">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <Award className="w-5 h-5 text-gold" />
+              1. Editorial Independence and Zero Sponsored Rankings
+            </h2>
+            <p className="leading-relaxed">
+              Every college and university represented in our directory is listed based on verified institutional accreditation, documented degree offerings, and transparent cost data. Unlike conventional commercial lead-generation portals:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-sm">
+              <li>We <strong>do not sell ranking spots</strong> or prioritize institutions in search queries based on financial sponsorship.</li>
+              <li>Filter parameters (such as tuition affordability, state location, and faculty ratio) sort exclusively on factual database values.</li>
+              <li>Institutional profiles do not feature misleading third-party ads that divert prospective students away from legitimate admissions information.</li>
             </ul>
           </section>
-          <section>
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">4. Dispute Resolution</h3>
-            <p className="leading-relaxed">In the event of a dispute between an institution and a faculty member, either party may contact our support team at support@CampusArge.com. We will investigate reported incidents within 5 business days and take appropriate action, which may include mediation, warning issuance, or account suspension. CampusArge's decision in dispute matters is final.</p>
+
+          <section className="space-y-3">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <ShieldCheck className="w-5 h-5 text-gold" />
+              2. Verification Standards and Public Data Integrity
+            </h2>
+            <p className="leading-relaxed">
+              Institutions designated as "Verified" on CampusArge have undergone multi-point verification against authoritative regional and national accrediting bodies recognized by the U.S. Department of Education and the Council for Higher Education Accreditation (CHEA). Our review covers:
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4 text-sm mt-3">
+              <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Accreditation Legitimacy</h3>
+                <p>Confirming valid institutional standing with regional agencies (e.g., HLC, SACSCOC, NECHE, MSCHE, NWCCU, WSCUC).</p>
+              </div>
+              <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Fee Transparency</h3>
+                <p>Auditing annual cost of attendance, in-state vs. out-of-state tuition, and published academic fee schedules.</p>
+              </div>
+              <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Faculty-Student Ratio</h3>
+                <p>Cross-checking reported instructional staff numbers with official IPEDS graduation and enrollment data.</p>
+              </div>
+              <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/60 dark:border-slate-800">
+                <h3 className="font-semibold text-slate-900 dark:text-white mb-1">Program Accuracy</h3>
+                <p>Ensuring undergraduate and graduate program majors accurately reflect current university catalog offerings.</p>
+              </div>
+            </div>
           </section>
-          <section>
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-3">5. Changes to This Policy</h3>
-            <p className="leading-relaxed">We reserve the right to update this Business Policy at any time. Registered users will be notified of material changes via email. Continued use of the platform after any change constitutes acceptance of the updated policy.</p>
+
+          <section className="space-y-3">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <CheckSquare className="w-5 h-5 text-gold" />
+              3. Partnership and Institutional Participation
+            </h2>
+            <p className="leading-relaxed">
+              Universities and academic leadership may claim their verified profile to update published program details, notify our editors of tuition adjustments, or contribute verified research spotlights. Claiming an institutional profile requires official organizational email validation (e.g., <code>@institution.edu</code>) and does not permit the suppression of factual public data.
+            </p>
           </section>
+
+          <section className="space-y-3">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <RefreshCw className="w-5 h-5 text-gold" />
+              4. Data Correction and Dispute Policy
+            </h2>
+            <p className="leading-relaxed">
+              If an institution or researcher discovers outdated tuition rates, revised accreditation status, or modified contact channels, our editorial team commits to reviewing correction submissions within 48 to 72 business hours upon verification of the primary source.
+            </p>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <Mail className="w-5 h-5 text-gold" />
+              5. Editorial Office Contact
+            </h2>
+            <p className="leading-relaxed">
+              For editorial inquiries, listing validation, or data correction submissions, contact our Academic Editorial Desk at <a href="mailto:info@campusarge.com" className="text-navy dark:text-gold font-semibold underline">info@campusarge.com</a> or via our <Link to="/contact" className="text-navy dark:text-gold font-semibold underline">Contact page</Link>.
+            </p>
+          </section>
+
         </div>
       </div>
     </div>

@@ -4,10 +4,8 @@ import { GraduationCap, Linkedin, Twitter, Youtube, Instagram, Facebook } from "
 const footerLinks = {
   Platform: [
     { label: "Institutions", path: "/institutions" },
-    // { label: "Faculty Directory", path: "/mentors" },
-    // { label: "Research Areas", path: "/research-areas" },
+    { label: "Compare Universities", path: "/compare" },
     { label: "About Us", path: "/about" },
-    { label: "Pricing", path: "/contact" },
   ],
   Resources: [
     { label: "Blog", path: "/blog" },
@@ -18,7 +16,7 @@ const footerLinks = {
   ],
   "For Institutions": [
     { label: "Institutional Benefits", path: "/about" },
-    { label: "Contact Sales", path: "/contact" },
+    { label: "Verification Process", path: "/verification-process" },
   ],
 };
 

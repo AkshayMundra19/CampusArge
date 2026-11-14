@@ -49,9 +49,9 @@ export default function HeroSection() {
           {/* Left: Text & Actions */}
           <div className="lg:col-span-7 max-w-2xl">
             {/* Trust badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 mb-6 sm:mb-8 animate-fade-in">
-              <ShieldCheck className="w-4 h-4 text-green-600 dark:text-green-400" aria-hidden="true" />
-              <span className="text-sm font-semibold text-green-700 dark:text-green-300">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FBF6EC] border border-[#EADFC8] text-navy text-sm font-medium mb-6 sm:mb-8 animate-fade-in">
+              <Building2 className="w-4 h-4 text-gold" aria-hidden="true" />
+              <span className="text-sm font-semibold text-navy">
                 Verified & Accredited Universities
               </span>
             </div>

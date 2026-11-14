@@ -42,10 +42,19 @@ for (const route of staticRoutes) {
 `;
 }
 
-// Institution pages (u_1 ... u_426)
+function getSlug(name) {
+  return name
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+}
+
+// Institution pages (clean permalinks e.g. /adler-university)
 for (const uni of fullData) {
+  const slug = uni.slug || getSlug(uni.name);
   xml += `  <url>
-    <loc>https://campusarge.com/institutions/${uni.id}</loc>
+    <loc>https://campusarge.com/${slug}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

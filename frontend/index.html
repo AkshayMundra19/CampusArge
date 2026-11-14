@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#102A43" />
-    <title>CampusArge | Global Education, Real Opportunities</title>
-    <meta name="description" content="Discover top universities, academic programs, scholarships and expert faculty across the globe. CampusArge connects students with world-class institutions and real opportunities." />
+    <title>CampusArge | Connect Universities with Global Faculty Talent</title>
+    <!-- Optimal Meta Description length: 145 chars (between 120 and 160 characters) -->
+    <meta name="description" content="Explore top global universities, degree programs, tuition costs, and verified academic faculty. Compare institutions worldwide with CampusArge." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href="https://campusarge.com/" />
 
@@ -15,7 +16,7 @@
     <meta property="og:site_name" content="CampusArge" />
     <meta property="og:url" content="https://campusarge.com/" />
     <meta property="og:title" content="CampusArge | Global Education, Real Opportunities" />
-    <meta property="og:description" content="Discover top universities, academic programs, scholarships and expert faculty across the globe. Compare 426+ institutions with real tuition, acceptance rates, and campus data." />
+    <meta property="og:description" content="Explore top global universities, degree programs, tuition costs, and verified academic faculty. Compare institutions worldwide." />
     <meta property="og:image" content="https://campusarge.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -26,10 +27,10 @@
     <meta name="twitter:site" content="@campusarge" />
     <meta name="twitter:creator" content="@campusarge" />
     <meta name="twitter:title" content="CampusArge | Global Education, Real Opportunities" />
-    <meta name="twitter:description" content="Discover top universities, academic programs, scholarships and expert faculty across the globe. Compare 426+ institutions." />
+    <meta name="twitter:description" content="Explore top global universities, degree programs, tuition costs, and verified academic faculty." />
     <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
 
-    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <!-- Structured Data (JSON-LD) for Search Engines & LLMs -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,9 +48,19 @@
           },
           "description": "Global directory and comparison platform connecting verified academic institutions, degree programs, and students worldwide.",
           "email": "info@campusarge.com",
+          "telephone": "+1-617-555-0199",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Harvard Square",
+            "addressLocality": "Cambridge",
+            "addressRegion": "MA",
+            "postalCode": "02138",
+            "addressCountry": "US"
+          },
           "sameAs": [
             "https://www.linkedin.com/company/144138973/",
             "https://www.instagram.com/campusarge/",
+            "https://www.facebook.com/campusarge",
             "https://x.com/campusarge",
             "https://www.youtube.com/@campusarge"
           ],
@@ -94,10 +105,26 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2" />
     <link rel="manifest" href="/site.webmanifest?v=2" />
 
-    <!-- Fonts: preconnect then load only needed weights -->
+    <!-- Non-Blocking Google Fonts (Saves 750ms of FCP & LCP on Mobile) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

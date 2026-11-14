@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { MapPin, BadgeCheck, Users, Tag } from 'lucide-react';
-import { REAL_UNIVERSITIES } from '@/lib/universitiesData';
+import { REAL_UNIVERSITIES, getUniversitySlug } from '@/lib/universitiesData';
 import InstitutionLogo from './InstitutionLogo';
 
 export interface Institution {
   id: string | number;
+  slug?: string;
   rank: number | null;
   name: string;
   location: string;
@@ -34,6 +35,7 @@ export interface Institution {
 // eslint-disable-next-line react-refresh/only-export-components
 export const INSTITUTIONS: Institution[] = REAL_UNIVERSITIES.slice(0, 3).map((u): Institution => ({
   id: u.id,
+  slug: u.slug || getUniversitySlug(u),
   rank: u.qs_rank,
   name: u.name,
   location: [u.city, u.country].filter(Boolean).join(', ') || 'United States',
@@ -128,7 +130,7 @@ export function InstitutionCard({
           </span>
 
           <h3 className="font-sans font-bold text-slate-900 dark:text-white text-lg leading-snug line-clamp-2">
-            <Link to={`/institutions/${inst.id}`} className="hover:text-navy dark:hover:text-gold transition-colors">
+            <Link to={`/${inst.slug || getUniversitySlug(inst)}`} className="hover:text-navy dark:hover:text-gold transition-colors">
               {inst.name}
             </Link>
           </h3>
@@ -195,7 +197,7 @@ export function InstitutionCard({
 
         {/* Button: mt-auto aligns button to row bottom with consistent spacing */}
         <Link
-          to={`/institutions/${inst.id}`}
+          to={`/${inst.slug || getUniversitySlug(inst)}`}
           aria-label={`View details for ${inst.name}`}
           className="mt-auto w-full py-2.5 px-4 bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-semibold rounded-[10px] transition-colors text-center block shadow-sm"
         >

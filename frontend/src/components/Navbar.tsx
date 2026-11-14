@@ -47,12 +47,12 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/60 ${
+      className={`fixed top-0 left-0 right-0 w-full max-w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-200/60 ${
         scrolled ? 'shadow-sm shadow-navy/5' : ''
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-        <div className="flex items-center justify-between h-16">
+      <nav className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+        <div className="flex items-center justify-between h-16 w-full">
 
           {/* Logo — light tile with navy icon and gold text */}
           <Link to="/" className="flex items-center gap-2 group" aria-label="CampusArge home">
@@ -140,7 +140,7 @@ export default function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-lg text-navy hover:bg-navy-light transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
+              className="lg:hidden p-2 rounded-lg text-navy hover:bg-navy-light transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center flex-shrink-0"
               aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileOpen}
             >

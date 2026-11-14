@@ -3,6 +3,7 @@ import type { University } from '@/types';
 export const REAL_UNIVERSITIES: University[] = [
   {
     "id": "u_1",
+    "slug": "massachusetts-institute-of-technology-mit",
     "name": "Massachusetts Institute of Technology (MIT)",
     "country": "United States",
     "country_code": "US",
@@ -96,6 +97,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_2",
+    "slug": "harvard-university",
     "name": "Harvard University",
     "country": "United States",
     "country_code": "US",
@@ -195,6 +197,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_3",
+    "slug": "stanford-university",
     "name": "Stanford University",
     "country": "United States",
     "country_code": "US",
@@ -289,6 +292,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_4",
+    "slug": "columbia-university",
     "name": "Columbia University",
     "country": "United States",
     "country_code": "US",
@@ -387,6 +391,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_5",
+    "slug": "princeton-university",
     "name": "Princeton University",
     "country": "United States",
     "country_code": "US",
@@ -478,6 +483,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_6",
+    "slug": "cornell-university",
     "name": "Cornell University",
     "country": "United States",
     "country_code": "US",
@@ -577,6 +583,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_7",
+    "slug": "yale-university",
     "name": "Yale University",
     "country": "United States",
     "country_code": "US",
@@ -677,6 +684,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_8",
+    "slug": "university-of-chicago",
     "name": "University of Chicago",
     "country": "United States",
     "country_code": "US",
@@ -775,6 +783,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_9",
+    "slug": "johns-hopkins-university",
     "name": "Johns Hopkins University",
     "country": "United States",
     "country_code": "US",
@@ -871,6 +880,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_10",
+    "slug": "university-of-california-berkeley",
     "name": "University of California, Berkeley",
     "country": "United States",
     "country_code": "US",
@@ -936,6 +946,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_11",
+    "slug": "university-of-pennsylvania",
     "name": "University of Pennsylvania",
     "country": "United States",
     "country_code": "US",
@@ -1001,6 +1012,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_12",
+    "slug": "northwestern-university",
     "name": "Northwestern University",
     "country": "United States",
     "country_code": "US",
@@ -1097,6 +1109,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_13",
+    "slug": "duke-university",
     "name": "Duke University",
     "country": "United States",
     "country_code": "US",
@@ -1193,6 +1206,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_14",
+    "slug": "university-of-michigan-ann-arbor",
     "name": "University of Michigan–Ann Arbor",
     "country": "United States",
     "country_code": "US",
@@ -1261,6 +1275,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_15",
+    "slug": "brown-university",
     "name": "Brown University",
     "country": "United States",
     "country_code": "US",
@@ -1355,6 +1370,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_16",
+    "slug": "new-york-university-nyu",
     "name": "New York University (NYU)",
     "country": "United States",
     "country_code": "US",
@@ -1452,6 +1468,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_17",
+    "slug": "rice-university",
     "name": "Rice University",
     "country": "United States",
     "country_code": "US",
@@ -1546,6 +1563,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_18",
+    "slug": "university-of-california-los-angeles-ucla",
     "name": "University of California, Los Angeles (UCLA)",
     "country": "United States",
     "country_code": "US",
@@ -1610,6 +1628,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_19",
+    "slug": "boston-university",
     "name": "Boston University",
     "country": "United States",
     "country_code": "US",
@@ -1708,6 +1727,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_20",
+    "slug": "georgetown-university",
     "name": "Georgetown University",
     "country": "United States",
     "country_code": "US",
@@ -1803,6 +1823,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_21",
+    "slug": "washington-university-in-st-louis-washu",
     "name": "Washington University in St. Louis (WashU)",
     "country": "United States",
     "country_code": "US",
@@ -1864,6 +1885,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_22",
+    "slug": "tufts-university",
     "name": "Tufts University",
     "country": "United States",
     "country_code": "US",
@@ -1958,6 +1980,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_23",
+    "slug": "university-of-rochester",
     "name": "University of Rochester",
     "country": "United States",
     "country_code": "US",
@@ -2051,6 +2074,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_24",
+    "slug": "california-institute-of-technology-caltech",
     "name": "California Institute of Technology (Caltech)",
     "country": "United States",
     "country_code": "US",
@@ -2110,6 +2134,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_25",
+    "slug": "george-washington-university",
     "name": "George Washington University",
     "country": "United States",
     "country_code": "US",
@@ -2206,6 +2231,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_26",
+    "slug": "vanderbilt-university",
     "name": "Vanderbilt University",
     "country": "United States",
     "country_code": "US",
@@ -2302,6 +2328,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_27",
+    "slug": "emory-university",
     "name": "Emory University",
     "country": "United States",
     "country_code": "US",
@@ -2397,6 +2424,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_28",
+    "slug": "university-of-notre-dame",
     "name": "University of Notre Dame",
     "country": "United States",
     "country_code": "US",
@@ -2491,6 +2519,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_29",
+    "slug": "dartmouth-college",
     "name": "Dartmouth College",
     "country": "United States",
     "country_code": "US",
@@ -2583,6 +2612,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_30",
+    "slug": "northeastern-university",
     "name": "Northeastern University",
     "country": "United States",
     "country_code": "US",
@@ -2678,6 +2708,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_31",
+    "slug": "boston-college",
     "name": "Boston College",
     "country": "United States",
     "country_code": "US",
@@ -2772,6 +2803,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_32",
+    "slug": "case-western-reserve-university",
     "name": "Case Western Reserve University",
     "country": "United States",
     "country_code": "US",
@@ -2867,6 +2899,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_33",
+    "slug": "rensselaer-polytechnic-institute-rpi",
     "name": "Rensselaer Polytechnic Institute (RPI)",
     "country": "United States",
     "country_code": "US",
@@ -2926,6 +2959,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_34",
+    "slug": "tulane-university",
     "name": "Tulane University",
     "country": "United States",
     "country_code": "US",
@@ -3021,6 +3055,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_35",
+    "slug": "brandeis-university",
     "name": "Brandeis University",
     "country": "United States",
     "country_code": "US",
@@ -3112,6 +3147,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_36",
+    "slug": "swarthmore-college",
     "name": "Swarthmore College",
     "country": "United States",
     "country_code": "US",
@@ -3198,6 +3234,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_37",
+    "slug": "wake-forest-university",
     "name": "Wake Forest University",
     "country": "United States",
     "country_code": "US",
@@ -3290,6 +3327,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_38",
+    "slug": "university-of-richmond",
     "name": "University of Richmond",
     "country": "United States",
     "country_code": "US",
@@ -3381,6 +3419,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_39",
+    "slug": "lehigh-university",
     "name": "Lehigh University",
     "country": "United States",
     "country_code": "US",
@@ -3472,6 +3511,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_40",
+    "slug": "middlebury-college",
     "name": "Middlebury College",
     "country": "United States",
     "country_code": "US",
@@ -3559,6 +3599,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_41",
+    "slug": "williams-college",
     "name": "Williams College",
     "country": "United States",
     "country_code": "US",
@@ -3645,6 +3686,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_42",
+    "slug": "smith-college",
     "name": "Smith College",
     "country": "United States",
     "country_code": "US",
@@ -3732,6 +3774,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_43",
+    "slug": "villanova-university",
     "name": "Villanova University",
     "country": "United States",
     "country_code": "US",
@@ -3823,6 +3866,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_44",
+    "slug": "wesleyan-university",
     "name": "Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -3914,6 +3958,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_45",
+    "slug": "carleton-college",
     "name": "Carleton College",
     "country": "United States",
     "country_code": "US",
@@ -3999,6 +4044,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_46",
+    "slug": "vassar-college",
     "name": "Vassar College",
     "country": "United States",
     "country_code": "US",
@@ -4084,6 +4130,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_47",
+    "slug": "amherst-college",
     "name": "Amherst College",
     "country": "United States",
     "country_code": "US",
@@ -4168,6 +4215,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_48",
+    "slug": "wellesley-college",
     "name": "Wellesley College",
     "country": "United States",
     "country_code": "US",
@@ -4254,6 +4302,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_49",
+    "slug": "colby-college",
     "name": "Colby College",
     "country": "United States",
     "country_code": "US",
@@ -4343,6 +4392,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_50",
+    "slug": "bowdoin-college",
     "name": "Bowdoin College",
     "country": "United States",
     "country_code": "US",
@@ -4432,6 +4482,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_51",
+    "slug": "washington-and-lee-university",
     "name": "Washington and Lee University",
     "country": "United States",
     "country_code": "US",
@@ -4521,6 +4572,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_52",
+    "slug": "harvey-mudd-college",
     "name": "Harvey Mudd College",
     "country": "United States",
     "country_code": "US",
@@ -4614,6 +4666,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_53",
+    "slug": "davidson-college",
     "name": "Davidson College",
     "country": "United States",
     "country_code": "US",
@@ -4702,6 +4755,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_54",
+    "slug": "pomona-college",
     "name": "Pomona College",
     "country": "United States",
     "country_code": "US",
@@ -4791,6 +4845,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_55",
+    "slug": "barnard-college",
     "name": "Barnard College",
     "country": "United States",
     "country_code": "US",
@@ -4881,6 +4936,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_56",
+    "slug": "hamilton-college",
     "name": "Hamilton College",
     "country": "United States",
     "country_code": "US",
@@ -4970,6 +5026,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_57",
+    "slug": "colgate-university",
     "name": "Colgate University",
     "country": "United States",
     "country_code": "US",
@@ -5059,6 +5116,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_58",
+    "slug": "wheaton-college-massachusetts",
     "name": "Wheaton College (Massachusetts)",
     "country": "United States",
     "country_code": "US",
@@ -5148,6 +5206,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_59",
+    "slug": "savannah-college-of-art-and-design-scad",
     "name": "Savannah College of Art and Design (SCAD)",
     "country": "United States",
     "country_code": "US",
@@ -5213,6 +5272,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_60",
+    "slug": "saint-josephs-university",
     "name": "Saint Joseph's University",
     "country": "United States",
     "country_code": "US",
@@ -5306,6 +5366,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_61",
+    "slug": "the-university-of-tulsa",
     "name": "The University of Tulsa",
     "country": "United States",
     "country_code": "US",
@@ -5398,6 +5459,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_62",
+    "slug": "grinnell-college",
     "name": "Grinnell College",
     "country": "United States",
     "country_code": "US",
@@ -5487,6 +5549,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_63",
+    "slug": "bates-college",
     "name": "Bates College",
     "country": "United States",
     "country_code": "US",
@@ -5576,6 +5639,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_64",
+    "slug": "gonzaga-university",
     "name": "Gonzaga University",
     "country": "United States",
     "country_code": "US",
@@ -5669,6 +5733,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_65",
+    "slug": "rhode-island-school-of-design-risd",
     "name": "Rhode Island School of Design (RISD)",
     "country": "United States",
     "country_code": "US",
@@ -5732,6 +5797,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_66",
+    "slug": "haverford-college",
     "name": "Haverford College",
     "country": "United States",
     "country_code": "US",
@@ -5822,6 +5888,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_67",
+    "slug": "trinity-university",
     "name": "Trinity University",
     "country": "United States",
     "country_code": "US",
@@ -5915,6 +5982,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_68",
+    "slug": "college-of-the-holy-cross",
     "name": "College of the Holy Cross",
     "country": "United States",
     "country_code": "US",
@@ -6004,6 +6072,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_69",
+    "slug": "bentley-university",
     "name": "Bentley University",
     "country": "United States",
     "country_code": "US",
@@ -6094,6 +6163,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_70",
+    "slug": "colorado-college",
     "name": "Colorado College",
     "country": "United States",
     "country_code": "US",
@@ -6184,6 +6254,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_71",
+    "slug": "pratt-institute",
     "name": "Pratt Institute",
     "country": "United States",
     "country_code": "US",
@@ -6276,6 +6347,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_72",
+    "slug": "macalester-college",
     "name": "Macalester College",
     "country": "United States",
     "country_code": "US",
@@ -6365,6 +6437,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_73",
+    "slug": "butler-university",
     "name": "Butler University",
     "country": "United States",
     "country_code": "US",
@@ -6459,6 +6532,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_74",
+    "slug": "connecticut-college",
     "name": "Connecticut College",
     "country": "United States",
     "country_code": "US",
@@ -6548,6 +6622,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_75",
+    "slug": "loyola-university-maryland",
     "name": "Loyola University Maryland",
     "country": "United States",
     "country_code": "US",
@@ -6639,6 +6714,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_76",
+    "slug": "depauw-university",
     "name": "DePauw University",
     "country": "United States",
     "country_code": "US",
@@ -6731,6 +6807,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_77",
+    "slug": "the-juilliard-school",
     "name": "The Juilliard School",
     "country": "United States",
     "country_code": "US",
@@ -6821,6 +6898,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_78",
+    "slug": "whitman-college",
     "name": "Whitman College",
     "country": "United States",
     "country_code": "US",
@@ -6910,6 +6988,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_79",
+    "slug": "franklin-and-marshall-college",
     "name": "Franklin and Marshall College",
     "country": "United States",
     "country_code": "US",
@@ -6999,6 +7078,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_80",
+    "slug": "rose-hulman-institute-of-technology",
     "name": "Rose-Hulman Institute of Technology",
     "country": "United States",
     "country_code": "US",
@@ -7091,6 +7171,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_81",
+    "slug": "hobart-and-william-smith-colleges",
     "name": "Hobart and William Smith Colleges",
     "country": "United States",
     "country_code": "US",
@@ -7180,6 +7261,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_82",
+    "slug": "belmont-university",
     "name": "Belmont University",
     "country": "United States",
     "country_code": "US",
@@ -7275,6 +7357,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_83",
+    "slug": "pitzer-college",
     "name": "Pitzer College",
     "country": "United States",
     "country_code": "US",
@@ -7365,6 +7448,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_84",
+    "slug": "fairfield-university",
     "name": "Fairfield University",
     "country": "United States",
     "country_code": "US",
@@ -7457,6 +7541,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_85",
+    "slug": "lafayette-college",
     "name": "Lafayette College",
     "country": "United States",
     "country_code": "US",
@@ -7546,6 +7631,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_86",
+    "slug": "california-institute-of-the-arts-calarts",
     "name": "California Institute of the Arts (CalArts)",
     "country": "United States",
     "country_code": "US",
@@ -7607,6 +7693,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_87",
+    "slug": "university-of-new-england",
     "name": "University of New England",
     "country": "United States",
     "country_code": "US",
@@ -7700,6 +7787,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_88",
+    "slug": "morehouse-college",
     "name": "Morehouse College",
     "country": "United States",
     "country_code": "US",
@@ -7790,6 +7878,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_89",
+    "slug": "denison-university",
     "name": "Denison University",
     "country": "United States",
     "country_code": "US",
@@ -7880,6 +7969,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_90",
+    "slug": "sewanee-the-university-of-the-south",
     "name": "Sewanee: The University of the South",
     "country": "United States",
     "country_code": "US",
@@ -7970,6 +8060,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_91",
+    "slug": "school-of-the-art-institute-of-chicago-saic",
     "name": "School of the Art Institute of Chicago (SAIC)",
     "country": "United States",
     "country_code": "US",
@@ -8030,6 +8121,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_92",
+    "slug": "claremont-mckenna-college",
     "name": "Claremont McKenna College",
     "country": "United States",
     "country_code": "US",
@@ -8119,6 +8211,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_93",
+    "slug": "university-of-puget-sound",
     "name": "University of Puget Sound",
     "country": "United States",
     "country_code": "US",
@@ -8209,6 +8302,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_94",
+    "slug": "illinois-wesleyan-university",
     "name": "Illinois Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -8301,6 +8395,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_95",
+    "slug": "the-cooper-union-for-the-advancement-of-science-and-art",
     "name": "The Cooper Union for the Advancement of Science and Art",
     "country": "United States",
     "country_code": "US",
@@ -8391,6 +8486,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_96",
+    "slug": "artcenter-college-of-design",
     "name": "ArtCenter College of Design",
     "country": "United States",
     "country_code": "US",
@@ -8487,6 +8583,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_97",
+    "slug": "providence-college",
     "name": "Providence College",
     "country": "United States",
     "country_code": "US",
@@ -8579,6 +8676,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_98",
+    "slug": "spelman-college",
     "name": "Spelman College",
     "country": "United States",
     "country_code": "US",
@@ -8669,6 +8767,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_99",
+    "slug": "berea-college",
     "name": "Berea College",
     "country": "United States",
     "country_code": "US",
@@ -8759,6 +8858,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_100",
+    "slug": "texas-a-m-university-commerce",
     "name": "Texas A&M University-Commerce",
     "country": "United States",
     "country_code": "US",
@@ -8852,6 +8952,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_101",
+    "slug": "agnes-scott-college",
     "name": "Agnes Scott College",
     "country": "United States",
     "country_code": "US",
@@ -8940,6 +9041,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_102",
+    "slug": "goucher-college",
     "name": "Goucher College",
     "country": "United States",
     "country_code": "US",
@@ -9030,6 +9132,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_103",
+    "slug": "rhodes-college",
     "name": "Rhodes College",
     "country": "United States",
     "country_code": "US",
@@ -9120,6 +9223,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_104",
+    "slug": "bellarmine-university",
     "name": "Bellarmine University",
     "country": "United States",
     "country_code": "US",
@@ -9212,6 +9316,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_105",
+    "slug": "saint-anselm-college",
     "name": "Saint Anselm College",
     "country": "United States",
     "country_code": "US",
@@ -9302,6 +9407,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_106",
+    "slug": "campbell-university",
     "name": "Campbell University",
     "country": "United States",
     "country_code": "US",
@@ -9397,6 +9503,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_107",
+    "slug": "university-of-portland",
     "name": "University of Portland",
     "country": "United States",
     "country_code": "US",
@@ -9489,6 +9596,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_108",
+    "slug": "ohio-wesleyan-university",
     "name": "Ohio Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -9577,6 +9685,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_109",
+    "slug": "california-college-of-the-arts-cca",
     "name": "California College of the Arts (CCA)",
     "country": "United States",
     "country_code": "US",
@@ -9639,6 +9748,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_110",
+    "slug": "george-fox-university",
     "name": "George Fox University",
     "country": "United States",
     "country_code": "US",
@@ -9732,6 +9842,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_111",
+    "slug": "the-university-of-tampa",
     "name": "The University of Tampa",
     "country": "United States",
     "country_code": "US",
@@ -9823,6 +9934,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_112",
+    "slug": "indiana-wesleyan-university",
     "name": "Indiana Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -9916,6 +10028,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_113",
+    "slug": "roger-williams-university",
     "name": "Roger Williams University",
     "country": "United States",
     "country_code": "US",
@@ -10009,6 +10122,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_114",
+    "slug": "north-central-college",
     "name": "North Central College",
     "country": "United States",
     "country_code": "US",
@@ -10084,6 +10198,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_115",
+    "slug": "milwaukee-school-of-engineering-msoe",
     "name": "Milwaukee School of Engineering (MSOE)",
     "country": "United States",
     "country_code": "US",
@@ -10141,6 +10256,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_116",
+    "slug": "st-bonaventure-university",
     "name": "St. Bonaventure University",
     "country": "United States",
     "country_code": "US",
@@ -10233,6 +10349,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_117",
+    "slug": "university-of-redlands",
     "name": "University of Redlands",
     "country": "United States",
     "country_code": "US",
@@ -10325,6 +10442,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_118",
+    "slug": "barry-university",
     "name": "Barry University",
     "country": "United States",
     "country_code": "US",
@@ -10421,6 +10539,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_119",
+    "slug": "bryant-university",
     "name": "Bryant University",
     "country": "United States",
     "country_code": "US",
@@ -10512,6 +10631,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_120",
+    "slug": "muhlenberg-college",
     "name": "Muhlenberg College",
     "country": "United States",
     "country_code": "US",
@@ -10602,6 +10722,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_121",
+    "slug": "morehouse-school-of-medicine",
     "name": "Morehouse School of Medicine",
     "country": "United States",
     "country_code": "US",
@@ -10693,6 +10814,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_122",
+    "slug": "alfred-university",
     "name": "Alfred University",
     "country": "United States",
     "country_code": "US",
@@ -10784,6 +10906,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_123",
+    "slug": "john-carroll-university",
     "name": "John Carroll University",
     "country": "United States",
     "country_code": "US",
@@ -10874,6 +10997,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_124",
+    "slug": "saint-michaels-college",
     "name": "Saint Michael's College",
     "country": "United States",
     "country_code": "US",
@@ -10964,6 +11088,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_125",
+    "slug": "arcadia-university",
     "name": "Arcadia University",
     "country": "United States",
     "country_code": "US",
@@ -11055,6 +11180,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_126",
+    "slug": "maryland-institute-college-of-art-mica",
     "name": "Maryland Institute College of Art (MICA)",
     "country": "United States",
     "country_code": "US",
@@ -11118,6 +11244,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_127",
+    "slug": "baldwin-wallace-university",
     "name": "Baldwin Wallace University",
     "country": "United States",
     "country_code": "US",
@@ -11210,6 +11337,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_128",
+    "slug": "elmhurst-university",
     "name": "Elmhurst University",
     "country": "United States",
     "country_code": "US",
@@ -11302,6 +11430,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_129",
+    "slug": "saint-marys-college-of-california",
     "name": "Saint Mary's College of California",
     "country": "United States",
     "country_code": "US",
@@ -11394,6 +11523,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_130",
+    "slug": "southwestern-university",
     "name": "Southwestern University",
     "country": "United States",
     "country_code": "US",
@@ -11485,6 +11615,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_131",
+    "slug": "canisius-university",
     "name": "Canisius University",
     "country": "United States",
     "country_code": "US",
@@ -11576,6 +11707,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_132",
+    "slug": "kalamazoo-college",
     "name": "Kalamazoo College",
     "country": "United States",
     "country_code": "US",
@@ -11665,6 +11797,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_133",
+    "slug": "xavier-university-of-louisiana",
     "name": "Xavier University of Louisiana",
     "country": "United States",
     "country_code": "US",
@@ -11757,6 +11890,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_134",
+    "slug": "augustana-college",
     "name": "Augustana College",
     "country": "United States",
     "country_code": "US",
@@ -11848,6 +11982,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_135",
+    "slug": "bennington-college",
     "name": "Bennington College",
     "country": "United States",
     "country_code": "US",
@@ -11937,6 +12072,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_136",
+    "slug": "washington-college",
     "name": "Washington College",
     "country": "United States",
     "country_code": "US",
@@ -12027,6 +12163,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_137",
+    "slug": "california-lutheran-university",
     "name": "California Lutheran University",
     "country": "United States",
     "country_code": "US",
@@ -12119,6 +12256,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_138",
+    "slug": "wofford-college",
     "name": "Wofford College",
     "country": "United States",
     "country_code": "US",
@@ -12209,6 +12347,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_139",
+    "slug": "the-university-of-the-arts",
     "name": "The University of the Arts",
     "country": "United States",
     "country_code": "US",
@@ -12301,6 +12440,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_140",
+    "slug": "centre-college",
     "name": "Centre College",
     "country": "United States",
     "country_code": "US",
@@ -12391,6 +12531,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_141",
+    "slug": "albany-medical-college",
     "name": "Albany Medical College",
     "country": "United States",
     "country_code": "US",
@@ -12481,6 +12622,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_142",
+    "slug": "antioch-university",
     "name": "Antioch University",
     "country": "United States",
     "country_code": "US",
@@ -12573,6 +12715,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_143",
+    "slug": "luther-college",
     "name": "Luther College",
     "country": "United States",
     "country_code": "US",
@@ -12663,6 +12806,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_144",
+    "slug": "knox-college",
     "name": "Knox College",
     "country": "United States",
     "country_code": "US",
@@ -12753,6 +12897,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_145",
+    "slug": "wilkes-university",
     "name": "Wilkes University",
     "country": "United States",
     "country_code": "US",
@@ -12846,6 +12991,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_146",
+    "slug": "berry-college",
     "name": "Berry College",
     "country": "United States",
     "country_code": "US",
@@ -12938,6 +13084,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_147",
+    "slug": "shenandoah-university",
     "name": "Shenandoah University",
     "country": "United States",
     "country_code": "US",
@@ -13032,6 +13179,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_148",
+    "slug": "concordia-college",
     "name": "Concordia College",
     "country": "United States",
     "country_code": "US",
@@ -13123,6 +13271,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_149",
+    "slug": "manhattan-college",
     "name": "Manhattan College",
     "country": "United States",
     "country_code": "US",
@@ -13215,6 +13364,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_150",
+    "slug": "lawrence-technological-university",
     "name": "Lawrence Technological University",
     "country": "United States",
     "country_code": "US",
@@ -13306,6 +13456,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_151",
+    "slug": "westmont-college",
     "name": "Westmont College",
     "country": "United States",
     "country_code": "US",
@@ -13396,6 +13547,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_152",
+    "slug": "lipscomb-university",
     "name": "Lipscomb University",
     "country": "United States",
     "country_code": "US",
@@ -13491,6 +13643,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_153",
+    "slug": "susquehanna-university",
     "name": "Susquehanna University",
     "country": "United States",
     "country_code": "US",
@@ -13582,6 +13735,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_154",
+    "slug": "eckerd-college",
     "name": "Eckerd College",
     "country": "United States",
     "country_code": "US",
@@ -13673,6 +13827,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_155",
+    "slug": "university-of-dallas",
     "name": "University of Dallas",
     "country": "United States",
     "country_code": "US",
@@ -13763,6 +13918,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_156",
+    "slug": "new-york-medical-college",
     "name": "New York Medical College",
     "country": "United States",
     "country_code": "US",
@@ -13853,6 +14009,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_157",
+    "slug": "otis-college-of-art-and-design",
     "name": "Otis College of Art and Design",
     "country": "United States",
     "country_code": "US",
@@ -13948,6 +14105,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_158",
+    "slug": "taylor-university",
     "name": "Taylor University",
     "country": "United States",
     "country_code": "US",
@@ -14040,6 +14198,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_159",
+    "slug": "point-loma-nazarene-university",
     "name": "Point Loma Nazarene University",
     "country": "United States",
     "country_code": "US",
@@ -14132,6 +14291,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_160",
+    "slug": "lewis-university",
     "name": "Lewis University",
     "country": "United States",
     "country_code": "US",
@@ -14224,6 +14384,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_161",
+    "slug": "niagara-university",
     "name": "Niagara University",
     "country": "United States",
     "country_code": "US",
@@ -14316,6 +14477,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_162",
+    "slug": "california-baptist-university",
     "name": "California Baptist University",
     "country": "United States",
     "country_code": "US",
@@ -14410,6 +14572,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_163",
+    "slug": "ursinus-college",
     "name": "Ursinus College",
     "country": "United States",
     "country_code": "US",
@@ -14499,6 +14662,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_164",
+    "slug": "grove-city-college",
     "name": "Grove City College",
     "country": "United States",
     "country_code": "US",
@@ -14591,6 +14755,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_165",
+    "slug": "wentworth-institute-of-technology",
     "name": "Wentworth Institute of Technology",
     "country": "United States",
     "country_code": "US",
@@ -14683,6 +14848,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_166",
+    "slug": "hendrix-college",
     "name": "Hendrix College",
     "country": "United States",
     "country_code": "US",
@@ -14772,6 +14938,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_167",
+    "slug": "university-of-la-verne",
     "name": "University of La Verne",
     "country": "United States",
     "country_code": "US",
@@ -14864,6 +15031,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_168",
+    "slug": "allegheny-college",
     "name": "Allegheny College",
     "country": "United States",
     "country_code": "US",
@@ -14954,6 +15122,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_169",
+    "slug": "university-of-lynchburg",
     "name": "University of Lynchburg",
     "country": "United States",
     "country_code": "US",
@@ -15046,6 +15215,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_170",
+    "slug": "florida-southern-college",
     "name": "Florida Southern College",
     "country": "United States",
     "country_code": "US",
@@ -15138,6 +15308,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_171",
+    "slug": "augustana-university",
     "name": "Augustana University",
     "country": "United States",
     "country_code": "US",
@@ -15229,6 +15400,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_172",
+    "slug": "trine-university",
     "name": "Trine University",
     "country": "United States",
     "country_code": "US",
@@ -15321,6 +15493,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_173",
+    "slug": "minneapolis-college-of-art-and-design-mcad",
     "name": "Minneapolis College of Art and Design (MCAD)",
     "country": "United States",
     "country_code": "US",
@@ -15382,6 +15555,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_174",
+    "slug": "salve-regina-university",
     "name": "Salve Regina University",
     "country": "United States",
     "country_code": "US",
@@ -15474,6 +15648,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_175",
+    "slug": "flagler-college",
     "name": "Flagler College",
     "country": "United States",
     "country_code": "US",
@@ -15565,6 +15740,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_176",
+    "slug": "new-england-conservatory",
     "name": "New England Conservatory",
     "country": "United States",
     "country_code": "US",
@@ -15659,6 +15835,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_177",
+    "slug": "linfield-university",
     "name": "Linfield University",
     "country": "United States",
     "country_code": "US",
@@ -15751,6 +15928,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_178",
+    "slug": "meharry-medical-college",
     "name": "Meharry Medical College",
     "country": "United States",
     "country_code": "US",
@@ -15842,6 +16020,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_179",
+    "slug": "franklin-w-olin-college-of-engineering",
     "name": "Franklin W. Olin College of Engineering",
     "country": "United States",
     "country_code": "US",
@@ -15932,6 +16111,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_180",
+    "slug": "saint-marys-college",
     "name": "Saint Mary's College",
     "country": "United States",
     "country_code": "US",
@@ -16024,6 +16204,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_181",
+    "slug": "mcdaniel-college",
     "name": "McDaniel College",
     "country": "United States",
     "country_code": "US",
@@ -16115,6 +16296,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_182",
+    "slug": "lynn-university",
     "name": "Lynn University",
     "country": "United States",
     "country_code": "US",
@@ -16207,6 +16389,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_183",
+    "slug": "st-ambrose-university",
     "name": "St. Ambrose University",
     "country": "United States",
     "country_code": "US",
@@ -16298,6 +16481,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_184",
+    "slug": "lake-forest-college",
     "name": "Lake Forest College",
     "country": "United States",
     "country_code": "US",
@@ -16389,6 +16573,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_185",
+    "slug": "desales-university",
     "name": "DeSales University",
     "country": "United States",
     "country_code": "US",
@@ -16482,6 +16667,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_186",
+    "slug": "juniata-college",
     "name": "Juniata College",
     "country": "United States",
     "country_code": "US",
@@ -16572,6 +16758,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_187",
+    "slug": "university-of-st-thomas-houston",
     "name": "University of St. Thomas (Houston)",
     "country": "United States",
     "country_code": "US",
@@ -16664,6 +16851,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_188",
+    "slug": "nazareth-university",
     "name": "Nazareth University",
     "country": "United States",
     "country_code": "US",
@@ -16756,6 +16944,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_189",
+    "slug": "mercyhurst-university",
     "name": "Mercyhurst University",
     "country": "United States",
     "country_code": "US",
@@ -16850,6 +17039,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_190",
+    "slug": "iona-university",
     "name": "Iona University",
     "country": "United States",
     "country_code": "US",
@@ -16941,6 +17131,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_191",
+    "slug": "wittenberg-university",
     "name": "Wittenberg University",
     "country": "United States",
     "country_code": "US",
@@ -17032,6 +17223,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_192",
+    "slug": "robert-morris-university",
     "name": "Robert Morris University",
     "country": "United States",
     "country_code": "US",
@@ -17124,6 +17316,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_193",
+    "slug": "north-carolina-wesleyan-university",
     "name": "North Carolina Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -17216,6 +17409,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_194",
+    "slug": "college-of-the-atlantic",
     "name": "College of the Atlantic",
     "country": "United States",
     "country_code": "US",
@@ -17303,6 +17497,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_195",
+    "slug": "whitworth-university",
     "name": "Whitworth University",
     "country": "United States",
     "country_code": "US",
@@ -17395,6 +17590,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_196",
+    "slug": "millikin-university",
     "name": "Millikin University",
     "country": "United States",
     "country_code": "US",
@@ -17486,6 +17682,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_197",
+    "slug": "mcphs-university",
     "name": "MCPHS University",
     "country": "United States",
     "country_code": "US",
@@ -17579,6 +17776,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_198",
+    "slug": "dallas-baptist-university",
     "name": "Dallas Baptist University",
     "country": "United States",
     "country_code": "US",
@@ -17673,6 +17871,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_199",
+    "slug": "hartwick-college",
     "name": "Hartwick College",
     "country": "United States",
     "country_code": "US",
@@ -17764,6 +17963,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_200",
+    "slug": "stevenson-university",
     "name": "Stevenson University",
     "country": "United States",
     "country_code": "US",
@@ -17859,6 +18059,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_201",
+    "slug": "lebanon-valley-college",
     "name": "Lebanon Valley College",
     "country": "United States",
     "country_code": "US",
@@ -17951,6 +18152,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_202",
+    "slug": "viterbo-university",
     "name": "Viterbo University",
     "country": "United States",
     "country_code": "US",
@@ -18043,6 +18245,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_203",
+    "slug": "daemen-university",
     "name": "Daemen University",
     "country": "United States",
     "country_code": "US",
@@ -18134,6 +18337,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_204",
+    "slug": "oglethorpe-university",
     "name": "Oglethorpe University",
     "country": "United States",
     "country_code": "US",
@@ -18224,6 +18428,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_205",
+    "slug": "gannon-university",
     "name": "Gannon University",
     "country": "United States",
     "country_code": "US",
@@ -18317,6 +18522,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_206",
+    "slug": "rockhurst-university",
     "name": "Rockhurst University",
     "country": "United States",
     "country_code": "US",
@@ -18408,6 +18614,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_207",
+    "slug": "transylvania-university",
     "name": "Transylvania University",
     "country": "United States",
     "country_code": "US",
@@ -18498,6 +18705,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_208",
+    "slug": "rosalind-franklin-university-of-medicine-and-science",
     "name": "Rosalind Franklin University of Medicine and Science",
     "country": "United States",
     "country_code": "US",
@@ -18591,6 +18799,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_209",
+    "slug": "curtis-institute-of-music",
     "name": "Curtis Institute of Music",
     "country": "United States",
     "country_code": "US",
@@ -18684,6 +18893,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_210",
+    "slug": "ringling-college-of-art-and-design",
     "name": "Ringling College of Art and Design",
     "country": "United States",
     "country_code": "US",
@@ -18778,6 +18988,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_211",
+    "slug": "roberts-wesleyan-university",
     "name": "Roberts Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -18871,6 +19082,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_212",
+    "slug": "endicott-college",
     "name": "Endicott College",
     "country": "United States",
     "country_code": "US",
@@ -18964,6 +19176,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_213",
+    "slug": "capitol-technology-university",
     "name": "Capitol Technology University",
     "country": "United States",
     "country_code": "US",
@@ -19056,6 +19269,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_214",
+    "slug": "marywood-university",
     "name": "Marywood University",
     "country": "United States",
     "country_code": "US",
@@ -19150,6 +19364,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_215",
+    "slug": "saint-vincent-college",
     "name": "Saint Vincent College",
     "country": "United States",
     "country_code": "US",
@@ -19241,6 +19456,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_216",
+    "slug": "scripps-college",
     "name": "Scripps College",
     "country": "United States",
     "country_code": "US",
@@ -19331,6 +19547,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_217",
+    "slug": "austin-college",
     "name": "Austin College",
     "country": "United States",
     "country_code": "US",
@@ -19421,6 +19638,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_218",
+    "slug": "unity-environmental-university",
     "name": "Unity Environmental University",
     "country": "United States",
     "country_code": "US",
@@ -19513,6 +19731,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_219",
+    "slug": "hampden-sydney-college",
     "name": "Hampden-Sydney College",
     "country": "United States",
     "country_code": "US",
@@ -19603,6 +19822,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_220",
+    "slug": "keck-graduate-institute-kgi",
     "name": "Keck Graduate Institute (KGI)",
     "country": "United States",
     "country_code": "US",
@@ -19661,6 +19881,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_221",
+    "slug": "university-of-mary-hardin-baylor",
     "name": "University of Mary Hardin-Baylor",
     "country": "United States",
     "country_code": "US",
@@ -19754,6 +19975,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_222",
+    "slug": "carroll-university",
     "name": "Carroll University",
     "country": "United States",
     "country_code": "US",
@@ -19846,6 +20068,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_223",
+    "slug": "university-of-northwestern-st-paul",
     "name": "University of Northwestern - St. Paul",
     "country": "United States",
     "country_code": "US",
@@ -19939,6 +20162,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_224",
+    "slug": "university-of-the-cumberlands",
     "name": "University of the Cumberlands",
     "country": "United States",
     "country_code": "US",
@@ -20032,6 +20256,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_225",
+    "slug": "john-brown-university",
     "name": "John Brown University",
     "country": "United States",
     "country_code": "US",
@@ -20126,6 +20351,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_226",
+    "slug": "saint-xavier-university",
     "name": "Saint Xavier University",
     "country": "United States",
     "country_code": "US",
@@ -20218,6 +20444,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_227",
+    "slug": "coe-college",
     "name": "Coe College",
     "country": "United States",
     "country_code": "US",
@@ -20309,6 +20536,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_228",
+    "slug": "carroll-college",
     "name": "Carroll College",
     "country": "United States",
     "country_code": "US",
@@ -20400,6 +20628,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_229",
+    "slug": "ripon-college",
     "name": "Ripon College",
     "country": "United States",
     "country_code": "US",
@@ -20490,6 +20719,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_230",
+    "slug": "texas-wesleyan-university",
     "name": "Texas Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -20582,6 +20812,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_231",
+    "slug": "saint-francis-university",
     "name": "Saint Francis University",
     "country": "United States",
     "country_code": "US",
@@ -20673,6 +20904,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_232",
+    "slug": "dordt-university",
     "name": "Dordt University",
     "country": "United States",
     "country_code": "US",
@@ -20767,6 +20999,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_233",
+    "slug": "manchester-university",
     "name": "Manchester University",
     "country": "United States",
     "country_code": "US",
@@ -20860,6 +21093,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_234",
+    "slug": "college-of-the-ozarks",
     "name": "College of the Ozarks",
     "country": "United States",
     "country_code": "US",
@@ -20952,6 +21186,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_235",
+    "slug": "college-for-creative-studies",
     "name": "College for Creative Studies",
     "country": "United States",
     "country_code": "US",
@@ -21045,6 +21280,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_236",
+    "slug": "virginia-wesleyan-university",
     "name": "Virginia Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -21136,6 +21372,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_237",
+    "slug": "alaska-pacific-university",
     "name": "Alaska Pacific University",
     "country": "United States",
     "country_code": "US",
@@ -21228,6 +21465,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_238",
+    "slug": "northwestern-college-iowa",
     "name": "Northwestern College (Iowa)",
     "country": "United States",
     "country_code": "US",
@@ -21286,6 +21524,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_239",
+    "slug": "nebraska-wesleyan-university",
     "name": "Nebraska Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -21377,6 +21616,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_240",
+    "slug": "southern-california-institute-of-architecture-sci-arc",
     "name": "Southern California Institute of Architecture (SCI-Arc)",
     "country": "United States",
     "country_code": "US",
@@ -21433,6 +21673,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_241",
+    "slug": "gardner-webb-university",
     "name": "Gardner-Webb University",
     "country": "United States",
     "country_code": "US",
@@ -21525,6 +21766,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_242",
+    "slug": "san-francisco-conservatory-of-music",
     "name": "San Francisco Conservatory of Music",
     "country": "United States",
     "country_code": "US",
@@ -21618,6 +21860,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_243",
+    "slug": "university-of-st-francis",
     "name": "University of St. Francis",
     "country": "United States",
     "country_code": "US",
@@ -21709,6 +21952,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_244",
+    "slug": "university-of-mary",
     "name": "University of Mary",
     "country": "United States",
     "country_code": "US",
@@ -21801,6 +22045,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_245",
+    "slug": "letourneau-university",
     "name": "LeTourneau University",
     "country": "United States",
     "country_code": "US",
@@ -21894,6 +22139,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_246",
+    "slug": "mount-st-marys-university",
     "name": "Mount St. Mary's University",
     "country": "United States",
     "country_code": "US",
@@ -21988,6 +22234,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_247",
+    "slug": "albany-law-school",
     "name": "Albany Law School",
     "country": "United States",
     "country_code": "US",
@@ -22080,6 +22327,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_248",
+    "slug": "concordia-university-chicago",
     "name": "Concordia University Chicago",
     "country": "United States",
     "country_code": "US",
@@ -22173,6 +22421,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_249",
+    "slug": "washington-jefferson-college",
     "name": "Washington & Jefferson College",
     "country": "United States",
     "country_code": "US",
@@ -22264,6 +22513,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_250",
+    "slug": "indiana-institute-of-technology",
     "name": "Indiana Institute of Technology",
     "country": "United States",
     "country_code": "US",
@@ -22357,6 +22607,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_251",
+    "slug": "charles-r-drew-university-of-medicine-and-science",
     "name": "Charles R. Drew University of Medicine and Science",
     "country": "United States",
     "country_code": "US",
@@ -22449,6 +22700,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_252",
+    "slug": "vanguard-university-of-southern-california",
     "name": "Vanguard University of Southern California",
     "country": "United States",
     "country_code": "US",
@@ -22542,6 +22794,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_253",
+    "slug": "morningside-university",
     "name": "Morningside University",
     "country": "United States",
     "country_code": "US",
@@ -22634,6 +22887,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_254",
+    "slug": "aquinas-college-grand-rapids-mi",
     "name": "Aquinas College (Grand Rapids, MI)",
     "country": "United States",
     "country_code": "US",
@@ -22726,6 +22980,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_255",
+    "slug": "lyon-college",
     "name": "Lyon College",
     "country": "United States",
     "country_code": "US",
@@ -22817,6 +23072,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_256",
+    "slug": "heidelberg-university",
     "name": "Heidelberg University",
     "country": "United States",
     "country_code": "US",
@@ -22909,6 +23165,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_257",
+    "slug": "millsaps-college",
     "name": "Millsaps College",
     "country": "United States",
     "country_code": "US",
@@ -23000,6 +23257,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_258",
+    "slug": "loras-college",
     "name": "Loras College",
     "country": "United States",
     "country_code": "US",
@@ -23091,6 +23349,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_259",
+    "slug": "mgh-institute-of-health-professions",
     "name": "MGH Institute of Health Professions",
     "country": "United States",
     "country_code": "US",
@@ -23183,6 +23442,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_260",
+    "slug": "grace-college",
     "name": "Grace College",
     "country": "United States",
     "country_code": "US",
@@ -23275,6 +23535,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_261",
+    "slug": "harrisburg-university-of-science-and-technology",
     "name": "Harrisburg University of Science and Technology",
     "country": "United States",
     "country_code": "US",
@@ -23367,6 +23628,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_262",
+    "slug": "new-england-institute-of-technology",
     "name": "New England Institute of Technology",
     "country": "United States",
     "country_code": "US",
@@ -23459,6 +23721,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_263",
+    "slug": "university-of-dubuque",
     "name": "University of Dubuque",
     "country": "United States",
     "country_code": "US",
@@ -23551,6 +23814,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_264",
+    "slug": "baker-university",
     "name": "Baker University",
     "country": "United States",
     "country_code": "US",
@@ -23642,6 +23906,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_265",
+    "slug": "delaware-valley-university",
     "name": "Delaware Valley University",
     "country": "United States",
     "country_code": "US",
@@ -23734,6 +23999,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_266",
+    "slug": "oklahoma-baptist-university",
     "name": "Oklahoma Baptist University",
     "country": "United States",
     "country_code": "US",
@@ -23826,6 +24092,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_267",
+    "slug": "houghton-university",
     "name": "Houghton University",
     "country": "United States",
     "country_code": "US",
@@ -23918,6 +24185,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_268",
+    "slug": "ouachita-baptist-university",
     "name": "Ouachita Baptist University",
     "country": "United States",
     "country_code": "US",
@@ -24010,6 +24278,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_269",
+    "slug": "catawba-college",
     "name": "Catawba College",
     "country": "United States",
     "country_code": "US",
@@ -24101,6 +24370,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_270",
+    "slug": "cornish-college-of-the-arts",
     "name": "Cornish College of the Arts",
     "country": "United States",
     "country_code": "US",
@@ -24194,6 +24464,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_271",
+    "slug": "samuel-merritt-university",
     "name": "Samuel Merritt University",
     "country": "United States",
     "country_code": "US",
@@ -24286,6 +24557,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_272",
+    "slug": "presbyterian-college",
     "name": "Presbyterian College",
     "country": "United States",
     "country_code": "US",
@@ -24377,6 +24649,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_273",
+    "slug": "trevecca-nazarene-university",
     "name": "Trevecca Nazarene University",
     "country": "United States",
     "country_code": "US",
@@ -24469,6 +24742,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_274",
+    "slug": "neumann-university",
     "name": "Neumann University",
     "country": "United States",
     "country_code": "US",
@@ -24561,6 +24835,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_275",
+    "slug": "university-of-mount-union",
     "name": "University of Mount Union",
     "country": "United States",
     "country_code": "US",
@@ -24653,6 +24928,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_276",
+    "slug": "soka-university-of-america",
     "name": "Soka University of America",
     "country": "United States",
     "country_code": "US",
@@ -24741,6 +25017,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_277",
+    "slug": "belmont-abbey-college",
     "name": "Belmont Abbey College",
     "country": "United States",
     "country_code": "US",
@@ -24832,6 +25109,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_278",
+    "slug": "goodwin-university",
     "name": "Goodwin University",
     "country": "United States",
     "country_code": "US",
@@ -24925,6 +25203,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_279",
+    "slug": "woodbury-university",
     "name": "Woodbury University",
     "country": "United States",
     "country_code": "US",
@@ -25017,6 +25296,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_280",
+    "slug": "marymount-manhattan-college",
     "name": "Marymount Manhattan College",
     "country": "United States",
     "country_code": "US",
@@ -25109,6 +25389,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_281",
+    "slug": "cleveland-institute-of-music",
     "name": "Cleveland Institute of Music",
     "country": "United States",
     "country_code": "US",
@@ -25200,6 +25481,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_282",
+    "slug": "emmanuel-college",
     "name": "Emmanuel College",
     "country": "United States",
     "country_code": "US",
@@ -25292,6 +25574,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_283",
+    "slug": "malone-university",
     "name": "Malone University",
     "country": "United States",
     "country_code": "US",
@@ -25384,6 +25667,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_284",
+    "slug": "thomas-aquinas-college",
     "name": "Thomas Aquinas College",
     "country": "United States",
     "country_code": "US",
@@ -25472,6 +25756,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_285",
+    "slug": "west-virginia-wesleyan-college",
     "name": "West Virginia Wesleyan College",
     "country": "United States",
     "country_code": "US",
@@ -25564,6 +25849,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_286",
+    "slug": "hardin-simmons-university",
     "name": "Hardin-Simmons University",
     "country": "United States",
     "country_code": "US",
@@ -25656,6 +25942,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_287",
+    "slug": "northwestern-health-sciences-university",
     "name": "Northwestern Health Sciences University",
     "country": "United States",
     "country_code": "US",
@@ -25746,6 +26033,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_288",
+    "slug": "kansas-city-art-institute",
     "name": "Kansas City Art Institute",
     "country": "United States",
     "country_code": "US",
@@ -25839,6 +26127,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_289",
+    "slug": "logan-university",
     "name": "Logan University",
     "country": "United States",
     "country_code": "US",
@@ -25930,6 +26219,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_290",
+    "slug": "lasell-university",
     "name": "Lasell University",
     "country": "United States",
     "country_code": "US",
@@ -26022,6 +26312,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_291",
+    "slug": "william-jewell-college",
     "name": "William Jewell College",
     "country": "United States",
     "country_code": "US",
@@ -26113,6 +26404,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_292",
+    "slug": "national-university-of-health-sciences",
     "name": "National University of Health Sciences",
     "country": "United States",
     "country_code": "US",
@@ -26204,6 +26496,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_293",
+    "slug": "bard-college-at-simons-rock",
     "name": "Bard College at Simon's Rock",
     "country": "United States",
     "country_code": "US",
@@ -26292,6 +26585,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_294",
+    "slug": "mount-saint-marys-university",
     "name": "Mount Saint Mary's University",
     "country": "United States",
     "country_code": "US",
@@ -26384,6 +26678,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_295",
+    "slug": "moore-college-of-art-and-design",
     "name": "Moore College of Art and Design",
     "country": "United States",
     "country_code": "US",
@@ -26476,6 +26771,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_296",
+    "slug": "franklin-college",
     "name": "Franklin College",
     "country": "United States",
     "country_code": "US",
@@ -26568,6 +26864,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_297",
+    "slug": "illinois-college",
     "name": "Illinois College",
     "country": "United States",
     "country_code": "US",
@@ -26659,6 +26956,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_298",
+    "slug": "wingate-university",
     "name": "Wingate University",
     "country": "United States",
     "country_code": "US",
@@ -26752,6 +27050,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_299",
+    "slug": "university-of-western-states",
     "name": "University of Western States",
     "country": "United States",
     "country_code": "US",
@@ -26843,6 +27142,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_300",
+    "slug": "adler-university",
     "name": "Adler University",
     "country": "United States",
     "country_code": "US",
@@ -26935,6 +27235,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_301",
+    "slug": "lee-university",
     "name": "Lee University",
     "country": "United States",
     "country_code": "US",
@@ -27028,6 +27329,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_302",
+    "slug": "the-college-of-idaho",
     "name": "The College of Idaho",
     "country": "United States",
     "country_code": "US",
@@ -27119,6 +27421,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_303",
+    "slug": "university-of-saint-joseph",
     "name": "University of Saint Joseph",
     "country": "United States",
     "country_code": "US",
@@ -27212,6 +27515,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_304",
+    "slug": "columbus-college-of-art-and-design",
     "name": "Columbus College of Art and Design",
     "country": "United States",
     "country_code": "US",
@@ -27305,6 +27609,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_305",
+    "slug": "midamerica-nazarene-university",
     "name": "MidAmerica Nazarene University",
     "country": "United States",
     "country_code": "US",
@@ -27397,6 +27702,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_306",
+    "slug": "dakota-wesleyan-university",
     "name": "Dakota Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -27489,6 +27795,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_307",
+    "slug": "milligan-university",
     "name": "Milligan University",
     "country": "United States",
     "country_code": "US",
@@ -27581,6 +27888,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_308",
+    "slug": "university-of-charleston",
     "name": "University of Charleston",
     "country": "United States",
     "country_code": "US",
@@ -27674,6 +27982,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_309",
+    "slug": "covenant-college",
     "name": "Covenant College",
     "country": "United States",
     "country_code": "US",
@@ -27765,6 +28074,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_310",
+    "slug": "mount-saint-mary-college",
     "name": "Mount Saint Mary College",
     "country": "United States",
     "country_code": "US",
@@ -27857,6 +28167,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_311",
+    "slug": "randolph-college",
     "name": "Randolph College",
     "country": "United States",
     "country_code": "US",
@@ -27948,6 +28259,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_312",
+    "slug": "university-of-jamestown",
     "name": "University of Jamestown",
     "country": "United States",
     "country_code": "US",
@@ -28040,6 +28352,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_313",
+    "slug": "maryland-university-of-integrative-health",
     "name": "Maryland University of Integrative Health",
     "country": "United States",
     "country_code": "US",
@@ -28132,6 +28445,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_314",
+    "slug": "monmouth-college",
     "name": "Monmouth College",
     "country": "United States",
     "country_code": "US",
@@ -28223,6 +28537,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_315",
+    "slug": "mount-vernon-nazarene-university",
     "name": "Mount Vernon Nazarene University",
     "country": "United States",
     "country_code": "US",
@@ -28315,6 +28630,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_316",
+    "slug": "texas-lutheran-university",
     "name": "Texas Lutheran University",
     "country": "United States",
     "country_code": "US",
@@ -28407,6 +28723,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_317",
+    "slug": "thomas-more-university",
     "name": "Thomas More University",
     "country": "United States",
     "country_code": "US",
@@ -28499,6 +28816,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_318",
+    "slug": "wisconsin-lutheran-college",
     "name": "Wisconsin Lutheran College",
     "country": "United States",
     "country_code": "US",
@@ -28591,6 +28909,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_319",
+    "slug": "ohio-dominican-university",
     "name": "Ohio Dominican University",
     "country": "United States",
     "country_code": "US",
@@ -28683,6 +29002,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_320",
+    "slug": "nebraska-methodist-college",
     "name": "Nebraska Methodist College",
     "country": "United States",
     "country_code": "US",
@@ -28774,6 +29094,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_321",
+    "slug": "newberry-college",
     "name": "Newberry College",
     "country": "United States",
     "country_code": "US",
@@ -28865,6 +29186,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_322",
+    "slug": "averett-university",
     "name": "Averett University",
     "country": "United States",
     "country_code": "US",
@@ -28957,6 +29279,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_323",
+    "slug": "mount-mary-university",
     "name": "Mount Mary University",
     "country": "United States",
     "country_code": "US",
@@ -29050,6 +29373,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_324",
+    "slug": "kansas-city-university",
     "name": "Kansas City University",
     "country": "United States",
     "country_code": "US",
@@ -29140,6 +29464,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_325",
+    "slug": "landmark-college",
     "name": "Landmark College",
     "country": "United States",
     "country_code": "US",
@@ -29231,6 +29556,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_326",
+    "slug": "southern-wesleyan-university",
     "name": "Southern Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -29323,6 +29649,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_327",
+    "slug": "saybrook-university",
     "name": "Saybrook University",
     "country": "United States",
     "country_code": "US",
@@ -29414,6 +29741,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_328",
+    "slug": "milwaukee-institute-of-art-design",
     "name": "Milwaukee Institute of Art & Design",
     "country": "United States",
     "country_code": "US",
@@ -29506,6 +29834,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_329",
+    "slug": "cranbrook-academy-of-art",
     "name": "Cranbrook Academy of Art",
     "country": "United States",
     "country_code": "US",
@@ -29602,6 +29931,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_330",
+    "slug": "chestnut-hill-college",
     "name": "Chestnut Hill College",
     "country": "United States",
     "country_code": "US",
@@ -29694,6 +30024,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_331",
+    "slug": "central-methodist-university",
     "name": "Central Methodist University",
     "country": "United States",
     "country_code": "US",
@@ -29786,6 +30117,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_332",
+    "slug": "greenville-university",
     "name": "Greenville University",
     "country": "United States",
     "country_code": "US",
@@ -29878,6 +30210,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_333",
+    "slug": "waynesburg-university",
     "name": "Waynesburg University",
     "country": "United States",
     "country_code": "US",
@@ -29970,6 +30303,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_334",
+    "slug": "rockford-university",
     "name": "Rockford University",
     "country": "United States",
     "country_code": "US",
@@ -30061,6 +30395,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_335",
+    "slug": "hastings-college",
     "name": "Hastings College",
     "country": "United States",
     "country_code": "US",
@@ -30152,6 +30487,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_336",
+    "slug": "university-of-pikeville",
     "name": "University of Pikeville",
     "country": "United States",
     "country_code": "US",
@@ -30245,6 +30581,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_337",
+    "slug": "new-york-school-of-interior-design",
     "name": "New York School of Interior Design",
     "country": "United States",
     "country_code": "US",
@@ -30333,6 +30670,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_338",
+    "slug": "immaculata-university",
     "name": "Immaculata University",
     "country": "United States",
     "country_code": "US",
@@ -30426,6 +30764,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_339",
+    "slug": "maryville-college",
     "name": "Maryville College",
     "country": "United States",
     "country_code": "US",
@@ -30517,6 +30856,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_340",
+    "slug": "touro-university-california",
     "name": "Touro University California",
     "country": "United States",
     "country_code": "US",
@@ -30609,6 +30949,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_341",
+    "slug": "salus-university",
     "name": "Salus University",
     "country": "United States",
     "country_code": "US",
@@ -30701,6 +31042,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_342",
+    "slug": "college-of-saint-mary",
     "name": "College of Saint Mary",
     "country": "United States",
     "country_code": "US",
@@ -30793,6 +31135,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_343",
+    "slug": "thomas-college",
     "name": "Thomas College",
     "country": "United States",
     "country_code": "US",
@@ -30885,6 +31228,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_344",
+    "slug": "barton-college",
     "name": "Barton College",
     "country": "United States",
     "country_code": "US",
@@ -30977,6 +31321,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_345",
+    "slug": "william-woods-university",
     "name": "William Woods University",
     "country": "United States",
     "country_code": "US",
@@ -31069,6 +31414,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_346",
+    "slug": "oklahoma-wesleyan-university",
     "name": "Oklahoma Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -31161,6 +31507,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_347",
+    "slug": "siena-heights-university",
     "name": "Siena Heights University",
     "country": "United States",
     "country_code": "US",
@@ -31253,6 +31600,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_348",
+    "slug": "university-of-saint-mary",
     "name": "University of Saint Mary",
     "country": "United States",
     "country_code": "US",
@@ -31345,6 +31693,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_349",
+    "slug": "university-of-saint-francis",
     "name": "University of Saint Francis",
     "country": "United States",
     "country_code": "US",
@@ -31438,6 +31787,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_350",
+    "slug": "university-of-the-ozarks",
     "name": "University of the Ozarks",
     "country": "United States",
     "country_code": "US",
@@ -31529,6 +31879,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_351",
+    "slug": "schreiner-university",
     "name": "Schreiner University",
     "country": "United States",
     "country_code": "US",
@@ -31621,6 +31972,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_352",
+    "slug": "clarkson-college",
     "name": "Clarkson College",
     "country": "United States",
     "country_code": "US",
@@ -31712,6 +32064,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_353",
+    "slug": "college-of-mount-saint-vincent",
     "name": "College of Mount Saint Vincent",
     "country": "United States",
     "country_code": "US",
@@ -31804,6 +32157,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_354",
+    "slug": "kansas-wesleyan-university",
     "name": "Kansas Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -31896,6 +32250,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_355",
+    "slug": "roseman-university-of-health-sciences",
     "name": "Roseman University of Health Sciences",
     "country": "United States",
     "country_code": "US",
@@ -31988,6 +32343,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_356",
+    "slug": "missouri-valley-college",
     "name": "Missouri Valley College",
     "country": "United States",
     "country_code": "US",
@@ -32080,6 +32436,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_357",
+    "slug": "coker-university",
     "name": "Coker University",
     "country": "United States",
     "country_code": "US",
@@ -32172,6 +32529,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_358",
+    "slug": "culver-stockton-college",
     "name": "Culver-Stockton College",
     "country": "United States",
     "country_code": "US",
@@ -32264,6 +32622,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_359",
+    "slug": "north-greenville-university",
     "name": "North Greenville University",
     "country": "United States",
     "country_code": "US",
@@ -32356,6 +32715,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_360",
+    "slug": "albany-college-of-pharmacy-and-health-sciences",
     "name": "Albany College of Pharmacy and Health Sciences",
     "country": "United States",
     "country_code": "US",
@@ -32447,6 +32807,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_361",
+    "slug": "hope-international-university",
     "name": "Hope International University",
     "country": "United States",
     "country_code": "US",
@@ -32539,6 +32900,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_362",
+    "slug": "briar-cliff-university",
     "name": "Briar Cliff University",
     "country": "United States",
     "country_code": "US",
@@ -32631,6 +32993,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_363",
+    "slug": "la-roche-university",
     "name": "La Roche University",
     "country": "United States",
     "country_code": "US",
@@ -32723,6 +33086,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_364",
+    "slug": "university-of-northwestern-ohio",
     "name": "University of Northwestern Ohio",
     "country": "United States",
     "country_code": "US",
@@ -32815,6 +33179,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_365",
+    "slug": "benjamin-franklin-cummings-institute-of-technology",
     "name": "Benjamin Franklin Cummings Institute of Technology",
     "country": "United States",
     "country_code": "US",
@@ -32907,6 +33272,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_366",
+    "slug": "university-of-mobile",
     "name": "University of Mobile",
     "country": "United States",
     "country_code": "US",
@@ -32999,6 +33365,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_367",
+    "slug": "bethany-lutheran-college",
     "name": "Bethany Lutheran College",
     "country": "United States",
     "country_code": "US",
@@ -33091,6 +33458,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_368",
+    "slug": "university-of-mount-olive",
     "name": "University of Mount Olive",
     "country": "United States",
     "country_code": "US",
@@ -33183,6 +33551,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_369",
+    "slug": "tabor-college",
     "name": "Tabor College",
     "country": "United States",
     "country_code": "US",
@@ -33275,6 +33644,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_370",
+    "slug": "marshall-b-ketchum-university",
     "name": "Marshall B. Ketchum University",
     "country": "United States",
     "country_code": "US",
@@ -33366,6 +33736,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_371",
+    "slug": "southern-college-of-optometry",
     "name": "Southern College of Optometry",
     "country": "United States",
     "country_code": "US",
@@ -33454,6 +33825,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_372",
+    "slug": "mid-america-christian-university",
     "name": "Mid-America Christian University",
     "country": "United States",
     "country_code": "US",
@@ -33546,6 +33918,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_373",
+    "slug": "thiel-college",
     "name": "Thiel College",
     "country": "United States",
     "country_code": "US",
@@ -33638,6 +34011,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_374",
+    "slug": "webb-institute",
     "name": "Webb Institute",
     "country": "United States",
     "country_code": "US",
@@ -33725,6 +34099,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_375",
+    "slug": "dunwoody-college-of-technology",
     "name": "Dunwoody College of Technology",
     "country": "United States",
     "country_code": "US",
@@ -33817,6 +34192,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_376",
+    "slug": "university-of-health-sciences-and-pharmacy-in-st-louis",
     "name": "University of Health Sciences and Pharmacy in St. Louis",
     "country": "United States",
     "country_code": "US",
@@ -33907,6 +34283,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_377",
+    "slug": "martin-luther-college",
     "name": "Martin Luther College",
     "country": "United States",
     "country_code": "US",
@@ -33997,6 +34374,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_378",
+    "slug": "kentucky-wesleyan-college",
     "name": "Kentucky Wesleyan College",
     "country": "United States",
     "country_code": "US",
@@ -34088,6 +34466,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_379",
+    "slug": "midland-university",
     "name": "Midland University",
     "country": "United States",
     "country_code": "US",
@@ -34180,6 +34559,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_380",
+    "slug": "vermont-college-of-fine-arts",
     "name": "Vermont College of Fine Arts",
     "country": "United States",
     "country_code": "US",
@@ -34272,6 +34652,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_381",
+    "slug": "pacific-oaks-college",
     "name": "Pacific Oaks College",
     "country": "United States",
     "country_code": "US",
@@ -34363,6 +34744,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_382",
+    "slug": "new-york-college-of-podiatric-medicine",
     "name": "New York College of Podiatric Medicine",
     "country": "United States",
     "country_code": "US",
@@ -34449,6 +34831,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_383",
+    "slug": "st-thomas-aquinas-college",
     "name": "St. Thomas Aquinas College",
     "country": "United States",
     "country_code": "US",
@@ -34541,6 +34924,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_384",
+    "slug": "cottey-college",
     "name": "Cottey College",
     "country": "United States",
     "country_code": "US",
@@ -34632,6 +35016,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_385",
+    "slug": "villa-maria-college",
     "name": "Villa Maria College",
     "country": "United States",
     "country_code": "US",
@@ -34724,6 +35109,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_386",
+    "slug": "illinois-college-of-optometry",
     "name": "Illinois College of Optometry",
     "country": "United States",
     "country_code": "US",
@@ -34812,6 +35198,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_387",
+    "slug": "young-harris-college",
     "name": "Young Harris College",
     "country": "United States",
     "country_code": "US",
@@ -34903,6 +35290,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_388",
+    "slug": "art-academy-of-cincinnati",
     "name": "Art Academy of Cincinnati",
     "country": "United States",
     "country_code": "US",
@@ -34995,6 +35383,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_389",
+    "slug": "fisher-college",
     "name": "Fisher College",
     "country": "United States",
     "country_code": "US",
@@ -35087,6 +35476,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_390",
+    "slug": "pennsylvania-college-of-art-and-design",
     "name": "Pennsylvania College of Art and Design",
     "country": "United States",
     "country_code": "US",
@@ -35179,6 +35569,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_391",
+    "slug": "everglades-university",
     "name": "Everglades University",
     "country": "United States",
     "country_code": "US",
@@ -35271,6 +35662,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_392",
+    "slug": "lake-erie-college",
     "name": "Lake Erie College",
     "country": "United States",
     "country_code": "US",
@@ -35363,6 +35755,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_393",
+    "slug": "principia-college",
     "name": "Principia College",
     "country": "United States",
     "country_code": "US",
@@ -35454,6 +35847,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_394",
+    "slug": "washington-adventist-university",
     "name": "Washington Adventist University",
     "country": "United States",
     "country_code": "US",
@@ -35546,6 +35940,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_395",
+    "slug": "mount-carmel-college-of-nursing",
     "name": "Mount Carmel College of Nursing",
     "country": "United States",
     "country_code": "US",
@@ -35634,6 +36029,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_396",
+    "slug": "labour-college",
     "name": "Labouré College",
     "country": "United States",
     "country_code": "US",
@@ -35691,6 +36087,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_397",
+    "slug": "allen-college",
     "name": "Allen College",
     "country": "United States",
     "country_code": "US",
@@ -35781,6 +36178,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_398",
+    "slug": "tennessee-wesleyan-university",
     "name": "Tennessee Wesleyan University",
     "country": "United States",
     "country_code": "US",
@@ -35873,6 +36271,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_399",
+    "slug": "franciscan-missionaries-of-our-lady-university",
     "name": "Franciscan Missionaries of Our Lady University",
     "country": "United States",
     "country_code": "US",
@@ -35964,6 +36363,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_400",
+    "slug": "john-paul-the-great-catholic-university",
     "name": "John Paul the Great Catholic University",
     "country": "United States",
     "country_code": "US",
@@ -36055,6 +36455,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_401",
+    "slug": "san-joaquin-college-of-law",
     "name": "San Joaquin College of Law",
     "country": "United States",
     "country_code": "US",
@@ -36141,6 +36542,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_402",
+    "slug": "laguna-college-of-art-and-design",
     "name": "Laguna College of Art and Design",
     "country": "United States",
     "country_code": "US",
@@ -36233,6 +36635,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_403",
+    "slug": "pardee-rand-graduate-school",
     "name": "Pardee RAND Graduate School",
     "country": "United States",
     "country_code": "US",
@@ -36320,6 +36723,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_404",
+    "slug": "vandercook-college-of-music",
     "name": "VanderCook College of Music",
     "country": "United States",
     "country_code": "US",
@@ -36409,6 +36813,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_405",
+    "slug": "cox-college",
     "name": "Cox College",
     "country": "United States",
     "country_code": "US",
@@ -36499,6 +36904,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_406",
+    "slug": "bellin-college",
     "name": "Bellin College",
     "country": "United States",
     "country_code": "US",
@@ -36589,6 +36995,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_407",
+    "slug": "goldfarb-school-of-nursing-at-barnes-jewish-college",
     "name": "Goldfarb School of Nursing at Barnes-Jewish College",
     "country": "United States",
     "country_code": "US",
@@ -36676,6 +37083,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_408",
+    "slug": "aquinas-college-nashville-tn",
     "name": "Aquinas College (Nashville, TN)",
     "country": "United States",
     "country_code": "US",
@@ -36768,6 +37176,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_409",
+    "slug": "american-film-institute-conservatory",
     "name": "American Film Institute Conservatory",
     "country": "United States",
     "country_code": "US",
@@ -36861,6 +37270,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_410",
+    "slug": "appalachian-college-of-pharmacy",
     "name": "Appalachian College of Pharmacy",
     "country": "United States",
     "country_code": "US",
@@ -36947,6 +37357,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_411",
+    "slug": "middle-tennessee-school-of-anesthesia",
     "name": "Middle Tennessee School of Anesthesia",
     "country": "United States",
     "country_code": "US",
@@ -37034,6 +37445,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_412",
+    "slug": "good-samaritan-college-of-nursing-health-science",
     "name": "Good Samaritan College of Nursing & Health Science",
     "country": "United States",
     "country_code": "US",
@@ -37124,6 +37536,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_413",
+    "slug": "rush-university",
     "name": "Rush University",
     "country": "United States",
     "country_code": "US",
@@ -37215,6 +37628,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_414",
+    "slug": "saint-anthony-college-of-nursing",
     "name": "Saint Anthony College of Nursing",
     "country": "United States",
     "country_code": "US",
@@ -37301,6 +37715,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_415",
+    "slug": "geisinger-college-of-health-sciences",
     "name": "Geisinger College of Health Sciences",
     "country": "United States",
     "country_code": "US",
@@ -37391,6 +37806,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_416",
+    "slug": "saint-francis-medical-center-college-of-nursing",
     "name": "Saint Francis Medical Center College of Nursing",
     "country": "United States",
     "country_code": "US",
@@ -37477,6 +37893,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_417",
+    "slug": "university-of-the-potomac",
     "name": "University of the Potomac",
     "country": "United States",
     "country_code": "US",
@@ -37568,6 +37985,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_418",
+    "slug": "cogswell-university-of-silicon-valley",
     "name": "Cogswell University of Silicon Valley",
     "country": "United States",
     "country_code": "US",
@@ -37660,6 +38078,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_419",
+    "slug": "national-university-of-natural-medicine",
     "name": "National University of Natural Medicine",
     "country": "United States",
     "country_code": "US",
@@ -37750,6 +38169,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_420",
+    "slug": "arizona-college-of-nursing",
     "name": "Arizona College of Nursing",
     "country": "United States",
     "country_code": "US",
@@ -37836,6 +38256,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_421",
+    "slug": "california-jazz-conservatory",
     "name": "California Jazz Conservatory",
     "country": "United States",
     "country_code": "US",
@@ -37923,6 +38344,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_422",
+    "slug": "university-of-the-arts",
     "name": "University of the Arts",
     "country": "United States",
     "country_code": "US",
@@ -38011,6 +38433,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_423",
+    "slug": "antioch-university-seattle",
     "name": "Antioch University Seattle",
     "country": "United States",
     "country_code": "US",
@@ -38103,6 +38526,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_424",
+    "slug": "antioch-university-los-angeles",
     "name": "Antioch University Los Angeles",
     "country": "United States",
     "country_code": "US",
@@ -38195,6 +38619,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_425",
+    "slug": "antioch-university-santa-barbara",
     "name": "Antioch University Santa Barbara",
     "country": "United States",
     "country_code": "US",
@@ -38286,6 +38711,7 @@ export const REAL_UNIVERSITIES: University[] = [
   },
   {
     "id": "u_426",
+    "slug": "antioch-university-new-england",
     "name": "Antioch University New England",
     "country": "United States",
     "country_code": "US",

@@ -5,13 +5,20 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
-
 const distDir = path.join(projectRoot, 'dist');
 const templatePath = path.join(distDir, 'index.html');
 
 if (!fs.existsSync(templatePath)) {
-  console.error('Error: dist/index.html not found. Run "npm run build" first.');
+  console.error('dist/index.html not found. Run vite build first.');
   process.exit(1);
+}
+
+function getSlug(name) {
+  return name
+    .toLowerCase()
+    .replace(/['’]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
 }
 
 const template = fs.readFileSync(templatePath, 'utf8');
@@ -25,7 +32,8 @@ let prerenderedCount = 0;
 
 for (const uni of fullData) {
   const facts = uni.facts || {};
-  const canonicalUrl = `https://campusarge.com/institutions/${uni.id}`;
+  const slug = uni.slug || getSlug(uni.name);
+  const canonicalUrl = `https://campusarge.com/${slug}`;
   const websiteUrl = uni.website || canonicalUrl;
 
   const pageTitle = `${uni.name} – Programs, Cost & Research | CampusArge`;
@@ -69,44 +77,40 @@ for (const uni of fullData) {
   // Replace <title>
   let html = template.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(pageTitle)}</title>`);
 
-  // Replace or inject <meta name="description">
-  if (/<meta name="description"[^>]*>/i.test(html)) {
-    html = html.replace(/<meta name="description"[^>]*>/i, `<meta name="description" content="${escapeHtml(metaDescription)}" />`);
-  } else {
-    html = html.replace('</head>', `  <meta name="description" content="${escapeHtml(metaDescription)}" />\n  </head>`);
-  }
+  // Replace meta description
+  html = html.replace(/<meta name="description"[^>]*>/i, `<meta name="description" content="${escapeHtml(metaDescription)}" />`);
 
-  // Inject Canonical, OG, Twitter, JSON-LD before </head>
+  // Inject canonical and Open Graph / Twitter tags into <head>
   const headInject = `
     <link rel="canonical" href="${canonicalUrl}" />
     <meta property="og:title" content="${escapeHtml(pageTitle)}" />
     <meta property="og:description" content="${escapeHtml(metaDescription)}" />
     <meta property="og:url" content="${canonicalUrl}" />
     <meta property="og:type" content="website" />
+    ${uni.logo_url ? `<meta property="og:image" content="https://campusarge.com${uni.logo_url}" />` : ''}
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="${escapeHtml(pageTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(metaDescription)}" />
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>
     <script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script>
   `;
-
   html = html.replace('</head>', `${headInject}\n  </head>`);
 
-  // Inject semantic fallback inside #root for crawlers/non-JS bots
+  // Fallback body content for search engine indexers before JS hydration
   const keyFactsList = [
-    uni.cost_of_attendance ? `<li><strong>Cost of Attendance:</strong> $${uni.cost_of_attendance.toLocaleString('en-US')} / year</li>` : '',
-    facts.student_faculty_ratio ? `<li><strong>Student-to-Faculty Ratio:</strong> ${escapeHtml(facts.student_faculty_ratio.display)}</li>` : '',
-    facts.school_classification ? `<li><strong>Classification:</strong> ${escapeHtml(facts.school_classification)}</li>` : '',
-    facts.accreditation_status ? `<li><strong>Accreditation:</strong> ${escapeHtml(facts.accreditation_status)}</li>` : '',
-    facts.undergrad_population ? `<li><strong>Undergraduate Students:</strong> ${escapeHtml(facts.undergrad_population.display)}</li>` : '',
-    facts.campus_acreage ? `<li><strong>Campus Size:</strong> ${escapeHtml(facts.campus_acreage.display)}</li>` : '',
-    facts.housing_capacity_beds ? `<li><strong>Housing Capacity:</strong> ${escapeHtml(facts.housing_capacity_beds.display)}</li>` : '',
-    facts.avg_apartment_rent ? `<li><strong>Average Rent:</strong> ${escapeHtml(facts.avg_apartment_rent.display)}</li>` : ''
+    facts.school_classification ? `<li>Classification: ${escapeHtml(facts.school_classification)}</li>` : '',
+    facts.accreditation_status ? `<li>Accreditation: ${escapeHtml(facts.accreditation_status)}</li>` : '',
+    uni.cost_of_attendance ? `<li>Cost of Attendance: $${uni.cost_of_attendance.toLocaleString('en-US')}/year</li>` : '',
+    facts.student_faculty_ratio ? `<li>Student-Faculty Ratio: ${escapeHtml(facts.student_faculty_ratio.display)}</li>` : '',
+    facts.undergrad_population ? `<li>Undergraduate Population: ${facts.undergrad_population.display}</li>` : '',
+    facts.graduate_population ? `<li>Graduate Population: ${facts.graduate_population.display}</li>` : '',
+    facts.campus_acreage ? `<li>Campus Acreage: ${escapeHtml(facts.campus_acreage.display)}</li>` : ''
   ].filter(Boolean).join('\n        ');
 
-  const rootFallback = `<div id="root"><main class="sr-fallback" style="max-width:1100px;margin:2rem auto;padding:1.5rem;font-family:system-ui,-apple-system,sans-serif;">
+  const rootFallback = `<div id="root"><main style="max-width:900px;margin:2rem auto;padding:1.5rem;font-family:system-ui,-apple-system,sans-serif;">
       <h1>${escapeHtml(uni.name)}</h1>
-      <p class="lead">${escapeHtml(uni.description || '')}</p>
-      ${facts.about && facts.about !== uni.description ? `<p>${escapeHtml(facts.about)}</p>` : ''}
+      <p><strong>Location:</strong> ${escapeHtml(uni.city || '')}${uni.state ? `, ${escapeHtml(uni.state)}` : ''}, ${escapeHtml(uni.country || 'United States')}</p>
+      ${facts.about ? `<p>${escapeHtml(facts.about)}</p>` : (uni.description ? `<p>${escapeHtml(uni.description)}</p>` : '')}
       ${keyFactsList ? `<section><h2>Key Institutional Facts</h2><ul>${keyFactsList}</ul></section>` : ''}
       ${facts.research_summary ? `<section><h2>Research Focus</h2><p>${escapeHtml(facts.research_summary)}</p></section>` : ''}
       ${uni.programs && uni.programs.length > 0 ? `<section><h2>Academic Programs</h2><p>${escapeHtml(uni.programs.join(', '))}</p></section>` : ''}
@@ -115,10 +119,20 @@ for (const uni of fullData) {
 
   html = html.replace('<div id="root"></div>', rootFallback);
 
-  // Write file to dist/institutions/{id}/index.html
-  const outDir = path.join(distDir, 'institutions', uni.id);
-  fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
+  // 1. Primary Clean Permalink: dist/{slug}/index.html
+  const outDirSlug = path.join(distDir, slug);
+  fs.mkdirSync(outDirSlug, { recursive: true });
+  fs.writeFileSync(path.join(outDirSlug, 'index.html'), html, 'utf8');
+
+  // 2. Secondary Alias: dist/institutions/{slug}/index.html
+  const outDirInstSlug = path.join(distDir, 'institutions', slug);
+  fs.mkdirSync(outDirInstSlug, { recursive: true });
+  fs.writeFileSync(path.join(outDirInstSlug, 'index.html'), html, 'utf8');
+
+  // 3. Backward Compatibility Alias: dist/institutions/{id}/index.html
+  const outDirId = path.join(distDir, 'institutions', uni.id);
+  fs.mkdirSync(outDirId, { recursive: true });
+  fs.writeFileSync(path.join(outDirId, 'index.html'), html, 'utf8');
 
   prerenderedCount++;
 }
@@ -146,7 +160,10 @@ const dirFallback = `<div id="root"><main style="max-width:1100px;margin:2rem au
   <h1>University Directory</h1>
   <p>${directoryDesc}</p>
   <ul>
-    ${fullData.slice(0, 50).map(u => `<li><a href="/institutions/${u.id}">${escapeHtml(u.name)}</a> - ${escapeHtml(u.city || '')}, ${escapeHtml(u.country || '')}</li>`).join('\n    ')}
+    ${fullData.slice(0, 50).map(u => {
+      const slug = u.slug || getSlug(u.name);
+      return `<li><a href="/${slug}">${escapeHtml(u.name)}</a> - ${escapeHtml(u.city || '')}, ${escapeHtml(u.country || '')}</li>`;
+    }).join('\n    ')}
   </ul>
 </main></div>`;
 dirHtml = dirHtml.replace('<div id="root"></div>', dirFallback);
@@ -155,7 +172,7 @@ const dirOutDir = path.join(distDir, 'institutions');
 fs.mkdirSync(dirOutDir, { recursive: true });
 fs.writeFileSync(path.join(dirOutDir, 'index.html'), dirHtml, 'utf8');
 
-console.log(`Prerender complete! Generated ${prerenderedCount} institution pages and 1 directory page in dist/institutions/`);
+console.log(`Prerender complete! Generated ${prerenderedCount} institution pages and 1 directory page in dist/`);
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -166,4 +183,3 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 }
-

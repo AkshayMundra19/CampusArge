@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Linkedin, Twitter, Youtube, Instagram } from "lucide-react";
+import { GraduationCap, Linkedin, Twitter, Youtube, Instagram, Facebook } from "lucide-react";
 
 const footerLinks = {
   Platform: [
@@ -30,6 +30,7 @@ const contactLinks = [
 const socialIcons = [
   { Icon: Linkedin,  href: "https://www.linkedin.com/company/144138973/", label: "LinkedIn" },
   { Icon: Instagram, href: "https://www.instagram.com/campusarge/", label: "Instagram" },
+  { Icon: Facebook,  href: "https://www.facebook.com/campusarge", label: "Facebook" },
   { Icon: Twitter,   href: "https://x.com/campusarge", label: "Twitter / X" },
   { Icon: Youtube,   href: "https://www.youtube.com/@campusarge", label: "YouTube" },
 ];
@@ -80,7 +81,7 @@ export default function Footer() {
           {/* Three link columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="font-semibold text-sm text-gold mb-4">{title}</h4>
+              <p className="font-semibold text-sm text-gold mb-4 tracking-wider uppercase">{title}</p>
               <ul className="space-y-2.5">
                 {links.map((link) => (
                   <li key={link.label}>
@@ -98,7 +99,7 @@ export default function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h4 className="font-semibold text-sm text-gold mb-4">Contact Us</h4>
+            <p className="font-semibold text-sm text-gold mb-4 tracking-wider uppercase">Contact Us</p>
             <ul className="space-y-2.5">
               {contactLinks.map((c) => (
                 <li key={c.label}>

@@ -90,7 +90,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mit.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mit.edu",
+    "slug": "massachusetts-institute-of-technology-mit"
   },
   {
     "id": "u_2",
@@ -189,7 +190,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=harvard.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=harvard.edu",
+    "slug": "harvard-university"
   },
   {
     "id": "u_3",
@@ -283,7 +285,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stanford.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stanford.edu",
+    "slug": "stanford-university"
   },
   {
     "id": "u_4",
@@ -381,7 +384,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=columbia.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=columbia.edu",
+    "slug": "columbia-university"
   },
   {
     "id": "u_5",
@@ -472,7 +476,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=princeton.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=princeton.edu",
+    "slug": "princeton-university"
   },
   {
     "id": "u_6",
@@ -571,7 +576,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cornell.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cornell.edu",
+    "slug": "cornell-university"
   },
   {
     "id": "u_7",
@@ -671,7 +677,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=yale.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=yale.edu",
+    "slug": "yale-university"
   },
   {
     "id": "u_8",
@@ -769,7 +776,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uchicago.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uchicago.edu",
+    "slug": "university-of-chicago"
   },
   {
     "id": "u_9",
@@ -865,7 +873,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jhu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jhu.edu",
+    "slug": "johns-hopkins-university"
   },
   {
     "id": "u_10",
@@ -930,7 +939,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=berkeley.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=berkeley.edu",
+    "slug": "university-of-california-berkeley"
   },
   {
     "id": "u_11",
@@ -995,7 +1005,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=upenn.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=upenn.edu",
+    "slug": "university-of-pennsylvania"
   },
   {
     "id": "u_12",
@@ -1091,7 +1102,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=northwestern.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=northwestern.edu",
+    "slug": "northwestern-university"
   },
   {
     "id": "u_13",
@@ -1187,7 +1199,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=duke.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=duke.edu",
+    "slug": "duke-university"
   },
   {
     "id": "u_14",
@@ -1255,7 +1268,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umich.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umich.edu",
+    "slug": "university-of-michigan-ann-arbor"
   },
   {
     "id": "u_15",
@@ -1349,7 +1363,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=brown.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=brown.edu",
+    "slug": "brown-university"
   },
   {
     "id": "u_16",
@@ -1446,7 +1461,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nyu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nyu.edu",
+    "slug": "new-york-university-nyu"
   },
   {
     "id": "u_17",
@@ -1540,7 +1556,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rice.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rice.edu",
+    "slug": "rice-university"
   },
   {
     "id": "u_18",
@@ -1604,7 +1621,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ucla.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ucla.edu",
+    "slug": "university-of-california-los-angeles-ucla"
   },
   {
     "id": "u_19",
@@ -1702,7 +1720,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bu.edu",
+    "slug": "boston-university"
   },
   {
     "id": "u_20",
@@ -1797,7 +1816,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=georgetown.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=georgetown.edu",
+    "slug": "georgetown-university"
   },
   {
     "id": "u_21",
@@ -1858,7 +1878,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wustl.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wustl.edu",
+    "slug": "washington-university-in-st-louis-washu"
   },
   {
     "id": "u_22",
@@ -1952,7 +1973,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tufts.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tufts.edu",
+    "slug": "tufts-university"
   },
   {
     "id": "u_23",
@@ -2045,7 +2067,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rochester.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rochester.edu",
+    "slug": "university-of-rochester"
   },
   {
     "id": "u_24",
@@ -2104,7 +2127,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=caltech.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=caltech.edu",
+    "slug": "california-institute-of-technology-caltech"
   },
   {
     "id": "u_25",
@@ -2200,7 +2224,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gwu.edu",
+    "slug": "george-washington-university"
   },
   {
     "id": "u_26",
@@ -2296,7 +2321,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vanderbilt.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vanderbilt.edu",
+    "slug": "vanderbilt-university"
   },
   {
     "id": "u_27",
@@ -2391,7 +2417,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=emory.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=emory.edu",
+    "slug": "emory-university"
   },
   {
     "id": "u_28",
@@ -2485,7 +2512,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nd.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nd.edu",
+    "slug": "university-of-notre-dame"
   },
   {
     "id": "u_29",
@@ -2577,7 +2605,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dartmouth.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dartmouth.edu",
+    "slug": "dartmouth-college"
   },
   {
     "id": "u_30",
@@ -2672,7 +2701,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=northeastern.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=northeastern.edu",
+    "slug": "northeastern-university"
   },
   {
     "id": "u_31",
@@ -2766,7 +2796,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bc.edu",
+    "slug": "boston-college"
   },
   {
     "id": "u_32",
@@ -2861,7 +2892,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=case.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=case.edu",
+    "slug": "case-western-reserve-university"
   },
   {
     "id": "u_33",
@@ -2920,7 +2952,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rpi.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rpi.edu",
+    "slug": "rensselaer-polytechnic-institute-rpi"
   },
   {
     "id": "u_34",
@@ -3015,7 +3048,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tulane.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tulane.edu",
+    "slug": "tulane-university"
   },
   {
     "id": "u_35",
@@ -3106,7 +3140,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=brandeis.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=brandeis.edu",
+    "slug": "brandeis-university"
   },
   {
     "id": "u_36",
@@ -3192,7 +3227,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=swarthmore.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=swarthmore.edu",
+    "slug": "swarthmore-college"
   },
   {
     "id": "u_37",
@@ -3284,7 +3320,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wfu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wfu.edu",
+    "slug": "wake-forest-university"
   },
   {
     "id": "u_38",
@@ -3375,7 +3412,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=richmond.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=richmond.edu",
+    "slug": "university-of-richmond"
   },
   {
     "id": "u_39",
@@ -3466,7 +3504,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lehigh.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lehigh.edu",
+    "slug": "lehigh-university"
   },
   {
     "id": "u_40",
@@ -3553,7 +3592,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=middlebury.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=middlebury.edu",
+    "slug": "middlebury-college"
   },
   {
     "id": "u_41",
@@ -3639,7 +3679,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=williams.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=williams.edu",
+    "slug": "williams-college"
   },
   {
     "id": "u_42",
@@ -3726,7 +3767,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=smith.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=smith.edu",
+    "slug": "smith-college"
   },
   {
     "id": "u_43",
@@ -3817,7 +3859,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=villanova.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=villanova.edu",
+    "slug": "villanova-university"
   },
   {
     "id": "u_44",
@@ -3908,7 +3951,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wesleyan.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wesleyan.edu",
+    "slug": "wesleyan-university"
   },
   {
     "id": "u_45",
@@ -3993,7 +4037,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=carleton.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=carleton.edu",
+    "slug": "carleton-college"
   },
   {
     "id": "u_46",
@@ -4078,7 +4123,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vassar.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vassar.edu",
+    "slug": "vassar-college"
   },
   {
     "id": "u_47",
@@ -4162,7 +4208,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=amherst.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=amherst.edu",
+    "slug": "amherst-college"
   },
   {
     "id": "u_48",
@@ -4248,7 +4295,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wellesley.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wellesley.edu",
+    "slug": "wellesley-college"
   },
   {
     "id": "u_49",
@@ -4337,7 +4385,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=colby.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=colby.edu",
+    "slug": "colby-college"
   },
   {
     "id": "u_50",
@@ -4426,7 +4475,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bowdoin.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bowdoin.edu",
+    "slug": "bowdoin-college"
   },
   {
     "id": "u_51",
@@ -4515,7 +4565,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wlu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wlu.edu",
+    "slug": "washington-and-lee-university"
   },
   {
     "id": "u_52",
@@ -4608,7 +4659,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hmc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hmc.edu",
+    "slug": "harvey-mudd-college"
   },
   {
     "id": "u_53",
@@ -4696,7 +4748,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=davidson.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=davidson.edu",
+    "slug": "davidson-college"
   },
   {
     "id": "u_54",
@@ -4785,7 +4838,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pomona.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pomona.edu",
+    "slug": "pomona-college"
   },
   {
     "id": "u_55",
@@ -4875,7 +4929,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barnard.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barnard.edu",
+    "slug": "barnard-college"
   },
   {
     "id": "u_56",
@@ -4964,7 +5019,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hamilton.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hamilton.edu",
+    "slug": "hamilton-college"
   },
   {
     "id": "u_57",
@@ -5053,7 +5109,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=colgate.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=colgate.edu",
+    "slug": "colgate-university"
   },
   {
     "id": "u_58",
@@ -5142,7 +5199,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wheatoncollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wheatoncollege.edu",
+    "slug": "wheaton-college-massachusetts"
   },
   {
     "id": "u_59",
@@ -5207,7 +5265,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=scad.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=scad.edu",
+    "slug": "savannah-college-of-art-and-design-scad"
   },
   {
     "id": "u_60",
@@ -5300,7 +5359,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sju.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sju.edu",
+    "slug": "saint-josephs-university"
   },
   {
     "id": "u_61",
@@ -5392,7 +5452,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=utulsa.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=utulsa.edu",
+    "slug": "the-university-of-tulsa"
   },
   {
     "id": "u_62",
@@ -5481,7 +5542,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=grinnell.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=grinnell.edu",
+    "slug": "grinnell-college"
   },
   {
     "id": "u_63",
@@ -5570,7 +5632,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bates.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bates.edu",
+    "slug": "bates-college"
   },
   {
     "id": "u_64",
@@ -5663,7 +5726,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gonzaga.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gonzaga.edu",
+    "slug": "gonzaga-university"
   },
   {
     "id": "u_65",
@@ -5726,7 +5790,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=risd.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=risd.edu",
+    "slug": "rhode-island-school-of-design-risd"
   },
   {
     "id": "u_66",
@@ -5816,7 +5881,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=haverford.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=haverford.edu",
+    "slug": "haverford-college"
   },
   {
     "id": "u_67",
@@ -5909,7 +5975,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=trinity.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=trinity.edu",
+    "slug": "trinity-university"
   },
   {
     "id": "u_68",
@@ -5998,7 +6065,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=holycross.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=holycross.edu",
+    "slug": "college-of-the-holy-cross"
   },
   {
     "id": "u_69",
@@ -6088,7 +6156,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bentley.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bentley.edu",
+    "slug": "bentley-university"
   },
   {
     "id": "u_70",
@@ -6178,7 +6247,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coloradocollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coloradocollege.edu",
+    "slug": "colorado-college"
   },
   {
     "id": "u_71",
@@ -6270,7 +6340,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pratt.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pratt.edu",
+    "slug": "pratt-institute"
   },
   {
     "id": "u_72",
@@ -6359,7 +6430,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=macalester.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=macalester.edu",
+    "slug": "macalester-college"
   },
   {
     "id": "u_73",
@@ -6453,7 +6525,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=butler.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=butler.edu",
+    "slug": "butler-university"
   },
   {
     "id": "u_74",
@@ -6542,7 +6615,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=conncoll.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=conncoll.edu",
+    "slug": "connecticut-college"
   },
   {
     "id": "u_75",
@@ -6633,7 +6707,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=loyola.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=loyola.edu",
+    "slug": "loyola-university-maryland"
   },
   {
     "id": "u_76",
@@ -6725,7 +6800,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=depauw.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=depauw.edu",
+    "slug": "depauw-university"
   },
   {
     "id": "u_77",
@@ -6815,7 +6891,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=juilliard.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=juilliard.edu",
+    "slug": "the-juilliard-school"
   },
   {
     "id": "u_78",
@@ -6904,7 +6981,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=whitman.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=whitman.edu",
+    "slug": "whitman-college"
   },
   {
     "id": "u_79",
@@ -6993,7 +7071,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=fandm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=fandm.edu",
+    "slug": "franklin-and-marshall-college"
   },
   {
     "id": "u_80",
@@ -7085,7 +7164,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rose-hulman.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rose-hulman.edu",
+    "slug": "rose-hulman-institute-of-technology"
   },
   {
     "id": "u_81",
@@ -7174,7 +7254,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hws.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hws.edu",
+    "slug": "hobart-and-william-smith-colleges"
   },
   {
     "id": "u_82",
@@ -7269,7 +7350,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=belmont.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=belmont.edu",
+    "slug": "belmont-university"
   },
   {
     "id": "u_83",
@@ -7359,7 +7441,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pitzer.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pitzer.edu",
+    "slug": "pitzer-college"
   },
   {
     "id": "u_84",
@@ -7451,7 +7534,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=fairfield.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=fairfield.edu",
+    "slug": "fairfield-university"
   },
   {
     "id": "u_85",
@@ -7540,7 +7624,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lafayette.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lafayette.edu",
+    "slug": "lafayette-college"
   },
   {
     "id": "u_86",
@@ -7601,7 +7686,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=calarts.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=calarts.edu",
+    "slug": "california-institute-of-the-arts-calarts"
   },
   {
     "id": "u_87",
@@ -7694,7 +7780,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=une.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=une.edu",
+    "slug": "university-of-new-england"
   },
   {
     "id": "u_88",
@@ -7784,7 +7871,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=morehouse.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=morehouse.edu",
+    "slug": "morehouse-college"
   },
   {
     "id": "u_89",
@@ -7874,7 +7962,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=denison.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=denison.edu",
+    "slug": "denison-university"
   },
   {
     "id": "u_90",
@@ -7964,7 +8053,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sewanee.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sewanee.edu",
+    "slug": "sewanee-the-university-of-the-south"
   },
   {
     "id": "u_91",
@@ -8024,7 +8114,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=saic.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=saic.edu",
+    "slug": "school-of-the-art-institute-of-chicago-saic"
   },
   {
     "id": "u_92",
@@ -8113,7 +8204,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cmc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cmc.edu",
+    "slug": "claremont-mckenna-college"
   },
   {
     "id": "u_93",
@@ -8203,7 +8295,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pugetsound.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pugetsound.edu",
+    "slug": "university-of-puget-sound"
   },
   {
     "id": "u_94",
@@ -8295,7 +8388,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=iwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=iwu.edu",
+    "slug": "illinois-wesleyan-university"
   },
   {
     "id": "u_95",
@@ -8385,7 +8479,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cooper.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cooper.edu",
+    "slug": "the-cooper-union-for-the-advancement-of-science-and-art"
   },
   {
     "id": "u_96",
@@ -8481,7 +8576,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=artcenter.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=artcenter.edu",
+    "slug": "artcenter-college-of-design"
   },
   {
     "id": "u_97",
@@ -8573,7 +8669,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=providence.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=providence.edu",
+    "slug": "providence-college"
   },
   {
     "id": "u_98",
@@ -8663,7 +8760,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=spelman.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=spelman.edu",
+    "slug": "spelman-college"
   },
   {
     "id": "u_99",
@@ -8753,7 +8851,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=berea.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=berea.edu",
+    "slug": "berea-college"
   },
   {
     "id": "u_100",
@@ -8846,7 +8945,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tamuc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tamuc.edu",
+    "slug": "texas-a-m-university-commerce"
   },
   {
     "id": "u_101",
@@ -8934,7 +9034,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=agnesscott.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=agnesscott.edu",
+    "slug": "agnes-scott-college"
   },
   {
     "id": "u_102",
@@ -9024,7 +9125,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=goucher.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=goucher.edu",
+    "slug": "goucher-college"
   },
   {
     "id": "u_103",
@@ -9114,7 +9216,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rhodes.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rhodes.edu",
+    "slug": "rhodes-college"
   },
   {
     "id": "u_104",
@@ -9206,7 +9309,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bellarmine.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bellarmine.edu",
+    "slug": "bellarmine-university"
   },
   {
     "id": "u_105",
@@ -9296,7 +9400,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=anselm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=anselm.edu",
+    "slug": "saint-anselm-college"
   },
   {
     "id": "u_106",
@@ -9391,7 +9496,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=campbell.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=campbell.edu",
+    "slug": "campbell-university"
   },
   {
     "id": "u_107",
@@ -9483,7 +9589,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=up.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=up.edu",
+    "slug": "university-of-portland"
   },
   {
     "id": "u_108",
@@ -9571,7 +9678,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=owu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=owu.edu",
+    "slug": "ohio-wesleyan-university"
   },
   {
     "id": "u_109",
@@ -9633,7 +9741,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cca.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cca.edu",
+    "slug": "california-college-of-the-arts-cca"
   },
   {
     "id": "u_110",
@@ -9726,7 +9835,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=georgefox.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=georgefox.edu",
+    "slug": "george-fox-university"
   },
   {
     "id": "u_111",
@@ -9817,7 +9927,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ut.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ut.edu",
+    "slug": "the-university-of-tampa"
   },
   {
     "id": "u_112",
@@ -9910,7 +10021,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=indwes.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=indwes.edu",
+    "slug": "indiana-wesleyan-university"
   },
   {
     "id": "u_113",
@@ -10003,7 +10115,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rwu.edu",
+    "slug": "roger-williams-university"
   },
   {
     "id": "u_114",
@@ -10078,7 +10191,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=noctrl.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=noctrl.edu",
+    "slug": "north-central-college"
   },
   {
     "id": "u_115",
@@ -10135,7 +10249,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msoe.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msoe.edu",
+    "slug": "milwaukee-school-of-engineering-msoe"
   },
   {
     "id": "u_116",
@@ -10227,7 +10342,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sbu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sbu.edu",
+    "slug": "st-bonaventure-university"
   },
   {
     "id": "u_117",
@@ -10319,7 +10435,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=redlands.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=redlands.edu",
+    "slug": "university-of-redlands"
   },
   {
     "id": "u_118",
@@ -10415,7 +10532,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barry.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barry.edu",
+    "slug": "barry-university"
   },
   {
     "id": "u_119",
@@ -10506,7 +10624,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bryant.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bryant.edu",
+    "slug": "bryant-university"
   },
   {
     "id": "u_120",
@@ -10596,7 +10715,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=muhlenberg.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=muhlenberg.edu",
+    "slug": "muhlenberg-college"
   },
   {
     "id": "u_121",
@@ -10687,7 +10807,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msm.edu",
+    "slug": "morehouse-school-of-medicine"
   },
   {
     "id": "u_122",
@@ -10778,7 +10899,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=alfred.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=alfred.edu",
+    "slug": "alfred-university"
   },
   {
     "id": "u_123",
@@ -10868,7 +10990,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jcu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jcu.edu",
+    "slug": "john-carroll-university"
   },
   {
     "id": "u_124",
@@ -10958,7 +11081,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=smcvt.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=smcvt.edu",
+    "slug": "saint-michaels-college"
   },
   {
     "id": "u_125",
@@ -11049,7 +11173,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=arcadia.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=arcadia.edu",
+    "slug": "arcadia-university"
   },
   {
     "id": "u_126",
@@ -11112,7 +11237,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mica.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mica.edu",
+    "slug": "maryland-institute-college-of-art-mica"
   },
   {
     "id": "u_127",
@@ -11204,7 +11330,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bw.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bw.edu",
+    "slug": "baldwin-wallace-university"
   },
   {
     "id": "u_128",
@@ -11296,7 +11423,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=elmhurst.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=elmhurst.edu",
+    "slug": "elmhurst-university"
   },
   {
     "id": "u_129",
@@ -11388,7 +11516,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stmarys-ca.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stmarys-ca.edu",
+    "slug": "saint-marys-college-of-california"
   },
   {
     "id": "u_130",
@@ -11479,7 +11608,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=southwestern.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=southwestern.edu",
+    "slug": "southwestern-university"
   },
   {
     "id": "u_131",
@@ -11570,7 +11700,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=canisius.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=canisius.edu",
+    "slug": "canisius-university"
   },
   {
     "id": "u_132",
@@ -11659,7 +11790,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kzoo.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kzoo.edu",
+    "slug": "kalamazoo-college"
   },
   {
     "id": "u_133",
@@ -11751,7 +11883,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=xula.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=xula.edu",
+    "slug": "xavier-university-of-louisiana"
   },
   {
     "id": "u_134",
@@ -11842,7 +11975,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=augustana.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=augustana.edu",
+    "slug": "augustana-college"
   },
   {
     "id": "u_135",
@@ -11931,7 +12065,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bennington.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bennington.edu",
+    "slug": "bennington-college"
   },
   {
     "id": "u_136",
@@ -12021,7 +12156,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=washcoll.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=washcoll.edu",
+    "slug": "washington-college"
   },
   {
     "id": "u_137",
@@ -12113,7 +12249,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=callutheran.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=callutheran.edu",
+    "slug": "california-lutheran-university"
   },
   {
     "id": "u_138",
@@ -12203,7 +12340,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wofford.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wofford.edu",
+    "slug": "wofford-college"
   },
   {
     "id": "u_139",
@@ -12295,7 +12433,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uarts.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uarts.edu",
+    "slug": "the-university-of-the-arts"
   },
   {
     "id": "u_140",
@@ -12385,7 +12524,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=centre.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=centre.edu",
+    "slug": "centre-college"
   },
   {
     "id": "u_141",
@@ -12475,7 +12615,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=amc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=amc.edu",
+    "slug": "albany-medical-college"
   },
   {
     "id": "u_142",
@@ -12567,7 +12708,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu",
+    "slug": "antioch-university"
   },
   {
     "id": "u_143",
@@ -12657,7 +12799,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=luther.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=luther.edu",
+    "slug": "luther-college"
   },
   {
     "id": "u_144",
@@ -12747,7 +12890,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=knox.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=knox.edu",
+    "slug": "knox-college"
   },
   {
     "id": "u_145",
@@ -12840,7 +12984,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wilkes.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wilkes.edu",
+    "slug": "wilkes-university"
   },
   {
     "id": "u_146",
@@ -12932,7 +13077,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=berry.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=berry.edu",
+    "slug": "berry-college"
   },
   {
     "id": "u_147",
@@ -13026,7 +13172,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=su.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=su.edu",
+    "slug": "shenandoah-university"
   },
   {
     "id": "u_148",
@@ -13117,7 +13264,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=concordiacollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=concordiacollege.edu",
+    "slug": "concordia-college"
   },
   {
     "id": "u_149",
@@ -13209,7 +13357,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=manhattan.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=manhattan.edu",
+    "slug": "manhattan-college"
   },
   {
     "id": "u_150",
@@ -13300,7 +13449,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ltu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ltu.edu",
+    "slug": "lawrence-technological-university"
   },
   {
     "id": "u_151",
@@ -13390,7 +13540,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=westmont.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=westmont.edu",
+    "slug": "westmont-college"
   },
   {
     "id": "u_152",
@@ -13485,7 +13636,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lipscomb.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lipscomb.edu",
+    "slug": "lipscomb-university"
   },
   {
     "id": "u_153",
@@ -13576,7 +13728,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=susqu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=susqu.edu",
+    "slug": "susquehanna-university"
   },
   {
     "id": "u_154",
@@ -13667,7 +13820,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=eckerd.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=eckerd.edu",
+    "slug": "eckerd-college"
   },
   {
     "id": "u_155",
@@ -13757,7 +13911,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=udallas.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=udallas.edu",
+    "slug": "university-of-dallas"
   },
   {
     "id": "u_156",
@@ -13847,7 +14002,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nymc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nymc.edu",
+    "slug": "new-york-medical-college"
   },
   {
     "id": "u_157",
@@ -13942,7 +14098,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=otis.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=otis.edu",
+    "slug": "otis-college-of-art-and-design"
   },
   {
     "id": "u_158",
@@ -14034,7 +14191,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=taylor.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=taylor.edu",
+    "slug": "taylor-university"
   },
   {
     "id": "u_159",
@@ -14126,7 +14284,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pointloma.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pointloma.edu",
+    "slug": "point-loma-nazarene-university"
   },
   {
     "id": "u_160",
@@ -14218,7 +14377,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lewisu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lewisu.edu",
+    "slug": "lewis-university"
   },
   {
     "id": "u_161",
@@ -14310,7 +14470,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=niagara.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=niagara.edu",
+    "slug": "niagara-university"
   },
   {
     "id": "u_162",
@@ -14404,7 +14565,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=calbaptist.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=calbaptist.edu",
+    "slug": "california-baptist-university"
   },
   {
     "id": "u_163",
@@ -14493,7 +14655,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ursinus.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ursinus.edu",
+    "slug": "ursinus-college"
   },
   {
     "id": "u_164",
@@ -14585,7 +14748,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gcc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gcc.edu",
+    "slug": "grove-city-college"
   },
   {
     "id": "u_165",
@@ -14677,7 +14841,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wit.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wit.edu",
+    "slug": "wentworth-institute-of-technology"
   },
   {
     "id": "u_166",
@@ -14766,7 +14931,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hendrix.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hendrix.edu",
+    "slug": "hendrix-college"
   },
   {
     "id": "u_167",
@@ -14858,7 +15024,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=laverne.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=laverne.edu",
+    "slug": "university-of-la-verne"
   },
   {
     "id": "u_168",
@@ -14948,7 +15115,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=allegheny.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=allegheny.edu",
+    "slug": "allegheny-college"
   },
   {
     "id": "u_169",
@@ -15040,7 +15208,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lynchburg.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lynchburg.edu",
+    "slug": "university-of-lynchburg"
   },
   {
     "id": "u_170",
@@ -15132,7 +15301,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=flsouthern.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=flsouthern.edu",
+    "slug": "florida-southern-college"
   },
   {
     "id": "u_171",
@@ -15223,7 +15393,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=augie.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=augie.edu",
+    "slug": "augustana-university"
   },
   {
     "id": "u_172",
@@ -15315,7 +15486,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=trine.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=trine.edu",
+    "slug": "trine-university"
   },
   {
     "id": "u_173",
@@ -15376,7 +15548,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mcad.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mcad.edu",
+    "slug": "minneapolis-college-of-art-and-design-mcad"
   },
   {
     "id": "u_174",
@@ -15468,7 +15641,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=salve.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=salve.edu",
+    "slug": "salve-regina-university"
   },
   {
     "id": "u_175",
@@ -15559,7 +15733,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=flagler.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=flagler.edu",
+    "slug": "flagler-college"
   },
   {
     "id": "u_176",
@@ -15653,7 +15828,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=necmusic.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=necmusic.edu",
+    "slug": "new-england-conservatory"
   },
   {
     "id": "u_177",
@@ -15745,7 +15921,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=linfield.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=linfield.edu",
+    "slug": "linfield-university"
   },
   {
     "id": "u_178",
@@ -15836,7 +16013,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=meharry.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=meharry.edu",
+    "slug": "meharry-medical-college"
   },
   {
     "id": "u_179",
@@ -15926,7 +16104,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=olin.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=olin.edu",
+    "slug": "franklin-w-olin-college-of-engineering"
   },
   {
     "id": "u_180",
@@ -16018,7 +16197,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=saintmarys.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=saintmarys.edu",
+    "slug": "saint-marys-college"
   },
   {
     "id": "u_181",
@@ -16109,7 +16289,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mcdaniel.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mcdaniel.edu",
+    "slug": "mcdaniel-college"
   },
   {
     "id": "u_182",
@@ -16201,7 +16382,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lynn.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lynn.edu",
+    "slug": "lynn-university"
   },
   {
     "id": "u_183",
@@ -16292,7 +16474,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sau.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sau.edu",
+    "slug": "st-ambrose-university"
   },
   {
     "id": "u_184",
@@ -16383,7 +16566,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lakeforest.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lakeforest.edu",
+    "slug": "lake-forest-college"
   },
   {
     "id": "u_185",
@@ -16476,7 +16660,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=desales.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=desales.edu",
+    "slug": "desales-university"
   },
   {
     "id": "u_186",
@@ -16566,7 +16751,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=juniata.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=juniata.edu",
+    "slug": "juniata-college"
   },
   {
     "id": "u_187",
@@ -16658,7 +16844,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stthom.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stthom.edu",
+    "slug": "university-of-st-thomas-houston"
   },
   {
     "id": "u_188",
@@ -16750,7 +16937,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=naz.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=naz.edu",
+    "slug": "nazareth-university"
   },
   {
     "id": "u_189",
@@ -16844,7 +17032,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mercyhurst.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mercyhurst.edu",
+    "slug": "mercyhurst-university"
   },
   {
     "id": "u_190",
@@ -16935,7 +17124,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=iona.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=iona.edu",
+    "slug": "iona-university"
   },
   {
     "id": "u_191",
@@ -17026,7 +17216,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wittenberg.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wittenberg.edu",
+    "slug": "wittenberg-university"
   },
   {
     "id": "u_192",
@@ -17118,7 +17309,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rmu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rmu.edu",
+    "slug": "robert-morris-university"
   },
   {
     "id": "u_193",
@@ -17210,7 +17402,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ncwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ncwu.edu",
+    "slug": "north-carolina-wesleyan-university"
   },
   {
     "id": "u_194",
@@ -17297,7 +17490,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coa.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coa.edu",
+    "slug": "college-of-the-atlantic"
   },
   {
     "id": "u_195",
@@ -17389,7 +17583,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=whitworth.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=whitworth.edu",
+    "slug": "whitworth-university"
   },
   {
     "id": "u_196",
@@ -17480,7 +17675,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=millikin.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=millikin.edu",
+    "slug": "millikin-university"
   },
   {
     "id": "u_197",
@@ -17573,7 +17769,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mcphs.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mcphs.edu",
+    "slug": "mcphs-university"
   },
   {
     "id": "u_198",
@@ -17667,7 +17864,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dbu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dbu.edu",
+    "slug": "dallas-baptist-university"
   },
   {
     "id": "u_199",
@@ -17758,7 +17956,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hartwick.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hartwick.edu",
+    "slug": "hartwick-college"
   },
   {
     "id": "u_200",
@@ -17853,7 +18052,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stevenson.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stevenson.edu",
+    "slug": "stevenson-university"
   },
   {
     "id": "u_201",
@@ -17945,7 +18145,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lvc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lvc.edu",
+    "slug": "lebanon-valley-college"
   },
   {
     "id": "u_202",
@@ -18037,7 +18238,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=viterbo.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=viterbo.edu",
+    "slug": "viterbo-university"
   },
   {
     "id": "u_203",
@@ -18128,7 +18330,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=daemen.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=daemen.edu",
+    "slug": "daemen-university"
   },
   {
     "id": "u_204",
@@ -18218,7 +18421,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=oglethorpe.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=oglethorpe.edu",
+    "slug": "oglethorpe-university"
   },
   {
     "id": "u_205",
@@ -18311,7 +18515,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gannon.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gannon.edu",
+    "slug": "gannon-university"
   },
   {
     "id": "u_206",
@@ -18402,7 +18607,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rockhurst.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rockhurst.edu",
+    "slug": "rockhurst-university"
   },
   {
     "id": "u_207",
@@ -18492,7 +18698,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=transy.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=transy.edu",
+    "slug": "transylvania-university"
   },
   {
     "id": "u_208",
@@ -18585,7 +18792,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rosalindfranklin.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rosalindfranklin.edu",
+    "slug": "rosalind-franklin-university-of-medicine-and-science"
   },
   {
     "id": "u_209",
@@ -18678,7 +18886,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=curtis.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=curtis.edu",
+    "slug": "curtis-institute-of-music"
   },
   {
     "id": "u_210",
@@ -18772,7 +18981,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ringling.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ringling.edu",
+    "slug": "ringling-college-of-art-and-design"
   },
   {
     "id": "u_211",
@@ -18865,7 +19075,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=roberts.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=roberts.edu",
+    "slug": "roberts-wesleyan-university"
   },
   {
     "id": "u_212",
@@ -18958,7 +19169,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=endicott.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=endicott.edu",
+    "slug": "endicott-college"
   },
   {
     "id": "u_213",
@@ -19050,7 +19262,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=captechu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=captechu.edu",
+    "slug": "capitol-technology-university"
   },
   {
     "id": "u_214",
@@ -19144,7 +19357,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=marywood.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=marywood.edu",
+    "slug": "marywood-university"
   },
   {
     "id": "u_215",
@@ -19235,7 +19449,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stvincent.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stvincent.edu",
+    "slug": "saint-vincent-college"
   },
   {
     "id": "u_216",
@@ -19325,7 +19540,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=scrippscollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=scrippscollege.edu",
+    "slug": "scripps-college"
   },
   {
     "id": "u_217",
@@ -19415,7 +19631,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=austincollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=austincollege.edu",
+    "slug": "austin-college"
   },
   {
     "id": "u_218",
@@ -19507,7 +19724,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=unity.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=unity.edu",
+    "slug": "unity-environmental-university"
   },
   {
     "id": "u_219",
@@ -19597,7 +19815,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hsc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hsc.edu",
+    "slug": "hampden-sydney-college"
   },
   {
     "id": "u_220",
@@ -19655,7 +19874,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kgi.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kgi.edu",
+    "slug": "keck-graduate-institute-kgi"
   },
   {
     "id": "u_221",
@@ -19748,7 +19968,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umhb.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umhb.edu",
+    "slug": "university-of-mary-hardin-baylor"
   },
   {
     "id": "u_222",
@@ -19840,7 +20061,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=carrollu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=carrollu.edu",
+    "slug": "carroll-university"
   },
   {
     "id": "u_223",
@@ -19933,7 +20155,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=unwsp.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=unwsp.edu",
+    "slug": "university-of-northwestern-st-paul"
   },
   {
     "id": "u_224",
@@ -20026,7 +20249,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ucumberlands.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ucumberlands.edu",
+    "slug": "university-of-the-cumberlands"
   },
   {
     "id": "u_225",
@@ -20120,7 +20344,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jbu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jbu.edu",
+    "slug": "john-brown-university"
   },
   {
     "id": "u_226",
@@ -20212,7 +20437,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sxu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sxu.edu",
+    "slug": "saint-xavier-university"
   },
   {
     "id": "u_227",
@@ -20303,7 +20529,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coe.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coe.edu",
+    "slug": "coe-college"
   },
   {
     "id": "u_228",
@@ -20394,7 +20621,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=carroll.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=carroll.edu",
+    "slug": "carroll-college"
   },
   {
     "id": "u_229",
@@ -20484,7 +20712,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ripon.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ripon.edu",
+    "slug": "ripon-college"
   },
   {
     "id": "u_230",
@@ -20576,7 +20805,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=txwes.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=txwes.edu",
+    "slug": "texas-wesleyan-university"
   },
   {
     "id": "u_231",
@@ -20667,7 +20897,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=francis.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=francis.edu",
+    "slug": "saint-francis-university"
   },
   {
     "id": "u_232",
@@ -20761,7 +20992,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dordt.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dordt.edu",
+    "slug": "dordt-university"
   },
   {
     "id": "u_233",
@@ -20854,7 +21086,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=manchester.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=manchester.edu",
+    "slug": "manchester-university"
   },
   {
     "id": "u_234",
@@ -20946,7 +21179,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cofo.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cofo.edu",
+    "slug": "college-of-the-ozarks"
   },
   {
     "id": "u_235",
@@ -21039,7 +21273,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=collegeforcreativestudies.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=collegeforcreativestudies.edu",
+    "slug": "college-for-creative-studies"
   },
   {
     "id": "u_236",
@@ -21130,7 +21365,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vwu.edu",
+    "slug": "virginia-wesleyan-university"
   },
   {
     "id": "u_237",
@@ -21222,7 +21458,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=alaskapacific.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=alaskapacific.edu",
+    "slug": "alaska-pacific-university"
   },
   {
     "id": "u_238",
@@ -21280,7 +21517,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nwciowa.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nwciowa.edu",
+    "slug": "northwestern-college-iowa"
   },
   {
     "id": "u_239",
@@ -21371,7 +21609,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nebrwesleyan.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nebrwesleyan.edu",
+    "slug": "nebraska-wesleyan-university"
   },
   {
     "id": "u_240",
@@ -21427,7 +21666,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sciarc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sciarc.edu",
+    "slug": "southern-california-institute-of-architecture-sci-arc"
   },
   {
     "id": "u_241",
@@ -21519,7 +21759,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gardner-webb.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gardner-webb.edu",
+    "slug": "gardner-webb-university"
   },
   {
     "id": "u_242",
@@ -21612,7 +21853,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sfcm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sfcm.edu",
+    "slug": "san-francisco-conservatory-of-music"
   },
   {
     "id": "u_243",
@@ -21703,7 +21945,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stfrancis.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stfrancis.edu",
+    "slug": "university-of-st-francis"
   },
   {
     "id": "u_244",
@@ -21795,7 +22038,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umary.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umary.edu",
+    "slug": "university-of-mary"
   },
   {
     "id": "u_245",
@@ -21888,7 +22132,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=letu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=letu.edu",
+    "slug": "letourneau-university"
   },
   {
     "id": "u_246",
@@ -21982,7 +22227,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msmary.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msmary.edu",
+    "slug": "mount-st-marys-university"
   },
   {
     "id": "u_247",
@@ -22074,7 +22320,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=albanylaw.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=albanylaw.edu",
+    "slug": "albany-law-school"
   },
   {
     "id": "u_248",
@@ -22167,7 +22414,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cuchicago.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cuchicago.edu",
+    "slug": "concordia-university-chicago"
   },
   {
     "id": "u_249",
@@ -22258,7 +22506,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=washjeff.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=washjeff.edu",
+    "slug": "washington-jefferson-college"
   },
   {
     "id": "u_250",
@@ -22351,7 +22600,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=indianatech.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=indianatech.edu",
+    "slug": "indiana-institute-of-technology"
   },
   {
     "id": "u_251",
@@ -22443,7 +22693,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cdrewu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cdrewu.edu",
+    "slug": "charles-r-drew-university-of-medicine-and-science"
   },
   {
     "id": "u_252",
@@ -22536,7 +22787,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vanguard.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vanguard.edu",
+    "slug": "vanguard-university-of-southern-california"
   },
   {
     "id": "u_253",
@@ -22628,7 +22880,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=morningside.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=morningside.edu",
+    "slug": "morningside-university"
   },
   {
     "id": "u_254",
@@ -22720,7 +22973,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=aquinas.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=aquinas.edu",
+    "slug": "aquinas-college-grand-rapids-mi"
   },
   {
     "id": "u_255",
@@ -22811,7 +23065,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lyon.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lyon.edu",
+    "slug": "lyon-college"
   },
   {
     "id": "u_256",
@@ -22903,7 +23158,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=heidelberg.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=heidelberg.edu",
+    "slug": "heidelberg-university"
   },
   {
     "id": "u_257",
@@ -22994,7 +23250,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=millsaps.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=millsaps.edu",
+    "slug": "millsaps-college"
   },
   {
     "id": "u_258",
@@ -23085,7 +23342,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=loras.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=loras.edu",
+    "slug": "loras-college"
   },
   {
     "id": "u_259",
@@ -23177,7 +23435,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mghihp.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mghihp.edu",
+    "slug": "mgh-institute-of-health-professions"
   },
   {
     "id": "u_260",
@@ -23269,7 +23528,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=grace.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=grace.edu",
+    "slug": "grace-college"
   },
   {
     "id": "u_261",
@@ -23361,7 +23621,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=harrisburgu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=harrisburgu.edu",
+    "slug": "harrisburg-university-of-science-and-technology"
   },
   {
     "id": "u_262",
@@ -23453,7 +23714,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=neit.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=neit.edu",
+    "slug": "new-england-institute-of-technology"
   },
   {
     "id": "u_263",
@@ -23545,7 +23807,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dbq.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dbq.edu",
+    "slug": "university-of-dubuque"
   },
   {
     "id": "u_264",
@@ -23636,7 +23899,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bakeru.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bakeru.edu",
+    "slug": "baker-university"
   },
   {
     "id": "u_265",
@@ -23728,7 +23992,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=delval.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=delval.edu",
+    "slug": "delaware-valley-university"
   },
   {
     "id": "u_266",
@@ -23820,7 +24085,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=okbu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=okbu.edu",
+    "slug": "oklahoma-baptist-university"
   },
   {
     "id": "u_267",
@@ -23912,7 +24178,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=houghton.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=houghton.edu",
+    "slug": "houghton-university"
   },
   {
     "id": "u_268",
@@ -24004,7 +24271,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=obu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=obu.edu",
+    "slug": "ouachita-baptist-university"
   },
   {
     "id": "u_269",
@@ -24095,7 +24363,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=catawba.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=catawba.edu",
+    "slug": "catawba-college"
   },
   {
     "id": "u_270",
@@ -24188,7 +24457,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cornish.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cornish.edu",
+    "slug": "cornish-college-of-the-arts"
   },
   {
     "id": "u_271",
@@ -24280,7 +24550,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=samuelmerritt.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=samuelmerritt.edu",
+    "slug": "samuel-merritt-university"
   },
   {
     "id": "u_272",
@@ -24371,7 +24642,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=presby.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=presby.edu",
+    "slug": "presbyterian-college"
   },
   {
     "id": "u_273",
@@ -24463,7 +24735,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=trevecca.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=trevecca.edu",
+    "slug": "trevecca-nazarene-university"
   },
   {
     "id": "u_274",
@@ -24555,7 +24828,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=neumann.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=neumann.edu",
+    "slug": "neumann-university"
   },
   {
     "id": "u_275",
@@ -24647,7 +24921,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mountunion.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mountunion.edu",
+    "slug": "university-of-mount-union"
   },
   {
     "id": "u_276",
@@ -24735,7 +25010,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=soka.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=soka.edu",
+    "slug": "soka-university-of-america"
   },
   {
     "id": "u_277",
@@ -24826,7 +25102,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bac.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bac.edu",
+    "slug": "belmont-abbey-college"
   },
   {
     "id": "u_278",
@@ -24919,7 +25196,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=goodwin.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=goodwin.edu",
+    "slug": "goodwin-university"
   },
   {
     "id": "u_279",
@@ -25011,7 +25289,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=woodbury.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=woodbury.edu",
+    "slug": "woodbury-university"
   },
   {
     "id": "u_280",
@@ -25103,7 +25382,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mmm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mmm.edu",
+    "slug": "marymount-manhattan-college"
   },
   {
     "id": "u_281",
@@ -25194,7 +25474,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cim.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cim.edu",
+    "slug": "cleveland-institute-of-music"
   },
   {
     "id": "u_282",
@@ -25286,7 +25567,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=emmanuel.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=emmanuel.edu",
+    "slug": "emmanuel-college"
   },
   {
     "id": "u_283",
@@ -25378,7 +25660,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=malone.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=malone.edu",
+    "slug": "malone-university"
   },
   {
     "id": "u_284",
@@ -25466,7 +25749,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thomasaquinas.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thomasaquinas.edu",
+    "slug": "thomas-aquinas-college"
   },
   {
     "id": "u_285",
@@ -25558,7 +25842,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wvwc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wvwc.edu",
+    "slug": "west-virginia-wesleyan-college"
   },
   {
     "id": "u_286",
@@ -25650,7 +25935,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hsutx.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hsutx.edu",
+    "slug": "hardin-simmons-university"
   },
   {
     "id": "u_287",
@@ -25740,7 +26026,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nwhealth.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nwhealth.edu",
+    "slug": "northwestern-health-sciences-university"
   },
   {
     "id": "u_288",
@@ -25833,7 +26120,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kcai.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kcai.edu",
+    "slug": "kansas-city-art-institute"
   },
   {
     "id": "u_289",
@@ -25924,7 +26212,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=logan.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=logan.edu",
+    "slug": "logan-university"
   },
   {
     "id": "u_290",
@@ -26016,7 +26305,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lasell.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lasell.edu",
+    "slug": "lasell-university"
   },
   {
     "id": "u_291",
@@ -26107,7 +26397,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jewell.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jewell.edu",
+    "slug": "william-jewell-college"
   },
   {
     "id": "u_292",
@@ -26198,7 +26489,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nuhs.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nuhs.edu",
+    "slug": "national-university-of-health-sciences"
   },
   {
     "id": "u_293",
@@ -26286,7 +26578,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=simons-rock.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=simons-rock.edu",
+    "slug": "bard-college-at-simons-rock"
   },
   {
     "id": "u_294",
@@ -26378,7 +26671,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msmu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msmu.edu",
+    "slug": "mount-saint-marys-university"
   },
   {
     "id": "u_295",
@@ -26470,7 +26764,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=moore.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=moore.edu",
+    "slug": "moore-college-of-art-and-design"
   },
   {
     "id": "u_296",
@@ -26562,7 +26857,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=franklincollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=franklincollege.edu",
+    "slug": "franklin-college"
   },
   {
     "id": "u_297",
@@ -26653,7 +26949,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ic.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ic.edu",
+    "slug": "illinois-college"
   },
   {
     "id": "u_298",
@@ -26746,7 +27043,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wingate.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wingate.edu",
+    "slug": "wingate-university"
   },
   {
     "id": "u_299",
@@ -26837,7 +27135,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uws.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uws.edu",
+    "slug": "university-of-western-states"
   },
   {
     "id": "u_300",
@@ -26929,7 +27228,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=adler.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=adler.edu",
+    "slug": "adler-university"
   },
   {
     "id": "u_301",
@@ -27022,7 +27322,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=leeuniversity.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=leeuniversity.edu",
+    "slug": "lee-university"
   },
   {
     "id": "u_302",
@@ -27113,7 +27414,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=collegeofidaho.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=collegeofidaho.edu",
+    "slug": "the-college-of-idaho"
   },
   {
     "id": "u_303",
@@ -27206,7 +27508,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=usj.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=usj.edu",
+    "slug": "university-of-saint-joseph"
   },
   {
     "id": "u_304",
@@ -27299,7 +27602,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ccad.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ccad.edu",
+    "slug": "columbus-college-of-art-and-design"
   },
   {
     "id": "u_305",
@@ -27391,7 +27695,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mnu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mnu.edu",
+    "slug": "midamerica-nazarene-university"
   },
   {
     "id": "u_306",
@@ -27483,7 +27788,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dwu.edu",
+    "slug": "dakota-wesleyan-university"
   },
   {
     "id": "u_307",
@@ -27575,7 +27881,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=milligan.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=milligan.edu",
+    "slug": "milligan-university"
   },
   {
     "id": "u_308",
@@ -27668,7 +27975,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ucwv.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ucwv.edu",
+    "slug": "university-of-charleston"
   },
   {
     "id": "u_309",
@@ -27759,7 +28067,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=covenant.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=covenant.edu",
+    "slug": "covenant-college"
   },
   {
     "id": "u_310",
@@ -27851,7 +28160,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msmc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=msmc.edu",
+    "slug": "mount-saint-mary-college"
   },
   {
     "id": "u_311",
@@ -27942,7 +28252,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=randolphcollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=randolphcollege.edu",
+    "slug": "randolph-college"
   },
   {
     "id": "u_312",
@@ -28034,7 +28345,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uj.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uj.edu",
+    "slug": "university-of-jamestown"
   },
   {
     "id": "u_313",
@@ -28126,7 +28438,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=muih.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=muih.edu",
+    "slug": "maryland-university-of-integrative-health"
   },
   {
     "id": "u_314",
@@ -28217,7 +28530,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=monmouthcollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=monmouthcollege.edu",
+    "slug": "monmouth-college"
   },
   {
     "id": "u_315",
@@ -28309,7 +28623,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mvnu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mvnu.edu",
+    "slug": "mount-vernon-nazarene-university"
   },
   {
     "id": "u_316",
@@ -28401,7 +28716,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tlu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tlu.edu",
+    "slug": "texas-lutheran-university"
   },
   {
     "id": "u_317",
@@ -28493,7 +28809,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thomasmore.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thomasmore.edu",
+    "slug": "thomas-more-university"
   },
   {
     "id": "u_318",
@@ -28585,7 +28902,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wlc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wlc.edu",
+    "slug": "wisconsin-lutheran-college"
   },
   {
     "id": "u_319",
@@ -28677,7 +28995,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ohiodominican.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ohiodominican.edu",
+    "slug": "ohio-dominican-university"
   },
   {
     "id": "u_320",
@@ -28768,7 +29087,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=methodistcollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=methodistcollege.edu",
+    "slug": "nebraska-methodist-college"
   },
   {
     "id": "u_321",
@@ -28859,7 +29179,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=newberry.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=newberry.edu",
+    "slug": "newberry-college"
   },
   {
     "id": "u_322",
@@ -28951,7 +29272,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=averett.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=averett.edu",
+    "slug": "averett-university"
   },
   {
     "id": "u_323",
@@ -29044,7 +29366,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mtmary.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mtmary.edu",
+    "slug": "mount-mary-university"
   },
   {
     "id": "u_324",
@@ -29134,7 +29457,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kcumb.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kcumb.edu",
+    "slug": "kansas-city-university"
   },
   {
     "id": "u_325",
@@ -29225,7 +29549,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=landmark.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=landmark.edu",
+    "slug": "landmark-college"
   },
   {
     "id": "u_326",
@@ -29317,7 +29642,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=swu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=swu.edu",
+    "slug": "southern-wesleyan-university"
   },
   {
     "id": "u_327",
@@ -29408,7 +29734,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=saybrook.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=saybrook.edu",
+    "slug": "saybrook-university"
   },
   {
     "id": "u_328",
@@ -29500,7 +29827,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=miad.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=miad.edu",
+    "slug": "milwaukee-institute-of-art-design"
   },
   {
     "id": "u_329",
@@ -29596,7 +29924,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cranbrook.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cranbrook.edu",
+    "slug": "cranbrook-academy-of-art"
   },
   {
     "id": "u_330",
@@ -29688,7 +30017,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=chc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=chc.edu",
+    "slug": "chestnut-hill-college"
   },
   {
     "id": "u_331",
@@ -29780,7 +30110,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=centralmethodist.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=centralmethodist.edu",
+    "slug": "central-methodist-university"
   },
   {
     "id": "u_332",
@@ -29872,7 +30203,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=greenville.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=greenville.edu",
+    "slug": "greenville-university"
   },
   {
     "id": "u_333",
@@ -29964,7 +30296,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=waynesburg.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=waynesburg.edu",
+    "slug": "waynesburg-university"
   },
   {
     "id": "u_334",
@@ -30055,7 +30388,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rockford.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rockford.edu",
+    "slug": "rockford-university"
   },
   {
     "id": "u_335",
@@ -30146,7 +30480,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hastings.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hastings.edu",
+    "slug": "hastings-college"
   },
   {
     "id": "u_336",
@@ -30239,7 +30574,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=upike.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=upike.edu",
+    "slug": "university-of-pikeville"
   },
   {
     "id": "u_337",
@@ -30327,7 +30663,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nysid.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nysid.edu",
+    "slug": "new-york-school-of-interior-design"
   },
   {
     "id": "u_338",
@@ -30420,7 +30757,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=immaculata.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=immaculata.edu",
+    "slug": "immaculata-university"
   },
   {
     "id": "u_339",
@@ -30511,7 +30849,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=maryvillecollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=maryvillecollege.edu",
+    "slug": "maryville-college"
   },
   {
     "id": "u_340",
@@ -30603,7 +30942,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tu.edu",
+    "slug": "touro-university-california"
   },
   {
     "id": "u_341",
@@ -30695,7 +31035,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=salus.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=salus.edu",
+    "slug": "salus-university"
   },
   {
     "id": "u_342",
@@ -30787,7 +31128,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=csm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=csm.edu",
+    "slug": "college-of-saint-mary"
   },
   {
     "id": "u_343",
@@ -30879,7 +31221,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thomas.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thomas.edu",
+    "slug": "thomas-college"
   },
   {
     "id": "u_344",
@@ -30971,7 +31314,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barton.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barton.edu",
+    "slug": "barton-college"
   },
   {
     "id": "u_345",
@@ -31063,7 +31407,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=williamwoods.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=williamwoods.edu",
+    "slug": "william-woods-university"
   },
   {
     "id": "u_346",
@@ -31155,7 +31500,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=okwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=okwu.edu",
+    "slug": "oklahoma-wesleyan-university"
   },
   {
     "id": "u_347",
@@ -31247,7 +31593,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sienaheights.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sienaheights.edu",
+    "slug": "siena-heights-university"
   },
   {
     "id": "u_348",
@@ -31339,7 +31686,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stmary.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stmary.edu",
+    "slug": "university-of-saint-mary"
   },
   {
     "id": "u_349",
@@ -31432,7 +31780,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sf.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sf.edu",
+    "slug": "university-of-saint-francis"
   },
   {
     "id": "u_350",
@@ -31523,7 +31872,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ozarks.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ozarks.edu",
+    "slug": "university-of-the-ozarks"
   },
   {
     "id": "u_351",
@@ -31615,7 +31965,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=schreiner.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=schreiner.edu",
+    "slug": "schreiner-university"
   },
   {
     "id": "u_352",
@@ -31706,7 +32057,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=clarksoncollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=clarksoncollege.edu",
+    "slug": "clarkson-college"
   },
   {
     "id": "u_353",
@@ -31798,7 +32150,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mountsaintvincent.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mountsaintvincent.edu",
+    "slug": "college-of-mount-saint-vincent"
   },
   {
     "id": "u_354",
@@ -31890,7 +32243,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kwu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kwu.edu",
+    "slug": "kansas-wesleyan-university"
   },
   {
     "id": "u_355",
@@ -31982,7 +32336,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=roseman.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=roseman.edu",
+    "slug": "roseman-university-of-health-sciences"
   },
   {
     "id": "u_356",
@@ -32074,7 +32429,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=moval.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=moval.edu",
+    "slug": "missouri-valley-college"
   },
   {
     "id": "u_357",
@@ -32166,7 +32522,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coker.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coker.edu",
+    "slug": "coker-university"
   },
   {
     "id": "u_358",
@@ -32258,7 +32615,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=culver.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=culver.edu",
+    "slug": "culver-stockton-college"
   },
   {
     "id": "u_359",
@@ -32350,7 +32708,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ngu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ngu.edu",
+    "slug": "north-greenville-university"
   },
   {
     "id": "u_360",
@@ -32441,7 +32800,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=acphs.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=acphs.edu",
+    "slug": "albany-college-of-pharmacy-and-health-sciences"
   },
   {
     "id": "u_361",
@@ -32533,7 +32893,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hiu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=hiu.edu",
+    "slug": "hope-international-university"
   },
   {
     "id": "u_362",
@@ -32625,7 +32986,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=briarcliff.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=briarcliff.edu",
+    "slug": "briar-cliff-university"
   },
   {
     "id": "u_363",
@@ -32717,7 +33079,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=laroche.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=laroche.edu",
+    "slug": "la-roche-university"
   },
   {
     "id": "u_364",
@@ -32809,7 +33172,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=unoh.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=unoh.edu",
+    "slug": "university-of-northwestern-ohio"
   },
   {
     "id": "u_365",
@@ -32901,7 +33265,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=franklincummings.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=franklincummings.edu",
+    "slug": "benjamin-franklin-cummings-institute-of-technology"
   },
   {
     "id": "u_366",
@@ -32993,7 +33358,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umobile.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umobile.edu",
+    "slug": "university-of-mobile"
   },
   {
     "id": "u_367",
@@ -33085,7 +33451,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=blc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=blc.edu",
+    "slug": "bethany-lutheran-college"
   },
   {
     "id": "u_368",
@@ -33177,7 +33544,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umo.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=umo.edu",
+    "slug": "university-of-mount-olive"
   },
   {
     "id": "u_369",
@@ -33269,7 +33637,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tabor.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tabor.edu",
+    "slug": "tabor-college"
   },
   {
     "id": "u_370",
@@ -33360,7 +33729,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ketchum.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ketchum.edu",
+    "slug": "marshall-b-ketchum-university"
   },
   {
     "id": "u_371",
@@ -33448,7 +33818,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sco.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sco.edu",
+    "slug": "southern-college-of-optometry"
   },
   {
     "id": "u_372",
@@ -33540,7 +33911,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=macu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=macu.edu",
+    "slug": "mid-america-christian-university"
   },
   {
     "id": "u_373",
@@ -33632,7 +34004,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thiel.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=thiel.edu",
+    "slug": "thiel-college"
   },
   {
     "id": "u_374",
@@ -33719,7 +34092,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=webb.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=webb.edu",
+    "slug": "webb-institute"
   },
   {
     "id": "u_375",
@@ -33811,7 +34185,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dunwoody.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=dunwoody.edu",
+    "slug": "dunwoody-college-of-technology"
   },
   {
     "id": "u_376",
@@ -33901,7 +34276,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uhsp.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uhsp.edu",
+    "slug": "university-of-health-sciences-and-pharmacy-in-st-louis"
   },
   {
     "id": "u_377",
@@ -33991,7 +34367,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mlc-wels.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mlc-wels.edu",
+    "slug": "martin-luther-college"
   },
   {
     "id": "u_378",
@@ -34082,7 +34459,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kwc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=kwc.edu",
+    "slug": "kentucky-wesleyan-college"
   },
   {
     "id": "u_379",
@@ -34174,7 +34552,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=midlandu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=midlandu.edu",
+    "slug": "midland-university"
   },
   {
     "id": "u_380",
@@ -34266,7 +34645,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vcfa.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vcfa.edu",
+    "slug": "vermont-college-of-fine-arts"
   },
   {
     "id": "u_381",
@@ -34357,7 +34737,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pacificoaks.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pacificoaks.edu",
+    "slug": "pacific-oaks-college"
   },
   {
     "id": "u_382",
@@ -34443,7 +34824,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nycpm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nycpm.edu",
+    "slug": "new-york-college-of-podiatric-medicine"
   },
   {
     "id": "u_383",
@@ -34535,7 +34917,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stac.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=stac.edu",
+    "slug": "st-thomas-aquinas-college"
   },
   {
     "id": "u_384",
@@ -34626,7 +35009,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cottey.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cottey.edu",
+    "slug": "cottey-college"
   },
   {
     "id": "u_385",
@@ -34718,7 +35102,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=villa.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=villa.edu",
+    "slug": "villa-maria-college"
   },
   {
     "id": "u_386",
@@ -34806,7 +35191,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ico.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=ico.edu",
+    "slug": "illinois-college-of-optometry"
   },
   {
     "id": "u_387",
@@ -34897,7 +35283,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=yhc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=yhc.edu",
+    "slug": "young-harris-college"
   },
   {
     "id": "u_388",
@@ -34989,7 +35376,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=artacademy.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=artacademy.edu",
+    "slug": "art-academy-of-cincinnati"
   },
   {
     "id": "u_389",
@@ -35081,7 +35469,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=fisher.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=fisher.edu",
+    "slug": "fisher-college"
   },
   {
     "id": "u_390",
@@ -35173,7 +35562,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pcad.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=pcad.edu",
+    "slug": "pennsylvania-college-of-art-and-design"
   },
   {
     "id": "u_391",
@@ -35265,7 +35655,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=evergladesuniversity.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=evergladesuniversity.edu",
+    "slug": "everglades-university"
   },
   {
     "id": "u_392",
@@ -35357,7 +35748,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lec.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lec.edu",
+    "slug": "lake-erie-college"
   },
   {
     "id": "u_393",
@@ -35448,7 +35840,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=principia.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=principia.edu",
+    "slug": "principia-college"
   },
   {
     "id": "u_394",
@@ -35540,7 +35933,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wau.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=wau.edu",
+    "slug": "washington-adventist-university"
   },
   {
     "id": "u_395",
@@ -35628,7 +36022,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mccn.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mccn.edu",
+    "slug": "mount-carmel-college-of-nursing"
   },
   {
     "id": "u_396",
@@ -35685,7 +36080,8 @@
       "avg_apartment_rent": null,
       "crime_rate": null
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=laboure.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=laboure.edu",
+    "slug": "labour-college"
   },
   {
     "id": "u_397",
@@ -35775,7 +36171,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=allencollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=allencollege.edu",
+    "slug": "allen-college"
   },
   {
     "id": "u_398",
@@ -35867,7 +36264,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tnwesleyan.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=tnwesleyan.edu",
+    "slug": "tennessee-wesleyan-university"
   },
   {
     "id": "u_399",
@@ -35958,7 +36356,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=franu.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=franu.edu",
+    "slug": "franciscan-missionaries-of-our-lady-university"
   },
   {
     "id": "u_400",
@@ -36049,7 +36448,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jpcatholic.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=jpcatholic.edu",
+    "slug": "john-paul-the-great-catholic-university"
   },
   {
     "id": "u_401",
@@ -36135,7 +36535,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sjcl.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sjcl.edu",
+    "slug": "san-joaquin-college-of-law"
   },
   {
     "id": "u_402",
@@ -36227,7 +36628,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lcad.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=lcad.edu",
+    "slug": "laguna-college-of-art-and-design"
   },
   {
     "id": "u_403",
@@ -36314,7 +36716,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=prgs.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=prgs.edu",
+    "slug": "pardee-rand-graduate-school"
   },
   {
     "id": "u_404",
@@ -36403,7 +36806,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vandercook.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=vandercook.edu",
+    "slug": "vandercook-college-of-music"
   },
   {
     "id": "u_405",
@@ -36493,7 +36897,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coxcollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=coxcollege.edu",
+    "slug": "cox-college"
   },
   {
     "id": "u_406",
@@ -36583,7 +36988,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bellincollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=bellincollege.edu",
+    "slug": "bellin-college"
   },
   {
     "id": "u_407",
@@ -36670,7 +37076,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barnesjewishcollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=barnesjewishcollege.edu",
+    "slug": "goldfarb-school-of-nursing-at-barnes-jewish-college"
   },
   {
     "id": "u_408",
@@ -36762,7 +37169,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=aquinas.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=aquinas.edu",
+    "slug": "aquinas-college-nashville-tn"
   },
   {
     "id": "u_409",
@@ -36855,7 +37263,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=afi.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=afi.edu",
+    "slug": "american-film-institute-conservatory"
   },
   {
     "id": "u_410",
@@ -36941,7 +37350,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=acp.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=acp.edu",
+    "slug": "appalachian-college-of-pharmacy"
   },
   {
     "id": "u_411",
@@ -37028,7 +37438,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mtsa.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=mtsa.edu",
+    "slug": "middle-tennessee-school-of-anesthesia"
   },
   {
     "id": "u_412",
@@ -37118,7 +37529,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gscollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=gscollege.edu",
+    "slug": "good-samaritan-college-of-nursing-health-science"
   },
   {
     "id": "u_413",
@@ -37209,7 +37621,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rush.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=rush.edu",
+    "slug": "rush-university"
   },
   {
     "id": "u_414",
@@ -37295,7 +37708,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sacn.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sacn.edu",
+    "slug": "saint-anthony-college-of-nursing"
   },
   {
     "id": "u_415",
@@ -37385,7 +37799,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=geisinger.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=geisinger.edu",
+    "slug": "geisinger-college-of-health-sciences"
   },
   {
     "id": "u_416",
@@ -37471,7 +37886,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sfmccon.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=sfmccon.edu",
+    "slug": "saint-francis-medical-center-college-of-nursing"
   },
   {
     "id": "u_417",
@@ -37562,7 +37978,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=potomac.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=potomac.edu",
+    "slug": "university-of-the-potomac"
   },
   {
     "id": "u_418",
@@ -37654,7 +38071,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cogswell.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cogswell.edu",
+    "slug": "cogswell-university-of-silicon-valley"
   },
   {
     "id": "u_419",
@@ -37744,7 +38162,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nunm.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=nunm.edu",
+    "slug": "national-university-of-natural-medicine"
   },
   {
     "id": "u_420",
@@ -37830,7 +38249,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=arizonacollege.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=arizonacollege.edu",
+    "slug": "arizona-college-of-nursing"
   },
   {
     "id": "u_421",
@@ -37917,7 +38337,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cjc.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=cjc.edu",
+    "slug": "california-jazz-conservatory"
   },
   {
     "id": "u_422",
@@ -38005,7 +38426,8 @@
         "level": "high"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uarts.edu"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=uarts.edu",
+    "slug": "university-of-the-arts"
   },
   {
     "id": "u_423",
@@ -38097,7 +38519,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/seattle"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/seattle",
+    "slug": "antioch-university-seattle"
   },
   {
     "id": "u_424",
@@ -38189,7 +38612,8 @@
         "level": "moderate"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/los-angeles"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/los-angeles",
+    "slug": "antioch-university-los-angeles"
   },
   {
     "id": "u_425",
@@ -38280,7 +38704,8 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/santa-barbara"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/santa-barbara",
+    "slug": "antioch-university-santa-barbara"
   },
   {
     "id": "u_426",
@@ -38372,6 +38797,7 @@
         "level": "low"
       }
     },
-    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/new-england"
+    "original_logo_url": "https://www.google.com/s2/favicons?sz=128&domain_url=antioch.edu/new-england",
+    "slug": "antioch-university-new-england"
   }
 ]

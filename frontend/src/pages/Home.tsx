@@ -67,6 +67,17 @@ export default function Home() {
     <div className="overflow-hidden">
       <Helmet>
         <title>CampusArge | Connect Universities with Global Faculty Talent</title>
+        <meta
+          name="description"
+          content="Explore top global universities, degree programs, tuition costs, and verified academic faculty. Compare institutions worldwide with CampusArge."
+        />
+        <link rel="canonical" href="https://campusarge.com/" />
+        <meta property="og:title" content="CampusArge | Global Education, Real Opportunities" />
+        <meta
+          property="og:description"
+          content="Explore top global universities, degree programs, tuition costs, and verified academic faculty. Compare institutions worldwide."
+        />
+        <meta property="og:url" content="https://campusarge.com/" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>

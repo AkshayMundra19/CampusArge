@@ -39,6 +39,7 @@ export interface InstitutionFacts {
 
 export interface University {
   id: string;
+  slug?: string;
   name: string;
   country: string;
   country_code: string | null;

@@ -5,6 +5,7 @@ import {
   ChevronDown,
 } from 'lucide-react';
 import heroImage from '@/assets/hero/hero-campus-banner.jpg';
+import heroMobileImage from '@/assets/hero/hero-campus-mobile.webp';
 
 export default function HeroSection() {
   const [query, setQuery] = useState('');
@@ -18,16 +19,19 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative pt-32 pb-16 sm:pt-36 sm:pb-24 lg:pt-32 lg:pb-28 overflow-hidden bg-white dark:bg-slate-950 lg:min-h-[640px] xl:min-h-[700px] flex items-center">
+    <section className="relative pt-24 pb-14 sm:pt-28 sm:pb-20 lg:pt-32 lg:pb-28 overflow-hidden bg-white dark:bg-slate-950 lg:min-h-[640px] xl:min-h-[700px] flex items-center">
       {/* Full-view Hero Background Artwork on Desktop — no borders, seamless fade */}
       <div className="absolute top-0 right-0 bottom-0 w-full lg:w-[58%] xl:w-[55%] pointer-events-none select-none z-0 hidden lg:block">
         <img
           src={heroImage}
           alt="CampusArge - Global Learning, Global Opportunities"
+          width={1024}
+          height={576}
           // @ts-expect-error fetchpriority attribute is supported in modern browsers
           fetchpriority="high"
           loading="eager"
           decoding="async"
+          style={{ aspectRatio: '1024 / 576' }}
           className="w-full h-full object-cover object-right"
         />
         {/* Soft linear gradient fade on left edge for seamless blend into white background */}
@@ -75,15 +79,33 @@ export default function HeroSection() {
               </Link>
             </div>
 
+            {/* Mobile view (< lg): centered, perfectly framed hero artwork */}
+            <div className="lg:hidden mt-6 mb-3 animate-fade-in-up" style={{ animationDelay: '0.18s' }}>
+              <div className="relative rounded-2xl overflow-hidden shadow-md border border-slate-100 dark:border-slate-800 bg-white dark:bg-slate-900 max-w-sm mx-auto">
+                <img
+                  src={heroMobileImage}
+                  alt="CampusArge - Global Learning and Academic Opportunities"
+                  width={704}
+                  height={576}
+                  loading="eager"
+                  decoding="async"
+                  // @ts-expect-error fetchpriority attribute is supported in modern browsers
+                  fetchpriority="high"
+                  style={{ aspectRatio: '704 / 576' }}
+                  className="w-full h-auto object-cover object-center select-none pointer-events-none"
+                />
+              </div>
+            </div>
+
             {/* Search bar */}
-            <form onSubmit={handleSearch} className="mt-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <form onSubmit={handleSearch} className="mt-6 animate-fade-in-up" style={{ animationDelay: '0.22s' }}>
               <div className="glass-card rounded-2xl p-2 flex items-center gap-2 max-w-xl border border-slate-200/80 shadow-md">
                 <Search className="w-5 h-5 text-slate-400 ml-3 flex-shrink-0" aria-hidden="true" />
                 <input
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search institutions, academic programs, or fields..."
+                  placeholder="Search institutions, programs, or fields..."
                   aria-label="Search institutions, academic programs, or fields"
                   className="flex-1 bg-transparent border-none focus:outline-none text-slate-900 dark:text-white placeholder-slate-400 text-sm py-2 min-w-0"
                 />
@@ -102,15 +124,6 @@ export default function HeroSection() {
               <span className="text-xs font-medium tracking-wide">Scroll to explore</span>
               <ChevronDown className="w-4 h-4 animate-bounce" aria-hidden="true" />
             </div>
-          </div>
-
-          {/* Mobile view (< lg): full view image displayed seamlessly without any card border */}
-          <div className="lg:hidden col-span-12 mt-6 sm:mt-8 animate-fade-in-up pointer-events-none select-none">
-            <img
-              src={heroImage}
-              alt="CampusArge - Global Learning, Global Opportunities"
-              className="w-full h-auto object-cover object-right"
-            />
           </div>
         </div>
       </div>

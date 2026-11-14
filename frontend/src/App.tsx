@@ -47,36 +47,40 @@ function Layout() {
     pathname.startsWith('/dashboard');
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors">
+    <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors overflow-x-hidden w-full max-w-full">
       <Navbar />
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/institutions" element={<InstitutionsDirectory />} />
-        <Route path="/institutions/:slug" element={<InstitutionDetail />} />
-        <Route path="/compare" element={<Compare />} />
-        <Route path="/research-areas" element={<Navigate to="/" replace />} />
-        <Route path="/universities" element={<Universities />} />
-        <Route path="/universities/:id" element={<UniversityDetail />} />
-        <Route path="/mentors" element={<Navigate to="/" replace />} />
-        <Route path="/mentors/:id" element={<Navigate to="/" replace />} />
-        <Route path="/roadmaps" element={<Roadmaps />} />
-        <Route path="/dashboard/*" element={<Dashboard />} />
-        <Route path="/admin" element={<Navigate to="/dashboard" replace />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<Blog />} />
-        <Route path="/business-policy" element={<BusinessPolicy />} />
-        <Route path="/disclaimer" element={<Disclaimer />} />
-        <Route path="/verification" element={<VerificationProcess />} />
-        <Route path="/accessibility" element={<Accessibility />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <main id="main-content" role="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/institutions" element={<InstitutionsDirectory />} />
+          <Route path="/institutions/:slug" element={<InstitutionDetail />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/research-areas" element={<Navigate to="/" replace />} />
+          <Route path="/universities" element={<Universities />} />
+          <Route path="/universities/:id" element={<UniversityDetail />} />
+          <Route path="/mentors" element={<Navigate to="/" replace />} />
+          <Route path="/mentors/:id" element={<Navigate to="/" replace />} />
+          <Route path="/roadmaps" element={<Roadmaps />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
+          <Route path="/admin" element={<Navigate to="/dashboard" replace />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<Blog />} />
+          <Route path="/business-policy" element={<BusinessPolicy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/verification" element={<VerificationProcess />} />
+          <Route path="/accessibility" element={<Accessibility />} />
+          {/* Direct university permalink: /university_name */}
+          <Route path="/:slug" element={<InstitutionDetail />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       {!hideFooter && <Footer />}
       <CookieBanner />
     </div>

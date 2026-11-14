@@ -6,7 +6,7 @@ import {
   MapPin, ShieldCheck, ShieldAlert,
   ArrowRight, Search, Scale, AlertCircle
 } from 'lucide-react';
-import { REAL_UNIVERSITIES, getUniversityById } from '@/lib/universitiesData';
+import { REAL_UNIVERSITIES, getUniversityById, getUniversitySlug } from '@/lib/universitiesData';
 import { useCompare } from '@/context/CompareContext';
 import type { University } from '@/types';
 import InstitutionLogo from '@/components/InstitutionLogo';
@@ -1040,7 +1040,7 @@ export default function Compare() {
 
                               {/* Row 4: View Details Button (pinned to bottom, height 40px) */}
                               <Link
-                                to={`/institutions/${inst.id}`}
+                                to={`/${inst.slug || getUniversitySlug(inst)}`}
                                 className="mt-auto w-full h-10 px-4 flex items-center justify-center text-center rounded-lg bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm"
                               >
                                 View Details →

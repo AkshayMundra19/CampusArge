@@ -104,3 +104,4 @@ captureMobileScreenshots().then(() => {
 }).catch(e => {
   console.error('Audit failed:', e);
 });
+

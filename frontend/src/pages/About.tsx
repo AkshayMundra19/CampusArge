@@ -149,7 +149,7 @@ export default function About() {
   };
 
   return (
-    <div className="pt-24 pb-20 min-h-screen bg-slate-50/60 dark:bg-slate-950 transition-colors">
+    <div className="pt-24 pb-20 min-h-screen bg-slate-50/60 dark:bg-slate-950 transition-colors overflow-x-hidden w-full max-w-full">
       <Helmet>
         <title>About CampusArge | Verified University Directory and Comparison Platform</title>
         <meta 
@@ -167,10 +167,10 @@ export default function About() {
       </Helmet>
 
       {/* ─── 1. HERO SECTION ─────────────────────────────────────────── */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20 text-center">
+      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20 text-center overflow-hidden">
         {/* Soft background glow */}
         <div 
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-r from-navy/10 via-oxford/10 to-gold/10 blur-[90px] -z-10 rounded-full pointer-events-none" 
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] max-w-[90vw] h-[450px] bg-gradient-to-r from-navy/10 via-oxford/10 to-gold/10 blur-[90px] -z-10 rounded-full pointer-events-none" 
           aria-hidden="true" 
         />
         
@@ -585,7 +585,7 @@ export default function About() {
             <p className="italic">
               Figures are indicative and can change over time. Always confirm current tuition and program terms with the institution directly before applying.
             </p>
-            <span className="font-semibold text-slate-700 dark:text-slate-300 whitespace-nowrap">
+            <span className="font-semibold text-slate-700 dark:text-slate-300 sm:whitespace-nowrap">
               {/* [CONFIRM]: Date of latest data review batch */}
               Data last reviewed: October 2026
             </span>

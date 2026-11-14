@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 import { InstitutionCard } from '@/components/InstitutionCard';
 import type { Institution } from '@/components/InstitutionCard';
-import { REAL_UNIVERSITIES } from '@/lib/universitiesData';
+import { REAL_UNIVERSITIES, getUniversitySlug } from '@/lib/universitiesData';
 import heroCampusWebp from '@/assets/institutions/hero-institutions-campus.webp';
 import heroCampus2xWebp from '@/assets/institutions/hero-institutions-campus@2x.webp';
 import { useCompare } from '@/context/CompareContext';
@@ -16,6 +16,7 @@ import CompareTray from '@/components/CompareTray';
 
 const MAPPED_INSTITUTIONS: Institution[] = REAL_UNIVERSITIES.map((u): Institution => ({
   id: u.id,
+  slug: u.slug || getUniversitySlug(u),
   rank: u.qs_rank,
   name: u.name,
   location: [u.city, u.country].filter(Boolean).join(', ') || 'United States',
@@ -227,7 +228,7 @@ export default function InstitutionsDirectory() {
         '@type': 'ListItem',
         position: index + 1,
         name: inst.name,
-        url: `https://campusarge.com/institutions/${inst.id}`
+        url: `https://campusarge.com/${inst.slug || getUniversitySlug(inst)}`
       }))
     },
     breadcrumb: {

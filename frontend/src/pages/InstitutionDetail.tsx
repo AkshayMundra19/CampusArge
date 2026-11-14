@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import {
   MapPin, Globe, BookOpen, Award, CheckCircle2, Building2,
@@ -7,7 +7,7 @@ import {
   GraduationCap, Compass, Trophy, Bed, Maximize2, Sparkles,
   Info, ChevronRight
 } from 'lucide-react';
-import { REAL_UNIVERSITIES, getUniversityById } from '@/lib/universitiesData';
+import { REAL_UNIVERSITIES, getUniversityById, getUniversitySlug, findSlimUniversity } from '@/lib/universitiesData';
 import type { University } from '@/types';
 
 // Helper for Initials Monogram Fallback
@@ -38,10 +38,12 @@ function getCleanHostname(url: string | null): string {
 
 export default function InstitutionDetail() {
   const { slug } = useParams<{ slug: string }>();
+  const location = useLocation();
+  const navigate = useNavigate();
   const [logoError, setLogoError] = useState(false);
 
-  // Instant initial state from slim index
-  const initialUni = REAL_UNIVERSITIES.find(u => u.id === slug) || null;
+  // Instant initial state from slim index using slug or id
+  const initialUni = slug ? findSlimUniversity(slug) : null;
   const [university, setUniversity] = useState<University | null>(initialUni);
   const [loadingFull, setLoadingFull] = useState(true);
 
@@ -50,19 +52,25 @@ export default function InstitutionDetail() {
     if (!slug) return;
     
     // Look up in slim list first
-    const slim = REAL_UNIVERSITIES.find(u => u.id === slug) || null;
+    const slim = findSlimUniversity(slug);
     setUniversity(slim);
     
     // Dynamically fetch full record
     getUniversityById(slug).then(full => {
       if (full) {
         setUniversity(full);
+        // Clean permalink auto-redirection (e.g. /institutions/u_300 -> /adler-university)
+        const canonicalSlug = full.slug || getUniversitySlug(full);
+        const expectedPath = `/${canonicalSlug}`;
+        if (location.pathname !== expectedPath) {
+          navigate(expectedPath, { replace: true });
+        }
       }
       setLoadingFull(false);
     }).catch(() => {
       setLoadingFull(false);
     });
-  }, [slug]);
+  }, [slug, location.pathname, navigate]);
 
   if (!university) {
     return (
@@ -99,7 +107,8 @@ export default function InstitutionDetail() {
   ].filter(Boolean);
   const metaDescription = metaDescParts.join('. ').slice(0, 158);
 
-  const canonicalUrl = `https://campusarge.com/institutions/${university.id}`;
+  const canonicalSlug = university.slug || getUniversitySlug(university);
+  const canonicalUrl = `https://campusarge.com/${canonicalSlug}`;
   const websiteUrl = university.website || canonicalUrl;
 
   // JSON-LD Structured Data
@@ -786,7 +795,7 @@ export default function InstitutionDetail() {
                   {relatedInstitutions.map(rel => (
                     <Link
                       key={rel.id}
-                      to={`/institutions/${rel.id}`}
+                      to={`/${rel.slug || getUniversitySlug(rel)}`}
                       className="p-4 rounded-xl border border-slate-200/80 dark:border-slate-800 hover:border-gold/60 transition-all bg-slate-50/50 dark:bg-slate-800/30 flex items-center gap-3.5 group"
                     >
                       <div className="w-12 h-12 rounded-lg bg-white shadow-sm flex items-center justify-center p-2 flex-shrink-0 border border-slate-100">

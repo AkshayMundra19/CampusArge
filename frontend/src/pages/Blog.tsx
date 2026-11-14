@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { BookOpen, ArrowRight, Clock, Tag } from 'lucide-react';
+import { BookOpen, ArrowRight, Clock, Tag, Building2, Scale } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { BLOG_POSTS } from '@/lib/blogData';
 
 const CATEGORIES = ['All', 'Institutional Strategy', 'Research Collaboration', 'Higher Ed Insights'];
@@ -13,6 +14,34 @@ export default function Blog() {
     : BLOG_POSTS.filter(p => p.category === selectedCategory);
   return (
     <div className="pt-24 pb-20 min-h-screen">
+      <Helmet>
+        <title>Higher Education Insights, Admissions & College Guides | CampusArge Blog</title>
+        <meta
+          name="description"
+          content="Explore expert guides, college admissions advice, university comparison tips, and academic partnership insights written by verified education experts on CampusArge."
+        />
+        <meta
+          name="keywords"
+          content="higher education blog, college admissions guide, university comparison tips, study abroad guide, academic career advice, college rankings insights"
+        />
+        <link rel="canonical" href="https://campusarge.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="Higher Education Insights, Admissions & College Guides | CampusArge Blog" />
+        <meta
+          property="og:description"
+          content="Explore expert guides, college admissions advice, university comparison tips, and academic partnership insights."
+        />
+        <meta property="og:url" content="https://campusarge.com/blog" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Higher Education Insights, Admissions & College Guides | CampusArge Blog" />
+        <meta
+          name="twitter:description"
+          content="Explore expert guides, college admissions advice, university comparison tips, and academic partnership insights."
+        />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">

@@ -151,16 +151,26 @@ export default function About() {
   return (
     <div className="pt-24 pb-20 min-h-screen bg-slate-50/60 dark:bg-slate-950 transition-colors overflow-x-hidden w-full max-w-full">
       <Helmet>
-        <title>About CampusArge | Verified University Directory and Comparison Platform</title>
+        <title>About CampusArge | Independent University Directory & Comparison Platform</title>
         <meta 
           name="description" 
-          content="Learn how CampusArge provides verified, transparent institution data, tuition figures, and academic comparisons for students and families worldwide." 
+          content="Discover how CampusArge independently indexes and verifies 426+ accredited universities, degree programs, and tuition figures to help students make confident decisions." 
+        />
+        <meta
+          name="keywords"
+          content="about CampusArge, university directory platform, verified college data, independent university review, higher education directory, college comparison platform"
         />
         <link rel="canonical" href="https://campusarge.com/about" />
-        <meta property="og:title" content="About CampusArge | Verified University Directory and Comparison Platform" />
-        <meta property="og:description" content="Discover how CampusArge empowers students with verified university data, costs, and comparisons." />
-        <meta property="og:url" content="https://campusarge.com/about" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="About CampusArge | Independent University Directory & Comparison Platform" />
+        <meta property="og:description" content="Discover how CampusArge independently indexes and verifies 426+ accredited universities, degree programs, and tuition figures." />
+        <meta property="og:url" content="https://campusarge.com/about" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About CampusArge | Independent University Directory & Comparison Platform" />
+        <meta name="twitter:description" content="Discover how CampusArge independently indexes and verifies 426+ accredited universities, degree programs, and tuition figures." />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(faqJsonLd)}
         </script>

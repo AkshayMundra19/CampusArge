@@ -55,9 +55,9 @@ function Layout() {
           <Route path="/" element={<Home />} />
           <Route path="/institutions" element={<InstitutionsDirectory />} />
           <Route path="/institutions/:slug" element={<InstitutionDetail />} />
+          <Route path="/universities" element={<InstitutionsDirectory />} />
           <Route path="/compare" element={<Compare />} />
-          <Route path="/research-areas" element={<Navigate to="/" replace />} />
-          <Route path="/universities" element={<Universities />} />
+          <Route path="/compare-universities" element={<Compare />} />
           <Route path="/universities/:id" element={<UniversityDetail />} />
           <Route path="/mentors" element={<Navigate to="/" replace />} />
           <Route path="/mentors/:id" element={<Navigate to="/" replace />} />

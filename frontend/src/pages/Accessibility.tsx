@@ -1,8 +1,18 @@
 import { Accessibility as AccessibilityIcon, HeartHandshake } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function Accessibility() {
   return (
     <div className="pt-32 pb-20 min-h-screen">
+      <Helmet>
+        <title>Accessibility Statement | CampusArge</title>
+        <meta
+          name="description"
+          content="CampusArge's commitment to web accessibility and WCAG standards for an inclusive higher education directory."
+        />
+        <meta name="keywords" content="accessibility statement, CampusArge accessibility, WCAG compliance" />
+        <link rel="canonical" href="https://campusarge.com/accessibility" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 animate-fade-in-up">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center mx-auto mb-4">

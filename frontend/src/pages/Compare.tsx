@@ -709,10 +709,27 @@ export default function Compare() {
   return (
     <div className="min-h-screen bg-slate-50/70 dark:bg-slate-950 pt-24 pb-36 sm:pb-28 transition-colors">
       <Helmet>
-        <title>Compare Institutions | CampusArge</title>
-        <meta name="description" content="Side-by-side comparison of universities and colleges across tuition costs, student-to-faculty ratios, living expenses, housing, and degree offerings." />
-        <meta name="robots" content="noindex, follow" />
+        <title>Compare Universities Side-by-Side | Tuition, Ratios & Fees – CampusArge</title>
+        <meta
+          name="description"
+          content="Compare up to 4 universities side-by-side on cost of attendance, tuition fees, student-to-faculty ratios, and degree programs. Make confident choices with CampusArge."
+        />
+        <meta
+          name="keywords"
+          content="compare universities, college comparison tool, side by side university comparison, compare college tuition, student faculty ratio compare, compare universities USA"
+        />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://campusarge.com/compare" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="Compare Universities Side-by-Side | Tuition, Ratios & Fees – CampusArge" />
+        <meta property="og:description" content="Compare up to 4 universities side-by-side on cost of attendance, tuition fees, student-to-faculty ratios, and degree programs." />
+        <meta property="og:url" content="https://campusarge.com/compare" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Compare Universities Side-by-Side | Tuition, Ratios & Fees – CampusArge" />
+        <meta name="twitter:description" content="Compare up to 4 universities side-by-side on cost of attendance, tuition fees, student-to-faculty ratios, and degree programs." />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
       </Helmet>
 
       <div className="inst-container">
@@ -1038,12 +1055,12 @@ export default function Compare() {
                                 <span className="leading-snug">{inst.city}, {inst.country}</span>
                               </p>
 
-                              {/* Row 4: View Details Button (pinned to bottom, height 40px) */}
+                              {/* Row 4: High-Converting CTA Button (pinned to bottom, height 40px) */}
                               <Link
                                 to={`/${inst.slug || getUniversitySlug(inst)}`}
-                                className="mt-auto w-full h-10 px-4 flex items-center justify-center text-center rounded-lg bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-semibold transition-colors shadow-sm"
+                                className="mt-auto w-full h-10 px-3 flex items-center justify-center text-center rounded-lg bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-bold transition-all shadow-sm hover:scale-[1.01]"
                               >
-                                View Details →
+                                View Programs &amp; Fees &rarr;
                               </Link>
                             </div>
                           </th>

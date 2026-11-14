@@ -6,6 +6,7 @@ import HomeBlogSection from '@/components/home/HomeBlogSection';
 import HowItWorks from '@/components/home/HowItWorks';
 import Testimonials from '@/components/home/Testimonials';
 import NewsletterBanner from '@/components/home/NewsletterBanner';
+import CallToActionBanner from '@/components/common/CallToActionBanner';
 import { Helmet } from 'react-helmet-async';
 
 const FAQ_ITEMS = [
@@ -66,18 +67,33 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Helmet>
-        <title>CampusArge | Connect Universities with Global Faculty Talent</title>
+        <title>CampusArge | Compare 426+ Verified Universities, Tuition & Programs</title>
         <meta
           name="description"
-          content="Explore top global universities, degree programs, tuition costs, and verified academic faculty. Compare institutions worldwide with CampusArge."
+          content="Explore and compare 426+ verified universities worldwide. Discover cost of attendance, tuition fees, student-faculty ratios, and accredited degree programs."
+        />
+        <meta
+          name="keywords"
+          content="compare universities, university directory, college tuition fees, accredited colleges, cost of attendance, university rankings, higher education search, degree programs, study in USA"
         />
         <link rel="canonical" href="https://campusarge.com/" />
-        <meta property="og:title" content="CampusArge | Global Education, Real Opportunities" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="CampusArge | Compare 426+ Verified Universities, Tuition & Programs" />
         <meta
           property="og:description"
-          content="Explore top global universities, degree programs, tuition costs, and verified academic faculty. Compare institutions worldwide."
+          content="Explore and compare 426+ verified universities worldwide. Discover cost of attendance, tuition fees, student-faculty ratios, and accredited degree programs."
         />
         <meta property="og:url" content="https://campusarge.com/" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@campusarge" />
+        <meta name="twitter:title" content="CampusArge | Compare 426+ Verified Universities, Tuition & Programs" />
+        <meta
+          name="twitter:description"
+          content="Explore and compare 426+ verified universities worldwide. Discover cost of attendance, tuition fees, student-faculty ratios, and accredited degree programs."
+        />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -149,6 +165,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 9. Global Conversion CTA Banner */}
+      <CallToActionBanner />
     </div>
   );
 }

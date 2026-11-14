@@ -1,8 +1,18 @@
 import { FileText } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function Terms() {
   return (
     <div className="pt-24 pb-20 min-h-screen">
+      <Helmet>
+        <title>Terms of Service | CampusArge</title>
+        <meta
+          name="description"
+          content="Review the terms and conditions governing the use of CampusArge's university directory, comparison platform, and educational resources."
+        />
+        <meta name="keywords" content="terms of service, CampusArge terms, directory terms of use, legal terms" />
+        <link rel="canonical" href="https://campusarge.com/terms" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center mx-auto mb-4">

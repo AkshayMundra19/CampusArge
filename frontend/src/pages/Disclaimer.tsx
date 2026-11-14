@@ -1,8 +1,18 @@
 import { AlertTriangle } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function Disclaimer() {
   return (
     <div className="pt-24 pb-20 min-h-screen">
+      <Helmet>
+        <title>Educational Data Disclaimer | CampusArge</title>
+        <meta
+          name="description"
+          content="Important disclaimer regarding higher education data, cost of attendance benchmarking, and independent directory status on CampusArge."
+        />
+        <meta name="keywords" content="disclaimer, higher education disclaimer, university data disclaimer, CampusArge" />
+        <link rel="canonical" href="https://campusarge.com/disclaimer" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center mx-auto mb-4">

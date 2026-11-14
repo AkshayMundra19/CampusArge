@@ -195,13 +195,13 @@ export function InstitutionCard({
           </div>
         )}
 
-        {/* Button: mt-auto aligns button to row bottom with consistent spacing */}
+        {/* High-Converting CTA Button: mt-auto aligns button to row bottom */}
         <Link
           to={`/${inst.slug || getUniversitySlug(inst)}`}
-          aria-label={`View details for ${inst.name}`}
-          className="mt-auto w-full py-2.5 px-4 bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-semibold rounded-[10px] transition-colors text-center block shadow-sm"
+          aria-label={`Explore programs and tuition fees for ${inst.name}`}
+          className="mt-auto w-full py-2.5 px-4 bg-navy hover:bg-navy-dark text-white text-xs sm:text-sm font-bold rounded-[10px] transition-all text-center block shadow-sm hover:shadow-md hover:scale-[1.01]"
         >
-          View Details →
+          Explore Programs &amp; Fees &rarr;
         </Link>
       </div>
     </div>

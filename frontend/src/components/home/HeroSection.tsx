@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   ShieldCheck, Building2, Search, ArrowRight,
-  ChevronDown,
+  ChevronDown, Scale, Sparkles
 } from 'lucide-react';
 import heroImage from '@/assets/hero/hero-campus-banner.jpg';
 import heroMobileImage from '@/assets/hero/hero-campus-mobile.webp';
@@ -52,30 +52,38 @@ export default function HeroSection() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 mb-6 sm:mb-8 animate-fade-in">
               <ShieldCheck className="w-4 h-4 text-green-600 dark:text-green-400" aria-hidden="true" />
               <span className="text-sm font-semibold text-green-700 dark:text-green-300">
-                Trusted by Leading Institutions
+                426+ Verified & Accredited Universities
               </span>
             </div>
 
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-slate-900 dark:text-white leading-[1.12] text-balance animate-fade-in-up">
-              Connect Your Institution with{' '}
-              <span className="gradient-text">Global Academic Talent</span>
+              Compare 426+ Verified Universities &{' '}
+              <span className="gradient-text">Degree Programs</span>
             </h1>
 
             {/* Primary description */}
             <p className="mt-5 sm:mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl text-pretty animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-              Showcase your institution, highlight verified faculty, foster academic collaborations, and increase global visibility.
+              Explore transparent tuition fees, cost of attendance, faculty ratios, and accredited degree programs. Make confident higher education decisions with CampusArge.
             </p>
 
-            {/* CTA */}
-            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
+            {/* High-Converting CTA Buttons */}
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3.5 sm:gap-4 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
               <Link
                 to="/institutions"
                 id="hero-explore-institutions-btn"
-                className="btn-primary flex items-center justify-center gap-2 text-base px-8 py-4 shadow-lg shadow-navy"
+                className="btn-primary flex items-center justify-center gap-2 text-base px-7 py-3.5 shadow-lg shadow-navy/20 font-bold hover:scale-[1.02] transition-transform"
               >
                 <Building2 className="w-5 h-5" aria-hidden="true" />
-                Explore Institutions
+                Explore 426+ Universities
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
+              </Link>
+              <Link
+                to="/compare"
+                id="hero-compare-universities-btn"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-900/90 text-navy dark:text-gold font-bold text-base hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Scale className="w-5 h-5 text-gold" aria-hidden="true" />
+                Compare Side-by-Side
               </Link>
             </div>
 
@@ -105,16 +113,51 @@ export default function HeroSection() {
                   type="text"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search institutions, programs, or fields..."
-                  aria-label="Search institutions, academic programs, or fields"
+                  placeholder="Search by university name, major, or city..."
+                  aria-label="Search universities, academic programs, or fields"
                   className="flex-1 bg-transparent border-none focus:outline-none text-slate-900 dark:text-white placeholder-slate-400 text-sm py-2 min-w-0"
                 />
                 <button
                   type="submit"
                   id="hero-search-btn"
-                  className="btn-primary px-5 py-2.5 text-sm flex-shrink-0"
+                  className="btn-primary px-6 py-2.5 text-sm font-bold flex-shrink-0"
                 >
                   Search
+                </button>
+              </div>
+
+              {/* Instant Engagement Discovery Pills */}
+              <div className="mt-3.5 flex flex-wrap items-center gap-2 text-xs">
+                <span className="text-slate-400 dark:text-slate-500 font-medium flex items-center gap-1">
+                  <Sparkles className="w-3.5 h-3.5 text-gold" /> Popular:
+                </span>
+                <button
+                  type="button"
+                  onClick={() => navigate('/institutions?coa=under30')}
+                  className="px-2.5 py-1 rounded-full bg-slate-100 hover:bg-gold/15 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 hover:text-navy border border-slate-200/80 dark:border-slate-700 transition-colors"
+                >
+                  💰 Under $30k Fees
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigate('/institutions?q=Engineering')}
+                  className="px-2.5 py-1 rounded-full bg-slate-100 hover:bg-gold/15 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 hover:text-navy border border-slate-200/80 dark:border-slate-700 transition-colors"
+                >
+                  🔬 Engineering & STEM
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigate('/institutions?ratio=le10')}
+                  className="px-2.5 py-1 rounded-full bg-slate-100 hover:bg-gold/15 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 hover:text-navy border border-slate-200/80 dark:border-slate-700 transition-colors"
+                >
+                  👥 10:1 Faculty Ratio
+                </button>
+                <button
+                  type="button"
+                  onClick={() => navigate('/institutions?type=Public')}
+                  className="px-2.5 py-1 rounded-full bg-slate-100 hover:bg-gold/15 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 hover:text-navy border border-slate-200/80 dark:border-slate-700 transition-colors"
+                >
+                  🏛️ Public Colleges
                 </button>
               </div>
             </form>

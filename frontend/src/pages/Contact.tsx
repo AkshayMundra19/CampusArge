@@ -42,18 +42,32 @@ export default function Contact() {
   return (
     <div className="pt-24 pb-20 min-h-screen">
       <Helmet>
-        <title>Contact Us | CampusArge &mdash; Inquiries, Support &amp; Partnerships</title>
+        <title>Contact CampusArge | Admissions Queries & University Directory Support</title>
         <meta
           name="description"
-          content="Get in touch with the CampusArge team for academic inquiries, institutional partnerships, and platform support. Reach us at info@campusarge.com or query@campusarge.com."
+          content="Get in touch with CampusArge for university profile updates, admission queries, or institutional partnerships. Our education support team responds within 24 hours."
+        />
+        <meta
+          name="keywords"
+          content="contact CampusArge, university directory support, admissions inquiries, higher education partnerships, submit university profile, university listing support"
         />
         <link rel="canonical" href="https://campusarge.com/contact" />
-        <meta property="og:title" content="Contact Us | CampusArge" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="Contact CampusArge | Admissions Queries & University Directory Support" />
         <meta
           property="og:description"
-          content="Have questions about global universities, programs, or partnerships? Contact the CampusArge team today."
+          content="Get in touch with CampusArge for university profile updates, admission queries, or institutional partnerships."
         />
         <meta property="og:url" content="https://campusarge.com/contact" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact CampusArge | Admissions Queries & University Directory Support" />
+        <meta
+          name="twitter:description"
+          content="Get in touch with CampusArge for university profile updates, admission queries, or institutional partnerships."
+        />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">

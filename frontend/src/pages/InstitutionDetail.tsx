@@ -5,7 +5,7 @@ import {
   MapPin, Globe, BookOpen, Award, CheckCircle2, Building2,
   ExternalLink, Users, ArrowLeft, DollarSign, Home, Shield,
   GraduationCap, Compass, Trophy, Bed, Maximize2, Sparkles,
-  Info, ChevronRight
+  Info, ChevronRight, Scale, Mail
 } from 'lucide-react';
 import { REAL_UNIVERSITIES, getUniversityById, getUniversitySlug, findSlimUniversity } from '@/lib/universitiesData';
 import type { University } from '@/types';
@@ -97,15 +97,26 @@ export default function InstitutionDetail() {
   const isSparse = !university.cost_of_attendance && !facts.campus_acreage && !facts.undergrad_population && !facts.avg_apartment_rent;
 
   // SEO Helpers
-  const pageTitle = `${university.name} – Programs, Cost & Research | CampusArge`;
+  const pageTitle = `${university.name} – Tuition Fees, Programs & Ranking | CampusArge`;
   const metaDescParts = [
     `${university.name}${university.city ? ` in ${university.city}` : ''}`,
     facts.school_classification ? facts.school_classification : null,
-    university.cost_of_attendance ? `Cost of attendance $${university.cost_of_attendance.toLocaleString('en-US')}/year` : null,
+    university.cost_of_attendance ? `Tuition & cost $${university.cost_of_attendance.toLocaleString('en-US')}/year` : null,
     facts.student_faculty_ratio ? `${facts.student_faculty_ratio.display} ratio` : null,
-    'Explore programs and research on CampusArge.'
+    'Explore programs, fees, and ranking on CampusArge.'
   ].filter(Boolean);
   const metaDescription = metaDescParts.join('. ').slice(0, 158);
+
+  const pageKeywords = [
+    university.name,
+    `${university.name} tuition fees`,
+    `${university.name} cost of attendance`,
+    `${university.name} programs`,
+    `${university.name} ranking`,
+    university.city ? `colleges in ${university.city}` : null,
+    university.state ? `universities in ${university.state}` : null,
+    'compare universities'
+  ].filter(Boolean).join(', ');
 
   const canonicalSlug = university.slug || getUniversitySlug(university);
   const canonicalUrl = `https://campusarge.com/${canonicalSlug}`;
@@ -238,6 +249,7 @@ export default function InstitutionDetail() {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={metaDescription} />
+        <meta name="keywords" content={pageKeywords} />
         <link rel="canonical" href={canonicalUrl} />
         <meta name="robots" content="index, follow" />
 
@@ -345,23 +357,35 @@ export default function InstitutionDetail() {
                 )}
               </div>
 
-              {/* Action Buttons */}
-              <div className="flex flex-wrap items-center gap-3 mt-6">
+              {/* High-Converting Action Buttons */}
+              <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 mt-6">
                 {university.website && (
                   <a
                     href={university.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-gold px-4 py-2 text-xs sm:text-sm inline-flex items-center gap-2 font-semibold shadow-md"
+                    className="btn-gold px-4 py-2.5 text-xs sm:text-sm inline-flex items-center gap-2 font-bold shadow-md hover:scale-[1.02] transition-transform"
                   >
-                    Visit Website ({getCleanHostname(university.website)}) <ExternalLink className="w-3.5 h-3.5" />
+                    Visit Official Site ({getCleanHostname(university.website)}) <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 )}
                 <Link
-                  to="/institutions"
-                  className="px-4 py-2 text-xs sm:text-sm inline-flex items-center gap-2 font-medium bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors border border-white/15"
+                  to={`/compare?ids=${university.id}`}
+                  className="px-4 py-2.5 text-xs sm:text-sm inline-flex items-center gap-2 font-semibold bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl transition-all shadow-md hover:scale-[1.02]"
                 >
-                  <ArrowLeft className="w-3.5 h-3.5" /> Back to Institutions
+                  <Scale className="w-3.5 h-3.5" /> Compare This College
+                </Link>
+                <Link
+                  to={`/contact?subject=${encodeURIComponent(`Inquiry regarding ${university.name}`)}`}
+                  className="px-4 py-2.5 text-xs sm:text-sm inline-flex items-center gap-2 font-medium bg-white/10 hover:bg-white/20 text-white rounded-xl transition-colors border border-white/15"
+                >
+                  <Mail className="w-3.5 h-3.5" /> Ask a Question
+                </Link>
+                <Link
+                  to="/institutions"
+                  className="px-4 py-2.5 text-xs sm:text-sm inline-flex items-center gap-2 font-medium bg-white/5 hover:bg-white/10 text-white/80 rounded-xl transition-colors border border-white/10"
+                >
+                  <ArrowLeft className="w-3.5 h-3.5" /> All Universities
                 </Link>
               </div>
             </div>
@@ -785,6 +809,33 @@ export default function InstitutionDetail() {
               )}
             </section>
 
+            {/* Interactive Decision / Comparison CTA Banner */}
+            <div className="bg-gradient-to-br from-navy via-navy-dark to-oxford text-white rounded-2xl p-6 sm:p-8 shadow-xl border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 my-8">
+              <div className="max-w-xl">
+                <span className="text-xs font-bold text-gold uppercase tracking-wider block mb-1">Make an Informed Decision</span>
+                <h3 className="font-display font-bold text-2xl text-white mb-2">
+                  Compare {university.name} Side-by-Side
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  Line up tuition, living costs, student-to-faculty ratios, and degree programs against similar institutions in our interactive matrix.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto flex-shrink-0">
+                <Link
+                  to={`/compare?ids=${university.id}`}
+                  className="btn-gold px-6 py-3 text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-lg hover:scale-105 transition-transform"
+                >
+                  <Scale className="w-4 h-4" /> Compare Now
+                </Link>
+                <Link
+                  to="/institutions"
+                  className="px-5 py-3 text-xs sm:text-sm font-semibold rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/20 text-center transition-colors"
+                >
+                  Browse All 426+
+                </Link>
+              </div>
+            </div>
+
             {/* 11. Related Institutions */}
             {relatedInstitutions.length > 0 && (
               <section className="bg-white dark:bg-slate-900 rounded-2xl p-6 sm:p-8 border border-slate-200/80 dark:border-slate-800 shadow-sm">
@@ -932,6 +983,26 @@ export default function InstitutionDetail() {
 
           </div>
         </div>
+      </div>
+
+      {/* Mobile Sticky Quick Action Bar (Ensures immediate CTA for mobile users) */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-4 py-3 border-t border-slate-200 dark:border-slate-800 shadow-2xl flex items-center gap-2.5">
+        {university.website && (
+          <a
+            href={university.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold flex-1 py-2.5 px-3 text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm truncate"
+          >
+            Visit Official Site <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
+          </a>
+        )}
+        <Link
+          to={`/compare?ids=${university.id}`}
+          className="flex-1 py-2.5 px-3 text-xs font-bold bg-navy text-white hover:bg-navy-dark rounded-xl flex items-center justify-center gap-1.5 shadow-sm truncate"
+        >
+          <Scale className="w-3.5 h-3.5 flex-shrink-0 text-gold" /> Compare ⚖️
+        </Link>
       </div>
     </div>
   );

@@ -36,15 +36,29 @@ for (const uni of fullData) {
   const canonicalUrl = `https://campusarge.com/${slug}`;
   const websiteUrl = uni.website || canonicalUrl;
 
-  const pageTitle = `${uni.name} – Programs, Cost & Research | CampusArge`;
+  const pageTitle = `${uni.name} – Tuition Fees, Programs & Ranking | CampusArge`;
   const metaDescParts = [
     `${uni.name}${uni.city ? ` in ${uni.city}` : ''}`,
     facts.school_classification ? facts.school_classification : null,
-    uni.cost_of_attendance ? `Cost of attendance $${uni.cost_of_attendance.toLocaleString('en-US')}/year` : null,
+    uni.cost_of_attendance ? `Tuition & cost $${uni.cost_of_attendance.toLocaleString('en-US')}/year` : null,
     facts.student_faculty_ratio ? `${facts.student_faculty_ratio.display} ratio` : null,
-    'Explore programs and research on CampusArge.'
+    'Explore programs, fees, and ranking on CampusArge.'
   ].filter(Boolean);
   const metaDescription = metaDescParts.join('. ').slice(0, 158);
+
+  const pageKeywords = [
+    uni.name,
+    `${uni.name} programs`,
+    `${uni.name} tuition fees`,
+    `${uni.name} cost of attendance`,
+    `${uni.name} acceptance rate`,
+    `${uni.name} ranking`,
+    uni.city ? `colleges in ${uni.city}` : null,
+    uni.state ? `universities in ${uni.state}` : null,
+    'higher education',
+    'compare universities',
+    'CampusArge'
+  ].filter(Boolean).join(', ');
 
   // JSON-LD
   const jsonLd = {
@@ -80,9 +94,15 @@ for (const uni of fullData) {
   // Replace meta description
   html = html.replace(/<meta name="description"[^>]*>/i, `<meta name="description" content="${escapeHtml(metaDescription)}" />`);
 
-  // Inject canonical and Open Graph / Twitter tags into <head>
+  // Strip default home canonical, og and twitter tags
+  html = html.replace(/<link rel="canonical"[^>]*>/i, '');
+  html = html.replace(/<meta property="og:[^>]*>/gi, '');
+  html = html.replace(/<meta name="twitter:[^>]*>/gi, '');
+
+  // Inject canonical, keywords, and Open Graph / Twitter tags into <head>
   const headInject = `
     <link rel="canonical" href="${canonicalUrl}" />
+    <meta name="keywords" content="${escapeHtml(pageKeywords)}" />
     <meta property="og:title" content="${escapeHtml(pageTitle)}" />
     <meta property="og:description" content="${escapeHtml(metaDescription)}" />
     <meta property="og:url" content="${canonicalUrl}" />
@@ -137,17 +157,22 @@ for (const uni of fullData) {
   prerenderedCount++;
 }
 
-// Prerender Directory page dist/institutions/index.html
+// Prerender Directory page dist/institutions/index.html and dist/universities/index.html
 const directoryCanonical = 'https://campusarge.com/institutions';
-const directoryTitle = 'University Directory | CampusArge';
-const directoryDesc = 'Explore 426 accredited universities and institutions worldwide. Compare tuition, cost of attendance, faculty ratios, and academic programs.';
+const directoryTitle = 'University Directory | Explore 426+ Accredited Colleges | CampusArge';
+const directoryDesc = 'Explore 426 accredited universities and institutions worldwide. Compare tuition fees, cost of attendance, faculty ratios, and academic programs on CampusArge.';
+const directoryKeywords = 'university directory, college directory, list of universities, compare universities, accredited colleges, university programs, tuition fees, CampusArge';
 
 let dirHtml = template
   .replace(/<title>.*?<\/title>/i, `<title>${directoryTitle}</title>`)
-  .replace(/<meta name="description"[^>]*>/i, `<meta name="description" content="${directoryDesc}" />`);
+  .replace(/<meta name="description"[^>]*>/i, `<meta name="description" content="${directoryDesc}" />`)
+  .replace(/<link rel="canonical"[^>]*>/i, '')
+  .replace(/<meta property="og:[^>]*>/gi, '')
+  .replace(/<meta name="twitter:[^>]*>/gi, '');
 
 const dirHeadInject = `
     <link rel="canonical" href="${directoryCanonical}" />
+    <meta name="keywords" content="${directoryKeywords}" />
     <meta property="og:title" content="${directoryTitle}" />
     <meta property="og:description" content="${directoryDesc}" />
     <meta property="og:url" content="${directoryCanonical}" />
@@ -160,7 +185,7 @@ const dirFallback = `<div id="root"><main style="max-width:1100px;margin:2rem au
   <h1>University Directory</h1>
   <p>${directoryDesc}</p>
   <ul>
-    ${fullData.slice(0, 50).map(u => {
+    ${fullData.slice(0, 100).map(u => {
       const slug = u.slug || getSlug(u.name);
       return `<li><a href="/${slug}">${escapeHtml(u.name)}</a> - ${escapeHtml(u.city || '')}, ${escapeHtml(u.country || '')}</li>`;
     }).join('\n    ')}
@@ -171,6 +196,10 @@ dirHtml = dirHtml.replace('<div id="root"></div>', dirFallback);
 const dirOutDir = path.join(distDir, 'institutions');
 fs.mkdirSync(dirOutDir, { recursive: true });
 fs.writeFileSync(path.join(dirOutDir, 'index.html'), dirHtml, 'utf8');
+
+const univOutDir = path.join(distDir, 'universities');
+fs.mkdirSync(univOutDir, { recursive: true });
+fs.writeFileSync(path.join(univOutDir, 'index.html'), dirHtml, 'utf8');
 
 console.log(`Prerender complete! Generated ${prerenderedCount} institution pages and 1 directory page in dist/`);
 

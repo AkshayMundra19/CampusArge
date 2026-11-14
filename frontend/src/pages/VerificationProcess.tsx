@@ -1,8 +1,31 @@
 import { ShieldCheck, CheckCircle, Search, FileText } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function VerificationProcess() {
   return (
     <div className="pt-32 pb-20 min-h-screen">
+      <Helmet>
+        <title>University Verification Protocol & Standards | CampusArge</title>
+        <meta
+          name="description"
+          content="Learn about CampusArge's trust protocol: How we audit accreditation, verify institutional disclosures, and maintain unbiased educational directory data."
+        />
+        <meta
+          name="keywords"
+          content="university verification, accredited institutions check, college accreditation protocol, verified higher education, CampusArge trust standards"
+        />
+        <link rel="canonical" href="https://campusarge.com/verification" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="University Verification Protocol & Standards | CampusArge" />
+        <meta property="og:description" content="Learn about CampusArge's trust protocol: How we audit accreditation and maintain unbiased educational directory data." />
+        <meta property="og:url" content="https://campusarge.com/verification" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="University Verification Protocol & Standards | CampusArge" />
+        <meta name="twitter:description" content="Learn about CampusArge's trust protocol: How we audit accreditation and maintain unbiased educational directory data." />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in-up">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold text-navy bg-navy-light mb-4">

@@ -1,8 +1,18 @@
 import { Briefcase } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function BusinessPolicy() {
   return (
     <div className="pt-24 pb-20 min-h-screen">
+      <Helmet>
+        <title>Business & Editorial Policy | CampusArge</title>
+        <meta
+          name="description"
+          content="Learn about CampusArge's independent business model, institutional listing policies, and non-sponsored editorial integrity standards."
+        />
+        <meta name="keywords" content="business policy, editorial independence, university listing policy, CampusArge standards" />
+        <link rel="canonical" href="https://campusarge.com/business-policy" />
+      </Helmet>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-navy to-burgundy flex items-center justify-center mx-auto mb-4">

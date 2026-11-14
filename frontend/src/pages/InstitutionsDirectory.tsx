@@ -13,6 +13,7 @@ import heroCampusWebp from '@/assets/institutions/hero-institutions-campus.webp'
 import heroCampus2xWebp from '@/assets/institutions/hero-institutions-campus@2x.webp';
 import { useCompare } from '@/context/CompareContext';
 import CompareTray from '@/components/CompareTray';
+import CallToActionBanner from '@/components/common/CallToActionBanner';
 
 const MAPPED_INSTITUTIONS: Institution[] = REAL_UNIVERSITIES.map((u): Institution => ({
   id: u.id,
@@ -243,17 +244,26 @@ export default function InstitutionsDirectory() {
   return (
     <div className="min-h-screen bg-slate-50/70 dark:bg-slate-950 transition-colors">
       <Helmet>
-        <title>{`Compare ${TOTAL_COUNT}+ Colleges & Universities | CampusArge`}</title>
+        <title>University Directory | Browse 426+ Verified Colleges & Programs – CampusArge</title>
         <meta
           name="description"
-          content={`Explore and compare ${TOTAL_COUNT}+ accredited institutions by tuition, programs, student-faculty ratio, and academic excellence on CampusArge.`}
+          content="Search and filter 426+ accredited colleges and universities by tuition fees, state, academic degree programs, and faculty ratios. Compare options on CampusArge."
+        />
+        <meta
+          name="keywords"
+          content="university directory, colleges list, find universities, accredited colleges in USA, college tuition compare, degree programs, higher education directory"
         />
         <link rel="canonical" href="https://campusarge.com/institutions" />
-        <meta property="og:title" content={`Compare ${TOTAL_COUNT}+ Colleges & Universities | CampusArge`} />
-        <meta property="og:description" content={`Explore and compare ${TOTAL_COUNT}+ accredited institutions worldwide.`} />
-        <meta property="og:url" content="https://campusarge.com/institutions" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusArge" />
+        <meta property="og:title" content="University Directory | Browse 426+ Verified Colleges & Programs – CampusArge" />
+        <meta property="og:description" content="Search and filter 426+ accredited colleges and universities by tuition fees, state, academic degree programs, and faculty ratios." />
+        <meta property="og:url" content="https://campusarge.com/institutions" />
+        <meta property="og:image" content="https://campusarge.com/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="University Directory | Browse 426+ Verified Colleges & Programs – CampusArge" />
+        <meta name="twitter:description" content="Search and filter 426+ accredited colleges and universities by tuition fees, state, academic degree programs, and faculty ratios." />
+        <meta name="twitter:image" content="https://campusarge.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -706,6 +716,11 @@ export default function InstitutionsDirectory() {
             )}
           </>
         )}
+      </div>
+
+      {/* Global Conversion CTA Banner */}
+      <div className="mt-20">
+        <CallToActionBanner />
       </div>
 
       {/* Sticky Bottom Compare Tray */}

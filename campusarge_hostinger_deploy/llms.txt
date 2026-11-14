@@ -1,0 +1,19 @@
+# CampusArge
+
+> Global Education Directory & Institutional Comparison Platform
+
+CampusArge is an independent academic discovery platform connecting students, educators, and researchers with 426+ verified universities and institutions worldwide. It provides authentic metrics on tuition costs, acceptance rates, student-faculty ratios, campus housing, academic programs, and accreditation status.
+
+## Primary Sections
+- [Home](https://campusarge.com/): Overview, featured global institutions, and academic opportunities.
+- [Institutions Directory](https://campusarge.com/institutions): Searchable database of 426+ institutions with real-time filters for country, tuition, type (Public/Private), and degree levels.
+- [Institution Comparison](https://campusarge.com/compare): Multi-institution side-by-side comparison across 16 key criteria including Cost of Attendance, Student-to-Faculty Ratio, Housing, and Accreditation.
+- [Academic Insights & Blog](https://campusarge.com/blog): Articles on international admissions, research collaborations, and global education trends.
+- [About Us](https://campusarge.com/about): Mission, verification methodology, and leadership.
+- [Contact](https://campusarge.com/contact): Support, institutional onboarding, and general queries.
+
+## Verified Contacts
+- General Inquiries: info@campusarge.com
+- Admissions & Queries: query@campusarge.com
+- Location: Cambridge, Massachusetts, USA
+

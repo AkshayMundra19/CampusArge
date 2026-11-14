@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "CampusArge",
+  "version": "1.0.0",
+  "description": "Global Academic Institution Directory and Comparison Engine",
+  "url": "https://campusarge.com",
+  "endpoints": {
+    "institutions": {
+      "path": "/institutions",
+      "description": "List and filter 426+ universities by country, tuition, type, and programs."
+    },
+    "compare": {
+      "path": "/compare",
+      "description": "Compare up to 4 institutions side-by-side across 16 academic and financial criteria."
+    },
+    "contact": {
+      "path": "/api/contact.php",
+      "method": "POST",
+      "description": "Submit academic inquiries and partnership requests."
+    }
+  },
+  "metadata": {
+    "publisher": "CampusArge",
+    "contact": "info@campusarge.com",
+    "last_updated": "2026-11-14"
+  }
+}
+

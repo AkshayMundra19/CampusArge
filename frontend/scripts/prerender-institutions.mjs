@@ -139,20 +139,18 @@ for (const uni of fullData) {
 
   html = html.replace('<div id="root"></div>', rootFallback);
 
-  // 1. Primary Clean Permalink: dist/{slug}/index.html
-  const outDirSlug = path.join(distDir, slug);
-  fs.mkdirSync(outDirSlug, { recursive: true });
-  fs.writeFileSync(path.join(outDirSlug, 'index.html'), html, 'utf8');
-
-  // 2. Secondary Alias: dist/institutions/{slug}/index.html
+  // Save ALL university profile pages inside dist/institutions/ folder only
+  // (Prevents cluttering root directory with 426 individual folders)
   const outDirInstSlug = path.join(distDir, 'institutions', slug);
   fs.mkdirSync(outDirInstSlug, { recursive: true });
   fs.writeFileSync(path.join(outDirInstSlug, 'index.html'), html, 'utf8');
 
-  // 3. Backward Compatibility Alias: dist/institutions/{id}/index.html
-  const outDirId = path.join(distDir, 'institutions', uni.id);
-  fs.mkdirSync(outDirId, { recursive: true });
-  fs.writeFileSync(path.join(outDirId, 'index.html'), html, 'utf8');
+  // Backward Compatibility Alias: dist/institutions/{id}/index.html
+  if (uni.id && uni.id !== slug) {
+    const outDirId = path.join(distDir, 'institutions', uni.id);
+    fs.mkdirSync(outDirId, { recursive: true });
+    fs.writeFileSync(path.join(outDirId, 'index.html'), html, 'utf8');
+  }
 
   prerenderedCount++;
 }

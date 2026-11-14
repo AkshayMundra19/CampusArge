@@ -17,8 +17,15 @@
     RewriteRule ^ - [L]
 
     # Serve existing files, directories, and assets directly
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Clean University Permalink: campusarge.com/{slug} -> internally serve /institutions/{slug}/index.html
+    # Keeps URL as campusarge.com/{slug} in the browser and for search engines
+    RewriteCond %{DOCUMENT_ROOT}/institutions/$1/index.html -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public_html/institutions/$1/index.html -f
+    RewriteRule ^([a-zA-Z0-9_-]+)/?$ institutions/$1/index.html [L]
 
     # Route all other URLs to SPA index.html
     RewriteRule ^ index.html [L]

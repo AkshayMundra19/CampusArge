@@ -12,6 +12,11 @@ $zipOutput = Join-Path $projectRoot "campusarge_hostinger_deploy.zip"
 
 # 1. Clean previous build directory and zip
 Write-Host "`n[1/5] Cleaning up previous deployment artifacts..." -ForegroundColor Yellow
+$frontendDist = Join-Path $frontendDir "dist"
+if (Test-Path $frontendDist) {
+    Remove-Item -Recurse -Force $frontendDist
+}
+
 if (Test-Path $deployDir) {
     Remove-Item -Recurse -Force $deployDir
 }

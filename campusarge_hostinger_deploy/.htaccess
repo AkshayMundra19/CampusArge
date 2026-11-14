@@ -1,0 +1,80 @@
+# =======================================================================
+# CampusArge - Hostinger Apache / LiteSpeed Configuration
+# Optimized for React SPA Routing, Security, Long-Term Caching & Speed
+# =======================================================================
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Enforce HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} ^(www\.)?campusarge\.com$ [NC]
+    RewriteRule ^ https://campusarge.com%{REQUEST_URI} [L,R=301]
+
+    # Exclude backend /api/ folder from React SPA rewriting
+    RewriteCond %{REQUEST_URI} ^/api/ [NC]
+    RewriteRule ^ - [L]
+
+    # Serve existing files, directories, and assets directly
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+
+    # Clean University Permalink: campusarge.com/{slug} -> internally serve /institutions/{slug}/index.html
+    # Keeps URL as campusarge.com/{slug} in the browser and for search engines
+    RewriteCond %{DOCUMENT_ROOT}/institutions/$1/index.html -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public_html/institutions/$1/index.html -f
+    RewriteRule ^([a-zA-Z0-9_-]+)/?$ institutions/$1/index.html [L]
+
+    # Route all other URLs to SPA index.html
+    RewriteRule ^ index.html [L]
+</IfModule>
+
+# ── Security Headers ──────────────────────────────────────────────────
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # 1-Year Immutable Caching for Vite Hashed Assets (Fixes The HOTH & PageSpeed Caching)
+    <FilesMatch "\.(js|css|webp|png|jpg|jpeg|gif|ico|svg|woff2|woff|ttf|eot)$">
+        Header set Cache-Control "max-age=31536000, public, immutable"
+    </FilesMatch>
+
+    # Fresh HTML on every release
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ── Browser Caching via mod_expires ───────────────────────────────────
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # HTML
+    ExpiresByType text/html "access plus 0 seconds"
+
+    # JavaScript and CSS
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+
+    # Images, Fonts and Icons
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+</IfModule>
+
+# ── GZIP / Deflate Compression ────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+    AddOutputFilterByType DEFLATE image/svg+xml font/woff2
+</IfModule>

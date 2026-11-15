@@ -75,6 +75,7 @@ function Layout() {
           <Route path="/business-policy" element={<BusinessPolicy />} />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/verification" element={<VerificationProcess />} />
+          <Route path="/verification-process" element={<VerificationProcess />} />
           <Route path="/accessibility" element={<Accessibility />} />
           {/* Direct university permalink: /university_name */}
           <Route path="/:slug" element={<InstitutionDetail />} />

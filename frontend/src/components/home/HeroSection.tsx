@@ -47,7 +47,7 @@ export default function HeroSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid lg:grid-cols-12 gap-8 items-center">
           {/* Left: Text & Actions */}
-          <div className="lg:col-span-7 max-w-2xl">
+          <div className="lg:col-span-7 max-w-xl">
             {/* Trust badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FBF6EC] border border-[#EADFC8] text-navy text-sm font-medium mb-6 sm:mb-8 animate-fade-in">
               <Building2 className="w-4 h-4 text-gold" aria-hidden="true" />
@@ -62,7 +62,7 @@ export default function HeroSection() {
             </h1>
 
             {/* Primary description */}
-            <p className="mt-5 sm:mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-xl text-pretty animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <p className="mt-5 sm:mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-[480px] leading-relaxed text-pretty animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               Explore transparent tuition fees, cost of attendance, faculty ratios, and accredited degree programs. Make confident higher education decisions with CampusArge.
             </p>
 
@@ -107,7 +107,7 @@ export default function HeroSection() {
 
             {/* Search bar */}
             <form onSubmit={handleSearch} className="mt-6 animate-fade-in-up" style={{ animationDelay: '0.22s' }}>
-              <div className="glass-card rounded-2xl p-2 flex items-center gap-2 max-w-xl border border-slate-200/80 shadow-md">
+              <div className="glass-card rounded-2xl p-2 flex items-center gap-2 max-w-[480px] border border-slate-200/80 shadow-md">
                 <Search className="w-5 h-5 text-slate-400 ml-3 flex-shrink-0" aria-hidden="true" />
                 <input
                   type="text"
@@ -120,14 +120,14 @@ export default function HeroSection() {
                 <button
                   type="submit"
                   id="hero-search-btn"
-                  className="btn-primary px-6 py-2.5 text-sm font-bold flex-shrink-0"
+                  className="btn-primary px-5 py-2.5 text-sm font-bold flex-shrink-0"
                 >
                   Search
                 </button>
               </div>
 
               {/* Instant Engagement Discovery Pills */}
-              <div className="mt-3.5 flex flex-wrap items-center gap-2 text-xs">
+              <div className="mt-3.5 flex flex-wrap items-center gap-2 text-xs max-w-[480px]">
                 <span className="inline-flex items-center gap-1.5 py-1 text-slate-500 dark:text-slate-400 font-semibold text-xs">
                   <Sparkles className="w-3.5 h-3.5 text-gold shrink-0" /> Popular:
                 </span>

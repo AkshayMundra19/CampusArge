@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, Linkedin, Twitter, Youtube, Instagram, Facebook } from "lucide-react";
+import { GraduationCap, Linkedin, Instagram } from "lucide-react";
 
 const footerLinks = {
   Platform: [
@@ -28,9 +28,6 @@ const contactLinks = [
 const socialIcons = [
   { Icon: Linkedin,  href: "https://www.linkedin.com/company/144138973/", label: "LinkedIn" },
   { Icon: Instagram, href: "https://www.instagram.com/campusarge/", label: "Instagram" },
-  { Icon: Facebook,  href: "https://www.facebook.com/campusarge", label: "Facebook" },
-  { Icon: Twitter,   href: "https://x.com/campusarge", label: "Twitter / X" },
-  { Icon: Youtube,   href: "https://www.youtube.com/@campusarge", label: "YouTube" },
 ];
 
 const legalLinks = [

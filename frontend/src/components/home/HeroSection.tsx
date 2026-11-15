@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {
   ShieldCheck, Building2, Search, ArrowRight,
-  ChevronDown, Scale, Sparkles
+  ChevronDown, Sparkles
 } from 'lucide-react';
 import heroImage from '@/assets/hero/hero-campus-banner.jpg';
 import heroMobileImage from '@/assets/hero/hero-campus-mobile.webp';
@@ -66,24 +66,16 @@ export default function HeroSection() {
               Explore transparent tuition fees, cost of attendance, faculty ratios, and accredited degree programs. Make confident higher education decisions with CampusArge.
             </p>
 
-            {/* High-Converting CTA Buttons */}
+            {/* CTA Button */}
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-3.5 sm:gap-4 animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
               <Link
                 to="/institutions"
                 id="hero-explore-institutions-btn"
-                className="btn-primary flex items-center justify-center gap-2 text-base px-7 py-3.5 shadow-lg shadow-navy/20 font-bold hover:scale-[1.02] transition-transform"
+                className="btn-primary flex items-center justify-center gap-2 text-base px-7 py-3.5 shadow-lg shadow-navy/20 font-bold hover:scale-[1.02] transition-transform w-full sm:w-auto"
               >
                 <Building2 className="w-5 h-5" aria-hidden="true" />
                 Explore Universities
                 <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </Link>
-              <Link
-                to="/compare"
-                id="hero-compare-universities-btn"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white/90 dark:bg-slate-900/90 text-navy dark:text-gold font-bold text-base hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shadow-sm hover:scale-[1.02]"
-              >
-                <Scale className="w-5 h-5 text-gold" aria-hidden="true" />
-                Compare Side-by-Side
               </Link>
             </div>
 
